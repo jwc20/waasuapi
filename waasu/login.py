@@ -1,14 +1,20 @@
 import requests
 from bs4 import BeautifulSoup
 
+from selenium import webdriver
+# from selenium.webdriver.chrome.options import Options
+# from selenium.webdriver.common.keys import Keys
+import time
+
+# import selenium
 
 class LogIn(object):
-    def __init__(self):
-        pass
-
     # def __init__(self, username, password):
     #     self.username = username
     #     self.password = password
+
+    def __init__(self):
+        pass
 
     @staticmethod
     def _load_page():
@@ -19,8 +25,15 @@ class LogIn(object):
         pass
 
     def log_in(self):
-        # self._load_page()
-        # print(self._get_login(self._load_page()))
+        print("hello from login page")
+        driver = webdriver.Chrome()
+        driver.get('http://www.google.com/');
+        time.sleep(5) # Let the user actually see something!
+        search_box = driver.find_element_by_name('q')
+        search_box.send_keys('ChromeDriver')
+        search_box.submit()
+        time.sleep(5) # Let the user actually see something!
+        driver.quit()
         pass
 
 
