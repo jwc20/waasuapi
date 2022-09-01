@@ -23,5 +23,5 @@ class Companies(object):
     def _scrape_element_b(self):
         return
 
-    def get_scraped_results(self):
-        return
+    def get_scraped_companies(self):
+        print("hello world")

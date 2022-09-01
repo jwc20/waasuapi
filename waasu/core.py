@@ -5,11 +5,6 @@ from bs4 import BeautifulSoup
 
 # Bunch of urls
 
-# BASE_URL = ""
-# HEADERS = {""}
-# INDEX_URL = ""
-# SEARCH_URL = ""
-
 # Helper functions:
 
 
