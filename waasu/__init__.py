@@ -5,8 +5,8 @@ from .login import LogIn
 
 
 class WorkAtAStartUp(Companies, Company, LogIn):
-    def __init__(self, keywords=[], username="", password="", *args):
-        Companies.__init__(self, keywords=keywords, *args)
+    def __init__(self, keywords=[], username="", password="", delay=20, *args):
+        Companies.__init__(self, keywords=keywords, delay=delay, *args)
         Company.__init__(self)
         LogIn.__init__(self, username=username, password=password, *args)
 
