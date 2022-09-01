@@ -1,6 +1,18 @@
 import waasu
 
-client = waasu.WorkAtAStartUp()
+
+keywords = []
+
+# Log In 
+username = "example_username"
+password = "example_password"
+
+client = waasu.WorkAtAStartUp(username=username, password=password)
+
+client.log_in()
+# print(client.log_in())
+
+
 
 client.get_company_info()
 client.get_companies()
@@ -15,9 +27,3 @@ print(waasu.is_companies_search(company_url)) # => False
 print(waasu.is_company(c_search_url)) # => False
 
 
-# username = 
-email = ""
-password = ""
-
-client.log_in()
-print(client.log_in())
