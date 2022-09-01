@@ -19,6 +19,5 @@ class Companies(object):
     def _scrape_element_a():
         return
 
-
     def get_companies(self):
         print("hello world")
