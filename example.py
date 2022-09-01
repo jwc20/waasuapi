@@ -4,12 +4,13 @@ import waasu
 keywords = []
 
 # Log In
-username = "example_username"
-password = "example_password"
+# username = "example_username"
+# password = "example_password"
+
 
 client = waasu.WorkAtAStartUp(username=username, password=password)
 
-client.log_in()
+client.log_in(delay=15)
 # print(client.log_in())
 
 
