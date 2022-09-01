@@ -12,17 +12,15 @@ class Company(object):
         return
 
     @staticmethod
-    def _load_page(self):
+    def _load_page():
         return
 
     @staticmethod
-    def _scrape_element_a(self):
+    def _scrape_element_a():
         return
 
-    @staticmethod
-    def _scrape_element_b(self):
-        return
 
-    def get_scraped_results(self):
+    def get_company_info(self):
+        print("hello from company class")
         return
 
