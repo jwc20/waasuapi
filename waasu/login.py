@@ -12,7 +12,7 @@ class LogIn(object):
         self.username = username
         self.password = password
 
-    def log_in(self):
+    def log_in(self, delay=None):
         options = Options()
         # options.add_argument("--headless")
         # options.add_argument("--window-size=1980,1020")
@@ -37,9 +37,10 @@ class LogIn(object):
         submit_button = driver.find_element_by_css_selector(".MuiButton-label")
         submit_button.click()
         # driver.quit()
-        # time.sleep(10)
+        if(delay is not None): time.sleep(delay)
+        else: time.sleep(10)
 
         # print("hellow asdijaisdl")
 
         soup = BeautifulSoup(driver.page_source, "lxml")
-        print(soup.find_all("span", {"class": "company-name hover:underline"}))
+        print(soup.find_all("span", {"class": "company-name hover:underline"})).text
