@@ -23,9 +23,9 @@ class LogIn(object):
     @staticmethod
     def _set_driver():
         options = Options()
-        options.add_argument("--headless")
-        options.add_argument("--window-size=1980,1020")
-        options.add_argument('--disable-gpu')
+        # options.add_argument("--headless")
+        # options.add_argument("--window-size=1980,1020")
+        # options.add_argument('--disable-gpu')
 
         driver = webdriver.Chrome(options=options)
         return driver
@@ -46,9 +46,6 @@ class LogIn(object):
         submit_button = driver.find_element_by_css_selector(".MuiButton-label")
         submit_button.click()
         # driver.quit()
-        if delay is not None:
-            time.sleep(delay)
-        else:
-            time.sleep(10)
+
 
         return driver
