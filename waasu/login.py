@@ -19,28 +19,26 @@ class LogIn(object):
     @staticmethod
     def _set_driver():
         options = Options()
-        options.add_argument("--headless")
-        options.add_argument("--window-size=500,1020")
-        options.add_argument('--disable-gpu')
+        # options.add_argument("--headless")
+        # options.add_argument("--window-size=500,1020")
+        # options.add_argument('--disable-gpu')
         driver = webdriver.Chrome(options=options)
         return driver
 
     def log_in(self, username, password, scroll_delay=None):
-        driver = self._set_driver()
-        driver.get(login_url)
+        # driver = self._set_driver()
+        self.driver.get(login_url)
         time.sleep(2)
 
         # YCombinator username
-        yc_username = driver.find_element_by_css_selector("#ycid-input")
+        yc_username = self.driver.find_element_by_css_selector("#ycid-input")
         yc_username.send_keys(username)  # insert self.username here
 
         # YCombinator password
-        yc_password = driver.find_element_by_css_selector("#password-input")
+        yc_password = self.driver.find_element_by_css_selector("#password-input")
         yc_password.send_keys(password)  # insert self.username here
 
-        submit_button = driver.find_element_by_css_selector(".MuiButton-label")
+        submit_button = self.driver.find_element_by_css_selector(".MuiButton-label")
         submit_button.click()
         # driver.quit()
 
-
-        return driver

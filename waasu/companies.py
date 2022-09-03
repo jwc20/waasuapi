@@ -5,9 +5,9 @@ import time
 import sys
 from requests.models import PreparedRequest
 
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.keys import Keys
+# from selenium import webdriver
+# from selenium.webdriver.chrome.options import Options
+# from selenium.webdriver.common.keys import Keys
 
 
 class Companies(object):
@@ -103,7 +103,6 @@ class Companies(object):
 
     def _load_page(
         self,
-        client,
         demographic=None,
         expo=None,
         hasEquity=None,
@@ -134,20 +133,10 @@ class Companies(object):
             safe="%20",
         )
 
-        # r = requests.get(filter_url, params=payload_str, headers=eHeaders.PAYLOAD)
-
-        options = Options()
-        # options.add_argument("--headless")
-        # options.add_argument("--window-size=500,1020")
-        # options.add_argument('--disable-gpu')
-        driver = webdriver.Chrome(options=options)
-
         target_url = filter_url + "?" + payload_str
-        r = driver.get(target_url)
+        self.driver.get(target_url)
+        time.sleep(10)
         # html = r.page_source
-
-        breakpoint()
-
         # return BeautifulSoup(html, "lxml")
 
     @staticmethod
@@ -156,7 +145,6 @@ class Companies(object):
 
     def get_companies(
         self,
-        client,
         scroll_delay,
         demographic=None,
         expo=None,
@@ -202,13 +190,8 @@ class Companies(object):
 
         sys.stdout.write("\rComplete!            \n")
 
-        result = []
-
-        soup = BeautifulSoup(client.page_source, "lxml")
-
         # self._make_companies_url(
-        page = self._load_page(
-            client,
+        self._load_page(
             demographic,
             expo,
             hasEquity,
@@ -223,23 +206,26 @@ class Companies(object):
         )
 
 
+        soup = BeautifulSoup(self.driver.page_source, "lxml")
+
 
         # get company names
-        companies_span = soup.find_all("span", {"class": "company-name hover:underline"})
+        companies_span = soup.find_all(
+            "span", {"class": "company-name hover:underline"}
+        )
+
+        result = []
         for span in companies_span:
             result.append(span.text)
 
+        # companies_div = page.find_all("div", {"class": "company-details text-lg"})
+        # result_div = []
+        # for div in companies_div:
+        #     result_div.append(div.text)
 
-        companies_div = page.find_all("div", {"class": "company-details text-lg"})
-        result_div = []
-        for div in companies_div:
-            result_div.append(div.text)
-
-        print(result_div)
-
+        # print(result_div)
         print(result)
 
-        breakpoint()
 
         # print(result, len(result))
         # return result
