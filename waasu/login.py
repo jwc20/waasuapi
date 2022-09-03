@@ -20,7 +20,7 @@ class LogIn(object):
     def _set_driver():
         options = Options()
         # options.add_argument("--headless")
-        # options.add_argument("--window-size=1980,1020")
+        options.add_argument("--window-size=500,1020")
         # options.add_argument('--disable-gpu')
         driver = webdriver.Chrome(options=options)
         return driver
