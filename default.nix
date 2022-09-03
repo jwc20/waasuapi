@@ -20,6 +20,7 @@ in pkgs.mkShell rec {
                 lxml
                 selenium
                 chromedriver
+                python39Packages.ipdb
             ];
         })
     ]);
