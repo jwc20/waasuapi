@@ -6,6 +6,11 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 import time
 
+# login_url = "https://account.ycombinator.com/"
+login_url = (
+    "https://account.ycombinator.com/?continue=https%3A%2F%2Fwww.workatastartup.com%2F"
+)
+
 
 class LogIn(object):
     # def __init__(self, username, password):
@@ -15,17 +20,18 @@ class LogIn(object):
     def __init__(self):
         pass
 
-    def log_in(self, username=username, password=password, driver=driver, delay=None):
+    @staticmethod
+    def _set_driver():
         options = Options()
-        # options.add_argument("--headless")
-        # options.add_argument("--window-size=1980,1020")
-        # options.add_argument('--disable-gpu')
+        options.add_argument("--headless")
+        options.add_argument("--window-size=1980,1020")
+        options.add_argument('--disable-gpu')
 
         driver = webdriver.Chrome(options=options)
-        # login_url = "https://account.ycombinator.com/"
+        return driver
 
-        login_url = "https://account.ycombinator.com/?continue=https%3A%2F%2Fwww.workatastartup.com%2F"
-
+    def log_in(self, username, password, delay=None):
+        driver = self._set_driver()
         driver.get(login_url)
         time.sleep(2)
 
@@ -46,4 +52,3 @@ class LogIn(object):
             time.sleep(10)
 
         return driver
-

@@ -19,5 +19,22 @@ class Companies(object):
     def _scrape_element_a():
         return
 
-    def get_companies(self):
-        print("hello world")
+    def get_companies(self,client):
+        # print("hello world")
+        # url = "https://www.workatastartup.com/companies?demographic=any&expo=any&hasEquity=any&hasSalary=any&industry=any&interviewProcess=any&jobType=any&layout=list-compact&remote=any&sortBy=keyword&usVisaNotRequired=any"
+        # PAYLOAD = {"Content-Type": "text/html; charset=UTF-8"}
+        # target_url = url
+        # r = requests.get(target_url, headers=PAYLOAD)
+        # html = r.text
+        # print(html)
+
+
+        result = []
+        soup = BeautifulSoup(client.page_source, "lxml")
+        companies = soup.find_all("span", {"class": "company-name hover:underline"})
+
+        for company in companies:
+            result.append(company.text)
+
+        print(result, len(result))
+
