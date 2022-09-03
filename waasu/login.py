@@ -30,7 +30,7 @@ class LogIn(object):
         driver = webdriver.Chrome(options=options)
         return driver
 
-    def log_in(self, username, password, delay=None):
+    def log_in(self, username, password, scroll_delay=None):
         driver = self._set_driver()
         driver.get(login_url)
         time.sleep(2)

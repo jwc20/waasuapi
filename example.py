@@ -2,6 +2,11 @@ import waasu
 from bs4 import BeautifulSoup
 
 
+
+
+
+
+
 keywords = []
 
 # Log In
@@ -9,8 +14,8 @@ keywords = []
 # password = "example_password"
 
 
-breakpoint()
-
-
 client = waasu.WorkAtAStartUp().log_in(username=username, password=password)
-waasu.WorkAtAStartUp().get_companies(client, delay=20)
+waasu.WorkAtAStartUp().get_companies(client, scroll_delay=5)
+
+
+# breakpoint()
