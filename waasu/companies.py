@@ -21,7 +21,24 @@ class Companies(object):
         p_rem,
         p_sort_by,
         p_visa,
+        p_query,
     ):
+        # url = "https://www.workatastartup.com/companies?demographic=any&expo=any&hasEquity=any&hasSalary=any&industry=any&interviewProcess=any&jobType=any&layout=list-compact&remote=any&sortBy=keyword&usVisaNotRequired=any"
+        """
+        companies?
+        demographic=any
+        expo=any
+        hasEquity=any
+        hasSalary=any
+        industry=any
+        interviewProcess=any
+        jobType=any
+        layout=list-compact
+        remote=any
+        sortBy=keyword
+        usVisaNotRequired=any
+        """
+
         payload = {}
 
         if self.keywords:
@@ -53,9 +70,10 @@ class Companies(object):
         p_rem=None,
         p_sort_by=None,
         p_visa=None,
+        p_query=None,
     ):
         # print("hello world")
-        # url = "https://www.workatastartup.com/companies?demographic=any&expo=any&hasEquity=any&hasSalary=any&industry=any&interviewProcess=any&jobType=any&layout=list-compact&remote=any&sortBy=keyword&usVisaNotRequired=any"
+
         # PAYLOAD = {"Content-Type": "text/html; charset=UTF-8"}
         # target_url = url
         # r = requests.get(target_url, headers=PAYLOAD)
@@ -100,6 +118,7 @@ class Companies(object):
             p_rem,
             p_sort_by,
             p_visa,
+            p_query,
         )
 
         # get company names
