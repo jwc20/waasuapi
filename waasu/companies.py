@@ -27,6 +27,7 @@ class Companies(object):
         companySize,
     ):
 
+        payload = {}
 
 
         # if self.query:
@@ -34,48 +35,25 @@ class Companies(object):
         # else:
         #     print("no query")
 
-        p_demo = demographic if demographic else "any"
-        p_expo = expo if expo else "any"
-        p_exq = hasEquity if hasEquity else "any"
-        p_sal = hasSalary if hasSalary else "any"
-        p_ind = industry if industry else "any"
-        p_int_proc = interviewProcess if interviewProcess else "any"
-        p_job_type = jobType if jobType else "any"
-        p_layout = "list"  # don't change
-        p_remote = remote if remote else "any"
-        p_sort_by = sortBy if sortBy else "any"
-        p_visa = usVisaNotRequired if usVisaNotRequired else "any"
-        p_comp_size = companySize if companySize else "any"
-        p_role = role if role else "any"
+        p_demo = demographic if demographic else "any",
+        p_expo = expo if expo else "any",
+        p_exq = hasEquity if hasEquity else "any",
+        p_sal = hasSalary if hasSalary else "any",
+        p_ind = industry if industry else "any",
+        p_int_proc = interviewProcess if interviewProcess else "any",
+        p_job_type = jobType if jobType else "any",
+        p_layout = "list",  # don't change
+        p_remote = remote if remote else "any",
+        p_sort_by = sortBy if sortBy else "any",
+        p_visa = usVisaNotRequired if usVisaNotRequired else "any",
+        p_comp_size = companySize if companySize else "any",
+        p_role = role if role else "any",
+        p_query = query if query else "",
 
-        p_query = query if query else ""
-        # print(p_query)
-
-        
-        Payload = namedtuple(
-            "Payload",
-            [
-                "demographic",
-                "expo",
-                "hasEquity",
-                "hasSalary",
-                "industry",
-                "interviewProcess",
-                "jobType",
-                "layout",
-                "remote",
-                "sortBy",
-                "usVisaNotRequired",
-                "query",
-                "role",
-                "companySize",
-            ],
-        )
-        # Payload order of keys must be same as above namedtuple.
-        payload_prep = Payload(
+        payload_list = [
             p_demo,
-            p_expo,
-            p_exq,
+            p_expo, 
+            p_exq, 
             p_sal,
             p_ind,
             p_int_proc,
@@ -84,11 +62,38 @@ class Companies(object):
             p_remote,
             p_sort_by,
             p_visa,
-            p_query,
-            p_role,
             p_comp_size,
-        )
-        return payload_prep._asdict()
+            p_role,
+            p_query
+        ]
+        
+
+        for i in range(len(payload_list)):
+            if len(payload_list[i]) > 1:
+                for j in range(len(payload_list[i])):
+                    payload.add(payload_list[i][j])
+        
+
+        print(payload_list)
+
+        # payload = {
+        #         "demographic": p_demo,
+        #         "expo": p_expo,
+        #         "hasEquity": p_exq,
+        #         "hasSalary": p_sal,
+        #         "industry": p_ind,
+        #         "interviewProcess": p_int_proc,
+        #         "jobType": p_job_type,
+        #         "layout": p_layout,
+        #         "remote": p_remote,
+        #         "sortBy": p_sort_by,
+        #         "usVisaNotRequired": p_visa,
+        #         "query": p_query,
+        #         "role": p_role,
+        #         "companySize": p_comp_size,
+        #     }
+
+        return payload
 
     def _load_page(
         self,
