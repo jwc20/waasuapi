@@ -15,7 +15,7 @@ keywords = []
 
 
 client = waasu.WorkAtAStartUp().log_in(username=username, password=password)
-waasu.WorkAtAStartUp().get_companies(client, scroll_delay=5)
+waasu.WorkAtAStartUp().get_companies(client, scroll_delay=10)
 
 
 # breakpoint()

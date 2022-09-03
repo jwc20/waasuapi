@@ -31,20 +31,20 @@ class Companies(object):
         # print(html)
 
         # Get scroll height
-        last_height = client.execute_script("return document.body.scrollHeight")
-        
-        while True:
-            # Scroll down to bottom
-            client.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        
-            # Wait to load page
-            time.sleep(5)
-        
-            # Calculate new scroll height and compare with last scroll height
-            new_height = client.execute_script("return document.body.scrollHeight")
-            if new_height == last_height:
-                break
-            last_height = new_height
+        # last_height = client.execute_script("return document.body.scrollHeight")
+        # 
+        # while True:
+        #     # Scroll down to bottom
+        #     client.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        # 
+        #     # Wait to load page
+        #     time.sleep(5)
+        # 
+        #     # Calculate new scroll height and compare with last scroll height
+        #     new_height = client.execute_script("return document.body.scrollHeight")
+        #     if new_height == last_height:
+        #         break
+        #     last_height = new_height
 
 
             
@@ -66,3 +66,4 @@ class Companies(object):
 
         print(result, len(result))
 
+        client.quit()
