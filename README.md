@@ -7,5 +7,5 @@
 - [ ] **_(medium)_** Add scroll down feature with a working countdown timer in console.
 
 ## FIXME
-
+- [ ] **_(low)_** Fix log in url
 - [ ] **_(low)_** Fix scroll down timer, display the total time (?).
