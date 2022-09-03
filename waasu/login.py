@@ -13,10 +13,6 @@ login_url = (
 
 
 class LogIn(object):
-    # def __init__(self, username, password):
-    #     self.username = username
-    #     self.password = password
-
     def __init__(self):
         pass
 
@@ -26,7 +22,6 @@ class LogIn(object):
         # options.add_argument("--headless")
         # options.add_argument("--window-size=1980,1020")
         # options.add_argument('--disable-gpu')
-
         driver = webdriver.Chrome(options=options)
         return driver
 

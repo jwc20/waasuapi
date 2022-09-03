@@ -50,7 +50,7 @@ class Companies(object):
             
         for remaining in range(scroll_delay, 0, -1):
             sys.stdout.write("\r")
-            sys.stdout.write("{:2d} seconds remaining until scroll down.".format(remaining))
+            sys.stdout.write("{:2d} seconds remaining.".format(remaining))
             sys.stdout.flush()
             time.sleep(1)
         
@@ -59,11 +59,14 @@ class Companies(object):
 
         result = []
         soup = BeautifulSoup(client.page_source, "lxml")
+        
+        # get company names
         companies = soup.find_all("span", {"class": "company-name hover:underline"})
 
         for company in companies:
             result.append(company.text)
 
-        print(result, len(result))
+        # print(result, len(result))
+        return result
 
         client.quit()
