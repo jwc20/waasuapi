@@ -2,12 +2,8 @@ from .core import *
 from collections import namedtuple
 import csv
 import time
-import sys
-from requests.models import PreparedRequest
 
-# from selenium import webdriver
-# from selenium.webdriver.chrome.options import Options
-# from selenium.webdriver.common.keys import Keys
+from requests.models import PreparedRequest
 
 
 class Companies(object):
@@ -27,24 +23,35 @@ class Companies(object):
         sortBy,
         usVisaNotRequired,
         query,
+        role,
+        companySize,
     ):
-        # url = "https://www.workatastartup.com/companies?demographic=any&expo=any&hasEquity=any&hasSalary=any&industry=any&interviewProcess=any&jobType=any&layout=list-compact&remote=any&sortBy=keyword&usVisaNotRequired=any"
-        """
-        companies?
-        demographic=any
-        expo=any
-        hasEquity=any
-        hasSalary=any
-        industry=any
-        interviewProcess=any
-        jobType=any
-        layout=list
-        remote=any
-        sortBy=keyword
-        usVisaNotRequired=any
-        """
 
-        # payload = {}
+
+
+        # if self.query:
+        #     print(self.query)
+        # else:
+        #     print("no query")
+
+        p_demo = demographic if demographic else "any"
+        p_expo = expo if expo else "any"
+        p_exq = hasEquity if hasEquity else "any"
+        p_sal = hasSalary if hasSalary else "any"
+        p_ind = industry if industry else "any"
+        p_int_proc = interviewProcess if interviewProcess else "any"
+        p_job_type = jobType if jobType else "any"
+        p_layout = "list"  # don't change
+        p_remote = remote if remote else "any"
+        p_sort_by = sortBy if sortBy else "any"
+        p_visa = usVisaNotRequired if usVisaNotRequired else "any"
+        p_comp_size = companySize if companySize else "any"
+        p_role = role if role else "any"
+
+        p_query = query if query else ""
+        # print(p_query)
+
+        
         Payload = namedtuple(
             "Payload",
             [
@@ -60,28 +67,11 @@ class Companies(object):
                 "sortBy",
                 "usVisaNotRequired",
                 "query",
+                "role",
+                "companySize",
             ],
         )
-
-        if self.query:
-            print(self.query)
-        else:
-            print("no query")
-
-        p_demo = demographic if demographic else "any"
-        p_expo = expo if expo else "any"
-        p_exq = hasEquity if hasEquity else "any"
-        p_sal = hasSalary if hasSalary else "any"
-        p_ind = industry if industry else "any"
-        p_int_proc = interviewProcess if interviewProcess else "any"
-        p_job_type = jobType if jobType else "any"
-        p_layout = "list"  # don't change
-        p_remote = remote if remote else "any"
-        p_sort_by = sortBy if sortBy else "any"
-        p_visa = usVisaNotRequired if usVisaNotRequired else "any"
-        p_query = query if query else ""
-        print(p_query)
-
+        # Payload order of keys must be same as above namedtuple.
         payload_prep = Payload(
             p_demo,
             p_expo,
@@ -95,14 +85,15 @@ class Companies(object):
             p_sort_by,
             p_visa,
             p_query,
+            p_role,
+            p_comp_size,
         )
-
-        # print(filter_url, pay.demographic)
-
         return payload_prep._asdict()
 
     def _load_page(
         self,
+        companySize=None,
+        role=None,
         demographic=None,
         expo=None,
         hasEquity=None,
@@ -119,6 +110,8 @@ class Companies(object):
         payload_str = urlencode(
             self._make_companies_url(
                 demographic,
+                role,
+                companySize,
                 expo,
                 hasEquity,
                 hasSalary,
@@ -136,8 +129,6 @@ class Companies(object):
         target_url = filter_url + "?" + payload_str
         self.driver.get(target_url)
         time.sleep(10)
-        # html = r.page_source
-        # return BeautifulSoup(html, "lxml")
 
     @staticmethod
     def _scrape_element_a():
@@ -146,6 +137,8 @@ class Companies(object):
     def get_companies(
         self,
         scroll_delay,
+        role=None,
+        companySize=None,
         demographic=None,
         expo=None,
         hasEquity=None,
@@ -158,15 +151,8 @@ class Companies(object):
         usVisaNotRequired=None,
         query=None,
     ):
-        # print("hello world")
 
-        # PAYLOAD = {"Content-Type": "text/html; charset=UTF-8"}
-        # target_url = url
-        # r = requests.get(target_url, headers=PAYLOAD)
-        # html = r.text
-        # print(html)
-
-        # Get scroll height
+        # # Get scroll height
         # last_height = client.execute_script("return document.body.scrollHeight")
         #
         # while True:
@@ -187,11 +173,12 @@ class Companies(object):
             sys.stdout.write("{:2d} seconds remaining.".format(remaining))
             sys.stdout.flush()
             time.sleep(1)
-
-        sys.stdout.write("\rComplete!            \n")
+        sys.stdout.write("\rComplete!                       \n")
 
         # self._make_companies_url(
         self._load_page(
+            role,
+            companySize,
             demographic,
             expo,
             hasEquity,
@@ -205,9 +192,7 @@ class Companies(object):
             query,
         )
 
-
         soup = BeautifulSoup(self.driver.page_source, "lxml")
-
 
         # get company names
         companies_span = soup.find_all(
@@ -218,16 +203,4 @@ class Companies(object):
         for span in companies_span:
             result.append(span.text)
 
-        # companies_div = page.find_all("div", {"class": "company-details text-lg"})
-        # result_div = []
-        # for div in companies_div:
-        #     result_div.append(div.text)
-
-        # print(result_div)
         print(result)
-
-
-        # print(result, len(result))
-        # return result
-
-        # client.quit()

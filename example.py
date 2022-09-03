@@ -9,14 +9,10 @@ query = ["query1", "query2"]
 # password = "example_password"
 
 
-client = waasu.WorkAtAStartUp()
+client = waasu.WorkAtAStartUp(query=query)
 client.log_in(username=username, password=password)
-# companies = waasu.WorkAtAStartUp(query=query).get_companies(
-#     client, scroll_delay=6
-# )
 
-client.get_companies(scroll_delay=10)
-
-
+# some parameters can have more than one choice
+client.get_companies(companySize="seed", jobType="contract", role="eng", demographic="black-founders", scroll_delay=10)
 
 # breakpoint()

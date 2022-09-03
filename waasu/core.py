@@ -1,6 +1,8 @@
 import requests
 from enum import Enum
 from bs4 import BeautifulSoup
+import sys
+import time
 
 try:
     from urllib import urlencode, urlunsplit
@@ -44,5 +46,3 @@ def is_companies_search(url):
     return True if (eCompanies.URL in url) and ("=" in url) else False
 
 
-# def is_company(url):
-#     return True if (eCompany.URL in url) and ("=" not in url) else False
