@@ -23,6 +23,6 @@ in pkgs.mkShell rec {
             ];
         })
     ]);
-}
 
+}
 
