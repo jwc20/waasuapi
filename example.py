@@ -2,7 +2,7 @@ import waasu
 from bs4 import BeautifulSoup
 
 
-keywords = []
+query = ["query1", "query2"]
 
 # Log In
 # username = "example_username"
@@ -10,8 +10,8 @@ keywords = []
 
 
 client = waasu.WorkAtAStartUp().log_in(username=username, password=password)
-companies = waasu.WorkAtAStartUp(keywords=keywords).get_companies(
-    client, scroll_delay=10
+companies = waasu.WorkAtAStartUp(query=query).get_companies(
+    client, scroll_delay=6
 )
 
 print(companies)

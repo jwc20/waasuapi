@@ -3,25 +3,30 @@ from collections import namedtuple
 import csv
 import time
 import sys
+from requests.models import PreparedRequest
+
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.keys import Keys
 
 
 class Companies(object):
-    def __init__(self, keywords=[], *args):
-        self.keywords = keywords
+    def __init__(self, query=[], *args):
+        self.query = query
 
     def _make_companies_url(
         self,
-        p_demo,
-        p_expo,
-        p_eq,
-        p_sal,
-        p_ind,
-        p_int_proc,
-        p_job_type,
-        p_rem,
-        p_sort_by,
-        p_visa,
-        p_query,
+        demographic,
+        expo,
+        hasEquity,
+        hasSalary,
+        industry,
+        interviewProcess,
+        jobType,
+        remote,
+        sortBy,
+        usVisaNotRequired,
+        query,
     ):
         # url = "https://www.workatastartup.com/companies?demographic=any&expo=any&hasEquity=any&hasSalary=any&industry=any&interviewProcess=any&jobType=any&layout=list-compact&remote=any&sortBy=keyword&usVisaNotRequired=any"
         """
@@ -33,24 +38,117 @@ class Companies(object):
         industry=any
         interviewProcess=any
         jobType=any
-        layout=list-compact
+        layout=list
         remote=any
         sortBy=keyword
         usVisaNotRequired=any
         """
 
-        payload = {}
+        # payload = {}
+        Payload = namedtuple(
+            "Payload",
+            [
+                "demographic",
+                "expo",
+                "hasEquity",
+                "hasSalary",
+                "industry",
+                "interviewProcess",
+                "jobType",
+                "layout",
+                "remote",
+                "sortBy",
+                "usVisaNotRequired",
+                "query",
+            ],
+        )
 
-        if self.keywords:
-            print(keywords)
+        if self.query:
+            print(self.query)
         else:
-            print("no keywords")
+            print("no query")
 
-        return
+        p_demo = demographic if demographic else "any"
+        p_expo = expo if expo else "any"
+        p_exq = hasEquity if hasEquity else "any"
+        p_sal = hasSalary if hasSalary else "any"
+        p_ind = industry if industry else "any"
+        p_int_proc = interviewProcess if interviewProcess else "any"
+        p_job_type = jobType if jobType else "any"
+        p_layout = "list"  # don't change
+        p_remote = remote if remote else "any"
+        p_sort_by = sortBy if sortBy else "any"
+        p_visa = usVisaNotRequired if usVisaNotRequired else "any"
+        p_query = query if query else ""
+        print(p_query)
 
-    @staticmethod
-    def _load_page():
-        return
+        payload_prep = Payload(
+            p_demo,
+            p_expo,
+            p_exq,
+            p_sal,
+            p_ind,
+            p_int_proc,
+            p_job_type,
+            p_layout,
+            p_remote,
+            p_sort_by,
+            p_visa,
+            p_query,
+        )
+
+        # print(filter_url, pay.demographic)
+
+        return payload_prep._asdict()
+
+    def _load_page(
+        self,
+        client,
+        demographic=None,
+        expo=None,
+        hasEquity=None,
+        hasSalary=None,
+        industry=None,
+        interviewProcess=None,
+        jobType=None,
+        remote=None,
+        sortBy=None,
+        usVisaNotRequired=None,
+        query=None,
+    ):
+        filter_url = eBase.URL + eCompanies.URL
+        payload_str = urlencode(
+            self._make_companies_url(
+                demographic,
+                expo,
+                hasEquity,
+                hasSalary,
+                industry,
+                interviewProcess,
+                jobType,
+                remote,
+                sortBy,
+                usVisaNotRequired,
+                query,
+            ),
+            safe="%20",
+        )
+
+        # r = requests.get(filter_url, params=payload_str, headers=eHeaders.PAYLOAD)
+
+        options = Options()
+        # options.add_argument("--headless")
+        # options.add_argument("--window-size=500,1020")
+        # options.add_argument('--disable-gpu')
+        driver = webdriver.Chrome(options=options)
+
+        target_url = filter_url + "?" + payload_str
+        r = driver.get(target_url)
+        # html = r.page_source
+
+        breakpoint()
+
+        # return BeautifulSoup(html, "lxml")
 
     @staticmethod
     def _scrape_element_a():
@@ -60,17 +158,17 @@ class Companies(object):
         self,
         client,
         scroll_delay,
-        p_demo=None,
-        p_expo=None,
-        p_eq=None,
-        p_sal=None,
-        p_ind=None,
-        p_int_proc=None,
-        p_job_type=None,
-        p_rem=None,
-        p_sort_by=None,
-        p_visa=None,
-        p_query=None,
+        demographic=None,
+        expo=None,
+        hasEquity=None,
+        hasSalary=None,
+        industry=None,
+        interviewProcess=None,
+        jobType=None,
+        remote=None,
+        sortBy=None,
+        usVisaNotRequired=None,
+        query=None,
     ):
         # print("hello world")
 
@@ -105,29 +203,45 @@ class Companies(object):
         sys.stdout.write("\rComplete!            \n")
 
         result = []
+
         soup = BeautifulSoup(client.page_source, "lxml")
 
-        self._make_companies_url(
-            p_demo,
-            p_expo,
-            p_eq,
-            p_sal,
-            p_ind,
-            p_int_proc,
-            p_job_type,
-            p_rem,
-            p_sort_by,
-            p_visa,
-            p_query,
+        # self._make_companies_url(
+        page = self._load_page(
+            client,
+            demographic,
+            expo,
+            hasEquity,
+            hasSalary,
+            industry,
+            interviewProcess,
+            jobType,
+            remote,
+            sortBy,
+            usVisaNotRequired,
+            query,
         )
 
-        # get company names
-        companies = soup.find_all("span", {"class": "company-name hover:underline"})
 
-        for company in companies:
-            result.append(company.text)
+
+        # get company names
+        companies_span = soup.find_all("span", {"class": "company-name hover:underline"})
+        for span in companies_span:
+            result.append(span.text)
+
+
+        companies_div = page.find_all("div", {"class": "company-details text-lg"})
+        result_div = []
+        for div in companies_div:
+            result_div.append(div.text)
+
+        print(result_div)
+
+        print(result)
+
+        breakpoint()
 
         # print(result, len(result))
-        return result
+        # return result
 
         # client.quit()

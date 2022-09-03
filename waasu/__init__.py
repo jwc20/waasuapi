@@ -4,8 +4,8 @@ from .login import LogIn
 
 
 class WorkAtAStartUp(Companies, LogIn):
-    def __init__(self, keywords=[], *args):
-        Companies.__init__(self, keywords=keywords, *args)
+    def __init__(self, query=[], *args):
+        Companies.__init__(self, query=query, *args)
         LogIn.__init__(self, *args)
 
 
