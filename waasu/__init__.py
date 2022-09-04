@@ -12,9 +12,9 @@ options.add_argument('--disable-gpu')
 
 
 class WorkAtAStartUp(Companies, LogIn):
-    def __init__(self, query=[], *args):
+    def __init__(self, *args):
         self.driver = webdriver.Chrome(options=options)
-        Companies.__init__(self, query=query, *args)
+        Companies.__init__(self, *args)
         LogIn.__init__(self, *args)
 
 

@@ -29,7 +29,7 @@ class Companies(object):
     ):
 
         p_demo = ("demographic", demographic) if demographic else ("demographic", "any")
-        p_expo = ("expo", expo) if expo else ("expo", expo)
+        p_expo = ("expo", expo) if expo else ("expo", "any")
         p_eq = ("hasEquity", hasEquity) if hasEquity else ("hasEquity", "any")
         p_sal = ("hasSalary", hasSalary) if hasSalary else ("hasSalary", "any")
         p_ind = ("industry", industry) if industry else ("industry", "any")
@@ -75,12 +75,18 @@ class Companies(object):
         # naive approach, use double loop
         for i in range(len(payload_list)):
             for j in range(len(payload_list[i])):
-                if isinstance(payload_list[i][1], list):
+                if isinstance(payload_list[i][1], list) and len(payload_list[i][1]) > 1:
                     payload.append((payload_list[i][0], payload_list[i][1][j]))
-            if isinstance(payload_list[i][1], str):
+
+            if isinstance(payload_list[i][1], list) and len(payload_list[i][1]) == 1:
+                # Note: need to do something different for query
+                payload.append((payload_list[i][0], payload_list[i][1][0]))
+
+            elif isinstance(payload_list[i][1], str):
                 payload.append((payload_list[i][0], payload_list[i][1]))
 
         # print(payload_list)
+        breakpoint()
         return payload
 
     def _load_page(
