@@ -5,6 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 import time
+from .core import * 
 
 # login_url = "https://account.ycombinator.com/"
 login_url = (
@@ -19,7 +20,9 @@ class LogIn(object):
     def log_in(self, username, password, scroll_delay=None):
         # driver = self._set_driver()
         self.driver.get(login_url)
-        time.sleep(5)
+        # time.sleep(5)
+        delay_timer("waiting for page to load...", "page loaded", 5)
+
 
         # YCombinator username
         yc_username = self.driver.find_element_by_css_selector("#ycid-input")
@@ -31,6 +34,7 @@ class LogIn(object):
 
         submit_button = self.driver.find_element_by_css_selector(".MuiButton-label")
         submit_button.click()
-        time.sleep(5)
+        # time.sleep(5)
+        delay_timer("loggin in...", "logged in",  5)
 
         # driver.quit()
