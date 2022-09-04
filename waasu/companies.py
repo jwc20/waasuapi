@@ -86,7 +86,6 @@ class Companies(object):
             #     payload.add(payload_list[i][0])
 
         print(payload_list)
-        breakpoint()
 
         # payload = {
         #         "demographic": p_demo,
@@ -125,7 +124,6 @@ class Companies(object):
         layout=None,
     ):
         filter_url = eBase.URL + eCompanies.URL
-        breakpoint()
         payload_str = urlencode(
             self._make_companies_url(
                 demographic,
@@ -150,8 +148,20 @@ class Companies(object):
         self.driver.get(target_url)
         time.sleep(10)
 
-    @staticmethod
-    def _scrape_element_a():
+    def _scrape_companies(self, soup_data):
+        # get company names
+        companies_span = soup_data.find_all(
+            "span", {"class": "company-name hover:underline"}
+        )
+
+        result = []
+        for span in companies_span:
+            if span.find("span", {"class": "text-sm w-full text-orange-500 text-right pr-5 italic"}):
+                pass
+            result.append(span.text)
+
+        print(result)
+
         return
 
     def get_companies(
@@ -173,31 +183,7 @@ class Companies(object):
         layout=None,
     ):
 
-        # # Get scroll height
-        # last_height = client.execute_script("return document.body.scrollHeight")
-        #
-        # while True:
-        #     # Scroll down to bottom
-        #     client.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        #
-        #     # Wait to load page
-        #     time.sleep(5)
-        #
-        #     # Calculate new scroll height and compare with last scroll height
-        #     new_height = client.execute_script("return document.body.scrollHeight")
-        #     if new_height == last_height:
-        #         break
-        #     last_height = new_height
-
-        for remaining in range(scroll_delay, 0, -1):
-            sys.stdout.write("\r")
-            sys.stdout.write("{:2d} seconds remaining.".format(remaining))
-            sys.stdout.flush()
-            time.sleep(1)
-        sys.stdout.write("\rComplete!                       \n")
-
         # self._make_companies_url(
-        breakpoint()
         self._load_page(
             demographic,
             expo,
@@ -215,15 +201,48 @@ class Companies(object):
             layout,
         )
 
-        soup = BeautifulSoup(self.driver.page_source, "lxml")
+        ###########################################################
+        # Scroll all the way to the bottom
+        # # Get scroll height
+        # last_height = self.driver.execute_script("return document.body.scrollHeight")
 
-        # get company names
+        # while True:
+        #     # Scroll down to bottom
+        #     self.driver.execute_script(
+        #         "window.scrollTo(0, document.body.scrollHeight);"
+        #     )
+
+        #     # Wait to load page
+        #     time.sleep(5)
+
+        #     # Calculate new scroll height and compare with last scroll height
+        #     new_height = self.driver.execute_script("return document.body.scrollHeight")
+        #     if new_height == last_height:
+        #         break
+        #     last_height = new_height
+
+        # for remaining in range(scroll_delay, 0, -1):
+        #     sys.stdout.write("\r")
+        #     sys.stdout.write("{:2d} seconds remaining.".format(remaining))
+        #     sys.stdout.flush()
+        #     time.sleep(1)
+        # sys.stdout.write("\rComplete!                       \n")
+        ###########################################################
+
+        
+        soup = BeautifulSoup(self.driver.page_source, "lxml")
+        # self._scrape_companies(soup)
+
+
         companies_span = soup.find_all(
             "span", {"class": "company-name hover:underline"}
         )
 
         result = []
         for span in companies_span:
+            if span.find("span", {"class": "text-sm w-full text-orange-500 text-right pr-5 italic"}):
+                pass
             result.append(span.text)
 
         print(result)
+
