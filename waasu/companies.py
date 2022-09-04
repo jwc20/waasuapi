@@ -87,23 +87,6 @@ class Companies(object):
 
         print(payload_list)
 
-        # payload = {
-        #         "demographic": p_demo,
-        #         "expo": p_expo,
-        #         "hasEquity": p_exq,
-        #         "hasSalary": p_sal,
-        #         "industry": p_ind,
-        #         "interviewProcess": p_int_proc,
-        #         "jobType": p_job_type,
-        #         "layout": p_layout,
-        #         "remote": p_remote,
-        #         "sortBy": p_sort_by,
-        #         "usVisaNotRequired": p_visa,
-        #         "query": p_query,
-        #         "role": p_role,
-        #         "companySize": p_comp_size,
-        #     }
-
         return payload
 
     def _load_page(
@@ -146,7 +129,7 @@ class Companies(object):
 
         target_url = filter_url + "?" + payload_str
         self.driver.get(target_url)
-        time.sleep(10)
+        delay_timer("making url...", "done", 10)
 
     def _scrape_companies(self, soup_data):
         # get company names
@@ -156,8 +139,8 @@ class Companies(object):
 
         result = []
         for span in companies_span:
-            if span.find("span", {"class": "text-sm w-full text-orange-500 text-right pr-5 italic"}):
-                pass
+            if span.parent.parent.parent.find("span", {"class": "text-sm w-full text-orange-500 text-right pr-5 italic"}):
+                continue
             result.append(span.text)
 
         print(result)
@@ -183,6 +166,9 @@ class Companies(object):
         layout=None,
     ):
 
+
+        delay_timer("waiting for page to load...", "done", scroll_delay)
+
         # self._make_companies_url(
         self._load_page(
             demographic,
@@ -200,6 +186,7 @@ class Companies(object):
             companySize,
             layout,
         )
+        
 
         ###########################################################
         # Scroll all the way to the bottom
@@ -231,18 +218,18 @@ class Companies(object):
 
         
         soup = BeautifulSoup(self.driver.page_source, "lxml")
-        # self._scrape_companies(soup)
+        self._scrape_companies(soup)
 
 
-        companies_span = soup.find_all(
-            "span", {"class": "company-name hover:underline"}
-        )
+        # companies_span = soup.find_all(
+        #     "span", {"class": "company-name hover:underline"}
+        # )
 
-        result = []
-        for span in companies_span:
-            if span.find("span", {"class": "text-sm w-full text-orange-500 text-right pr-5 italic"}):
-                pass
-            result.append(span.text)
+        # result = []
+        # for span in companies_span:
+        #     if span.find("span", {"class": "text-sm w-full text-orange-500 text-right pr-5 italic"}):
+        #         pass
+        #     result.append(span.text)
 
-        print(result)
+        # print(result)
 
