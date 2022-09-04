@@ -51,7 +51,7 @@ class Companies(object):
         p_comp_size = (
             ("companySize", companySize) if companySize else ("companySize", "any")
         )
-        p_layout = ("list", "list")  # don't change
+        p_layout = ("layout", "list")  # don't change
 
         payload_list = [
             p_demo,
@@ -129,19 +129,44 @@ class Companies(object):
 
         target_url = filter_url + "?" + payload_str
         self.driver.get(target_url)
+        print(target_url)
         delay_timer("making url...", "done", 10)
 
     def _scrape_companies(self, soup_data):
-        # get company names
-        companies_span = soup_data.find_all(
-            "span", {"class": "company-name hover:underline"}
-        )
-
         result = []
-        for span in companies_span:
-            if span.parent.parent.parent.find("span", {"class": "text-sm w-full text-orange-500 text-right pr-5 italic"}):
-                continue
-            result.append(span.text)
+        d = {}
+
+        directory_list = soup_data.find("div", {"class": "directory-list list-compact"})
+    
+        companies = directory_list.find_all("div", {"class":"bg-beige-lighter border border-gray-200 rounded mb-5 pb-6"})
+
+
+        # get company names
+
+
+        for company in companies:
+
+            # result.append(span.text)
+            company_name = company.find(
+                "span", {"class": "company-name hover:underline"}
+            )
+            d["name"] = company_name.text
+
+            # details = company.find(
+            #     "div", {"class": "flex flex-wrap gap-1 sm:gap-3 whitespace-nowrap"}
+            # ).find_all("div")
+
+            details = company.find(
+                "div", {"class": "flex flex-wrap gap-1 sm:gap-3 whitespace-nowrap"}
+                ).find_all("div", {"class": "flex text-gray-600 border px-2 rounded"})
+
+            d["location"] = details[0].find("div", {"class": "detail-label"}).text
+            d["size"] = details[1].find("div", {"class": "detail-label"}).text.strip()
+            if len(details) > 2:
+                d["tag1"] = details[2].find("div", {"class": "detail-label"}).text
+                d["tag2"] = details[3].find("div", {"class": "detail-label"}).text
+
+            result.append(d)
 
         print(result)
 
@@ -166,7 +191,6 @@ class Companies(object):
         layout=None,
     ):
 
-
         delay_timer("waiting for page to load...", "done", scroll_delay)
 
         # self._make_companies_url(
@@ -186,7 +210,6 @@ class Companies(object):
             companySize,
             layout,
         )
-        
 
         ###########################################################
         # Scroll all the way to the bottom
@@ -216,20 +239,5 @@ class Companies(object):
         # sys.stdout.write("\rComplete!                       \n")
         ###########################################################
 
-        
         soup = BeautifulSoup(self.driver.page_source, "lxml")
         self._scrape_companies(soup)
-
-
-        # companies_span = soup.find_all(
-        #     "span", {"class": "company-name hover:underline"}
-        # )
-
-        # result = []
-        # for span in companies_span:
-        #     if span.find("span", {"class": "text-sm w-full text-orange-500 text-right pr-5 italic"}):
-        #         pass
-        #     result.append(span.text)
-
-        # print(result)
-
