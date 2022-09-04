@@ -156,8 +156,6 @@ class Companies(object):
             d["company_url"] = company.find("div", {"class": "hidden sm:flex mt-4 sm:w-1/5"}).a.text
 
 
-
-
             # company_founders =  company.find("div", {"class": "sm:col-span-11"}).find_all("div", {"class":"font-medium"})
             # d["founders"]=  [company_founder.text for company_founder in company_founders]
             # d["about"] =  company.find("div", {"class": "mx-5 prose max-w-none col-span-11"}).p.text
@@ -165,7 +163,7 @@ class Companies(object):
 
             more_details = company.find("div", {"class":"flex"}).next_sibling.next_sibling 
             company_founders = more_details.div.find_all("div", {"class":"font-medium"})
-            d["founders"]=  [company_founder.text for company_founder in company_founders[1:]]
+            d["founders"]=  [company_founder.text.strip() for company_founder in company_founders[1:]]
             if more_details.find("div").find_next_sibling("div").p is not None:
                 d["about"] =  more_details.find("div").find_next_sibling("div").p.text
 
