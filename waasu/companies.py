@@ -134,27 +134,18 @@ class Companies(object):
 
     def _scrape_companies(self, soup_data):
         result = []
-        d = {}
 
         directory_list = soup_data.find("div", {"class": "directory-list list-compact"})
-    
         companies = directory_list.find_all("div", {"class":"bg-beige-lighter border border-gray-200 rounded mb-5 pb-6"})
-
-
-        # get company names
-
 
         for company in companies:
 
+            d = {}
             # result.append(span.text)
             company_name = company.find(
                 "span", {"class": "company-name hover:underline"}
             )
             d["name"] = company_name.text
-
-            # details = company.find(
-            #     "div", {"class": "flex flex-wrap gap-1 sm:gap-3 whitespace-nowrap"}
-            # ).find_all("div")
 
             details = company.find(
                 "div", {"class": "flex flex-wrap gap-1 sm:gap-3 whitespace-nowrap"}
@@ -166,7 +157,35 @@ class Companies(object):
                 d["tag1"] = details[2].find("div", {"class": "detail-label"}).text
                 d["tag2"] = details[3].find("div", {"class": "detail-label"}).text
 
+            d["waasu_url"] = eBase.URL + company.a['href']
+            d["company_url"] = company.find("div", {"class": "hidden sm:flex mt-4 sm:w-1/5"}).a.text
+            d["about"] =  company.find("div", {"class": "mx-5 prose max-w-none col-span-11"}).p.text
+            d["tech"] = company.find("div", {"class": "mx-5 prose max-w-none col-span-11"}).p.text
+            company_founders =  company.find("div", {"class": "sm:col-span-11"}).find_all("div", {"class":"font-medium"})
+            d["founders"]=  [company_founder.text for company_founder in company_founders]
+            company_jobs = company.find("div", {"class": "w-full"}).find_all("div", {"class":"flex justify-between"})
+
+            for job in company_jobs:
+                company_job = {}
+                company_job["job_name"] = job.find("div", {"class":"w-full sm:w-9/10 mb-4"}).a.text
+                company_job["job_url"] = job.find("div", {"class":"flex-none my-auto"}).a["href"]
+
+                job_details = job.find("div", {"class":"sm:flex sm:flex-wrap text-sm mr-2 sm:mr-3"}).find_all("span")
+                # details = set()
+                # for job_detail in job_details: 
+                #     details.add(job_detail.text)
+                
+                job_details_texts = [job_detail.text for job_detail in job_details]
+                job_details_text = ' '.join(job_details_texts)
+
+                company_job["details"] = job_details_text
+
+
+            d["jobs"] = company_job
+            
             result.append(d)
+            # breakpoint()
+
 
         print(result)
 
