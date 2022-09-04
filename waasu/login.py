@@ -16,15 +16,6 @@ class LogIn(object):
     def __init__(self):
         pass
 
-    @staticmethod
-    def _set_driver():
-        options = Options()
-        # options.add_argument("--headless")
-        # options.add_argument("--window-size=500,1020")
-        # options.add_argument('--disable-gpu')
-        driver = webdriver.Chrome(options=options)
-        return driver
-
     def log_in(self, username, password, scroll_delay=None):
         # driver = self._set_driver()
         self.driver.get(login_url)
@@ -41,4 +32,3 @@ class LogIn(object):
         submit_button = self.driver.find_element_by_css_selector(".MuiButton-label")
         submit_button.click()
         # driver.quit()
-

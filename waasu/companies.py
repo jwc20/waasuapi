@@ -29,31 +29,26 @@ class Companies(object):
 
         payload = {}
 
-
-        # if self.query:
-        #     print(self.query)
-        # else:
-        #     print("no query")
-
-        p_demo = demographic if demographic else "any",
-        p_expo = expo if expo else "any",
-        p_exq = hasEquity if hasEquity else "any",
-        p_sal = hasSalary if hasSalary else "any",
-        p_ind = industry if industry else "any",
-        p_int_proc = interviewProcess if interviewProcess else "any",
-        p_job_type = jobType if jobType else "any",
-        p_layout = "list",  # don't change
-        p_remote = remote if remote else "any",
-        p_sort_by = sortBy if sortBy else "any",
-        p_visa = usVisaNotRequired if usVisaNotRequired else "any",
-        p_comp_size = companySize if companySize else "any",
-        p_role = role if role else "any",
-        p_query = query if query else "",
+        # this works for some reason
+        p_demo = demographic if demographic else "any"
+        p_expo = expo if expo else "any"
+        p_exq = hasEquity if hasEquity else "any"
+        p_sal = hasSalary if hasSalary else "any"
+        p_ind = industry if industry else "any"
+        p_int_proc = interviewProcess if interviewProcess else "any"
+        p_job_type = jobType if jobType else "any"
+        p_layout = "list"  # don't change
+        p_remote = remote if remote else "any"
+        p_sort_by = sortBy if sortBy else "any"
+        p_visa = usVisaNotRequired if usVisaNotRequired else "any"
+        p_comp_size = companySize if companySize else "any"
+        p_role = role if role else "any"
+        p_query = query if query else ""
 
         payload_list = [
             p_demo,
-            p_expo, 
-            p_exq, 
+            p_expo,
+            p_exq,
             p_sal,
             p_ind,
             p_int_proc,
@@ -64,15 +59,16 @@ class Companies(object):
             p_visa,
             p_comp_size,
             p_role,
-            p_query
+            p_query,
         ]
-        
 
+        # naive approach, use double loop
         for i in range(len(payload_list)):
             if len(payload_list[i]) > 1:
                 for j in range(len(payload_list[i])):
                     payload.add(payload_list[i][j])
-        
+            elif len(payload_list[i]) == 1:
+                payload.add(payload_list[i][0])
 
         print(payload_list)
 
@@ -92,7 +88,7 @@ class Companies(object):
         #         "role": p_role,
         #         "companySize": p_comp_size,
         #     }
-
+        breakpoint()
         return payload
 
     def _load_page(
