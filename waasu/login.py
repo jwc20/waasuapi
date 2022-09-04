@@ -6,10 +6,10 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 import time
 
-login_url = "https://account.ycombinator.com/"
-# login_url = (
-#     "https://account.ycombinator.com/?continue=https%3A%2F%2Fwww.workatastartup.com%2F"
-# )
+# login_url = "https://account.ycombinator.com/"
+login_url = (
+    "https://account.ycombinator.com/?continue=https%3A%2F%2Fwww.workatastartup.com%2F"
+)
 
 
 class LogIn(object):
@@ -31,4 +31,6 @@ class LogIn(object):
 
         submit_button = self.driver.find_element_by_css_selector(".MuiButton-label")
         submit_button.click()
+        time.sleep(5)
+
         # driver.quit()
