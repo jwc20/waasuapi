@@ -21,7 +21,7 @@ class LogIn(object):
         # driver = self._set_driver()
         self.driver.get(login_url)
         # time.sleep(5)
-        delay_timer("waiting for page to load...", "page loaded", 5)
+        delay_timer("waiting for login page...", "page loaded", 5)
 
 
         # YCombinator username
