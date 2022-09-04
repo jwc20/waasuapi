@@ -1,5 +1,5 @@
 from .core import *
-from collections import namedtuple
+from collections import namedtuple, defaultdict
 import csv
 import time
 
@@ -25,52 +25,68 @@ class Companies(object):
         query,
         role,
         companySize,
+        layout,
     ):
 
-        payload = {}
-
-        # this works for some reason
-        p_demo = demographic if demographic else "any"
-        p_expo = expo if expo else "any"
-        p_exq = hasEquity if hasEquity else "any"
-        p_sal = hasSalary if hasSalary else "any"
-        p_ind = industry if industry else "any"
-        p_int_proc = interviewProcess if interviewProcess else "any"
-        p_job_type = jobType if jobType else "any"
-        p_layout = "list"  # don't change
-        p_remote = remote if remote else "any"
-        p_sort_by = sortBy if sortBy else "any"
-        p_visa = usVisaNotRequired if usVisaNotRequired else "any"
-        p_comp_size = companySize if companySize else "any"
-        p_role = role if role else "any"
-        p_query = query if query else ""
+        p_demo = ("demographic", demographic) if demographic else ("demographic", "any")
+        p_expo = ("expo", expo) if expo else ("expo", expo)
+        p_eq = ("hasEquity", hasEquity) if hasEquity else ("hasEquity", "any")
+        p_sal = ("hasSalary", hasSalary) if hasSalary else ("hasSalary", "any")
+        p_ind = ("industry", industry) if industry else ("industry", "any")
+        p_int_proc = (
+            ("interviewProcess", interviewProcess)
+            if interviewProcess
+            else ("interviewProcess", "any")
+        )
+        p_job_type = ("jobType", jobType) if jobType else ("jobType", "any")
+        p_remote = ("remote", remote) if remote else ("remote", "any")
+        p_sort_by = ("sortBy", sortBy) if sortBy else ("sortBy", "any")
+        p_visa = (
+            ("usVisaNotRequired", usVisaNotRequired)
+            if usVisaNotRequired
+            else ("usVisaNotRequired", "any")
+        )
+        p_query = ("query", query) if query else ("query", "")
+        p_role = ("role", role) if role else ("role", "any")
+        p_comp_size = (
+            ("companySize", companySize) if companySize else ("companySize", "any")
+        )
+        p_layout = ("list", "list")  # don't change
 
         payload_list = [
             p_demo,
             p_expo,
-            p_exq,
+            p_eq,
             p_sal,
             p_ind,
             p_int_proc,
             p_job_type,
-            p_layout,
             p_remote,
             p_sort_by,
             p_visa,
-            p_comp_size,
-            p_role,
             p_query,
+            p_role,
+            p_comp_size,
+            p_layout,
         ]
+
+        payload = []
 
         # naive approach, use double loop
         for i in range(len(payload_list)):
-            if len(payload_list[i]) > 1:
-                for j in range(len(payload_list[i])):
-                    payload.add(payload_list[i][j])
-            elif len(payload_list[i]) == 1:
-                payload.add(payload_list[i][0])
+            for j in range(len(payload_list[i])):
+                # if (isinstance(payload_list[i][1], list)) and (len(payload_list[i][1]) > 1):
+                if isinstance(payload_list[i][1], list):
+                    # if (payload_list[i][1] != "any") or (payload_list[i][1] != ""):
+                    payload.append((payload_list[i][0], payload_list[i][1][j]))
+            if isinstance(payload_list[i][1], str):
+                payload.append((payload_list[i][0], payload_list[i][1]))
+
+            # elif len(payload_list[i]) == 1:
+            #     payload.add(payload_list[i][0])
 
         print(payload_list)
+        breakpoint()
 
         # payload = {
         #         "demographic": p_demo,
@@ -88,13 +104,11 @@ class Companies(object):
         #         "role": p_role,
         #         "companySize": p_comp_size,
         #     }
-        breakpoint()
+
         return payload
 
     def _load_page(
         self,
-        companySize=None,
-        role=None,
         demographic=None,
         expo=None,
         hasEquity=None,
@@ -106,13 +120,15 @@ class Companies(object):
         sortBy=None,
         usVisaNotRequired=None,
         query=None,
+        role=None,
+        companySize=None,
+        layout=None,
     ):
         filter_url = eBase.URL + eCompanies.URL
+        breakpoint()
         payload_str = urlencode(
             self._make_companies_url(
                 demographic,
-                role,
-                companySize,
                 expo,
                 hasEquity,
                 hasSalary,
@@ -123,6 +139,9 @@ class Companies(object):
                 sortBy,
                 usVisaNotRequired,
                 query,
+                role,
+                companySize,
+                layout,
             ),
             safe="%20",
         )
@@ -138,8 +157,6 @@ class Companies(object):
     def get_companies(
         self,
         scroll_delay,
-        role=None,
-        companySize=None,
         demographic=None,
         expo=None,
         hasEquity=None,
@@ -151,6 +168,9 @@ class Companies(object):
         sortBy=None,
         usVisaNotRequired=None,
         query=None,
+        role=None,
+        companySize=None,
+        layout=None,
     ):
 
         # # Get scroll height
@@ -177,9 +197,8 @@ class Companies(object):
         sys.stdout.write("\rComplete!                       \n")
 
         # self._make_companies_url(
+        breakpoint()
         self._load_page(
-            role,
-            companySize,
             demographic,
             expo,
             hasEquity,
@@ -191,6 +210,9 @@ class Companies(object):
             sortBy,
             usVisaNotRequired,
             query,
+            role,
+            companySize,
+            layout,
         )
 
         soup = BeautifulSoup(self.driver.page_source, "lxml")
