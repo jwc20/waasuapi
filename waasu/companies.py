@@ -86,7 +86,7 @@ class Companies(object):
                 payload.append((payload_list[i][0], payload_list[i][1]))
 
         # print(payload_list)
-        breakpoint()
+        # breakpoint()
         return payload
 
     def _load_page(
