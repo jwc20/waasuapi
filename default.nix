@@ -21,6 +21,7 @@ in pkgs.mkShell rec {
                 selenium
                 chromedriver
                 python39Packages.ipdb
+                fake-useragent
             ];
         })
     ]);
