@@ -5,7 +5,9 @@
 - [x] **_(high)_** Add filtering.
 - [x] **_(high)_** Get company details and available jobs from the companies search result.
 - [ ] **_(medium)_** Add scroll down feature.
-- [ ] **_(medium)_** Convert job details into dictionary (?) 
+- [ ] **_(low)_** Convert job details into dictionary. (?)
+- [ ] **_(medium)_** Add "(New Grads Ok)" option.
+- [ ] **_(high)_** Add export to csv feature.
 
 ## FIXME
 
