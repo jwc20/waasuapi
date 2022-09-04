@@ -79,7 +79,6 @@ class Companies(object):
                     payload.append((payload_list[i][0], payload_list[i][1][j]))
 
             if isinstance(payload_list[i][1], list) and len(payload_list[i][1]) == 1:
-                # Note: need to do something different for query
                 payload.append((payload_list[i][0], payload_list[i][1][0]))
 
             elif isinstance(payload_list[i][1], str):
