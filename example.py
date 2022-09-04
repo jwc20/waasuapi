@@ -1,14 +1,25 @@
 import waasu
+from bs4 import BeautifulSoup
+
+
+
+
+# Log In
+# username = "example_username"
+# password = "example_password"
+
 
 client = waasu.WorkAtAStartUp()
+client.log_in(username=username, password=password)
 
-client.get_scraped_companies()
+# some parameters can have more than one choice
+# client.get_companies(
+#     jobType="contract", role="eng", demographic="black-founders", scroll_delay=10
+# )
 
-c_search_url = "https://www.workatastartup.com/companies?demographic=any&expo=any&hasEquity=any&hasSalary=any&industry=any&interviewProcess=any&jobType=any&layout=list-compact&remote=any&sortBy=keyword&usVisaNotRequired=any"
-company_url = "https://www.workatastartup.com/companies/focal-systems"
+# query = ["junior"]
+query = ["python", "javascript"]
 
-print(waasu.is_companies_search(c_search_url)) # => True
-print(waasu.is_company(company_url)) # => True
+client.get_companies(query=query, jobType="contract", role="eng", scroll_delay=10)
 
-print(waasu.is_companies_search(company_url)) # => False
-print(waasu.is_company(c_search_url)) # => False
+# breakpoint()
