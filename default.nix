@@ -22,6 +22,7 @@ in pkgs.mkShell rec {
                 chromedriver
                 python39Packages.ipdb
                 fake-useragent
+                pprintpp
             ];
         })
     ]);
