@@ -23,6 +23,15 @@ nix-shell
 
 Inside the shell, you can run the example.py.
 
+## Dependencies
+```
+beautifulsoup4
+lxml
+requests
+selenium
+pprintpp
+```
+
 ### TODO
 
 - #### Create a selenium client
