@@ -176,7 +176,9 @@ class Companies(object):
                 company_founder.text.strip() for company_founder in company_founders[1:]
             ]
             if more_details.find("div").find_next_sibling("div").p is not None:
-                d["about"] = more_details.find("div").find_next_sibling("div").p.text
+                d["about"] = (
+                    more_details.find("div").find_next_sibling("div").p.text
+                )  # FIXME: Get all text
 
             if (
                 more_details.find("div")
@@ -190,7 +192,7 @@ class Companies(object):
                     .find_next_sibling("div")
                     .find_next_sibling("div")
                     .p.text
-                )
+                )  # FIXME: get all texts
             # breakpoint()
 
             company_jobs = company.find("div", {"class": "w-full"}).find_all(

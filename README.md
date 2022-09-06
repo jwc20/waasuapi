@@ -53,3 +53,4 @@ pprintpp
 ~~**_(low)_** Fix log in url~~ \
  ~~**_(low)_** Fix scroll down timer, display the total time (?).~~\
 ~~**_(high)_** Fix search query url.~~
+- [x] **_(high)_** Fix About, Tech to get all text.
