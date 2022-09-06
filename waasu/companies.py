@@ -4,6 +4,7 @@ import csv
 import time
 
 from requests.models import PreparedRequest
+from pprintpp import pprint
 
 
 class Companies(object):
@@ -128,13 +129,16 @@ class Companies(object):
 
         target_url = filter_url + "?" + payload_str
         self.driver.get(target_url)
-        print(target_url)
-        delay_timer("making url...", "done", 10)
+        pprint(target_url)
+        delay_timer("prepping to scrape...", "done", 10)
 
     def _scrape_companies(self, soup_data):
         result = []
         directory_list = soup_data.find("div", {"class": "directory-list list-compact"})
-        companies = directory_list.find_all("div", {"class":"bg-beige-lighter border border-gray-200 rounded mb-5 pb-6"})
+        companies = directory_list.find_all(
+            "div",
+            {"class": "bg-beige-lighter border border-gray-200 rounded mb-5 pb-6"},
+        )
 
         for company in companies:
             d = {}
@@ -145,50 +149,75 @@ class Companies(object):
 
             details = company.find(
                 "div", {"class": "flex flex-wrap gap-1 sm:gap-3 whitespace-nowrap"}
-                ).find_all("div", {"class": "flex text-gray-600 border px-2 rounded"})
+            ).find_all("div", {"class": "flex text-gray-600 border px-2 rounded"})
 
             d["location"] = details[0].find("div", {"class": "detail-label"}).text
             d["size"] = details[1].find("div", {"class": "detail-label"}).text.strip()
             # d["tag1"] = details[2].find("div", {"class": "detail-label"}).text if details[2] else None
             # d["tag2"] = details[3].find("div", {"class": "detail-label"}).text if details[3] else None
 
-            d["waasu_url"] = eBase.URL + company.a['href']
-            d["company_url"] = company.find("div", {"class": "hidden sm:flex mt-4 sm:w-1/5"}).a.text
-
+            d["waasu_url"] = eBase.URL + company.a["href"]
+            d["company_url"] = company.find(
+                "div", {"class": "hidden sm:flex mt-4 sm:w-1/5"}
+            ).a.text
 
             # company_founders =  company.find("div", {"class": "sm:col-span-11"}).find_all("div", {"class":"font-medium"})
             # d["founders"]=  [company_founder.text for company_founder in company_founders]
             # d["about"] =  company.find("div", {"class": "mx-5 prose max-w-none col-span-11"}).p.text
             # d["tech"] = company.find_next("div", {"class": "mx-5 prose max-w-none col-span-11"}).p.text
 
-            more_details = company.find("div", {"class":"flex"}).next_sibling.next_sibling 
-            company_founders = more_details.div.find_all("div", {"class":"font-medium"})
-            d["founders"]=  [company_founder.text.strip() for company_founder in company_founders[1:]]
+            more_details = company.find(
+                "div", {"class": "flex"}
+            ).next_sibling.next_sibling
+            company_founders = more_details.div.find_all(
+                "div", {"class": "font-medium"}
+            )
+            d["founders"] = [
+                company_founder.text.strip() for company_founder in company_founders[1:]
+            ]
             if more_details.find("div").find_next_sibling("div").p is not None:
-                d["about"] =  more_details.find("div").find_next_sibling("div").p.text
+                d["about"] = more_details.find("div").find_next_sibling("div").p.text
 
-            if more_details.find("div").find_next_sibling("div").find_next_sibling("div").p is not None:
-                d["tech"] = more_details.find("div").find_next_sibling("div").find_next_sibling("div").p.text 
+            if (
+                more_details.find("div")
+                .find_next_sibling("div")
+                .find_next_sibling("div")
+                .p
+                is not None
+            ):
+                d["tech"] = (
+                    more_details.find("div")
+                    .find_next_sibling("div")
+                    .find_next_sibling("div")
+                    .p.text
+                )
             # breakpoint()
 
-
-            company_jobs = company.find("div", {"class": "w-full"}).find_all("div", {"class":"flex justify-between"})
+            company_jobs = company.find("div", {"class": "w-full"}).find_all(
+                "div", {"class": "flex justify-between"}
+            )
             jobs = []
 
             for job in company_jobs:
                 company_job = {}
-                company_job["job_name"] = job.find("div", {"class":"w-full sm:w-9/10 mb-4"}).a.text
-                company_job["job_url"] = job.find("div", {"class":"flex-none my-auto"}).a["href"]
-                job_details = job.find("div", {"class":"sm:flex sm:flex-wrap text-sm mr-2 sm:mr-3"}).find_all("span")
+                company_job["job_name"] = job.find(
+                    "div", {"class": "w-full sm:w-9/10 mb-4"}
+                ).a.text
+                company_job["job_url"] = job.find(
+                    "div", {"class": "flex-none my-auto"}
+                ).a["href"]
+                job_details = job.find(
+                    "div", {"class": "sm:flex sm:flex-wrap text-sm mr-2 sm:mr-3"}
+                ).find_all("span")
                 job_details_texts = [job_detail.text for job_detail in job_details]
-                job_details_text = ' '.join(job_details_texts)
+                job_details_text = " ".join(job_details_texts)
                 company_job["details"] = job_details_text
                 jobs.append(company_job)
 
             d["jobs"] = jobs
             result.append(d)
 
-        print(result)
+        pprint(result)
         return
 
     def get_companies(
@@ -210,7 +239,7 @@ class Companies(object):
         layout=None,
     ):
 
-        delay_timer("prepping to scrape...", "done", scroll_delay)
+        delay_timer("prepping to url...", "url prepped", scroll_delay)
 
         # self._make_companies_url(
         self._load_page(

@@ -21,7 +21,7 @@ class LogIn(object):
         # driver = self._set_driver()
         self.driver.get(login_url)
         # time.sleep(5)
-        delay_timer("waiting for login page...", "page loaded", 5)
+        delay_timer("waiting for login page...", "login page loaded", 3)
 
 
         # YCombinator username
@@ -35,6 +35,6 @@ class LogIn(object):
         submit_button = self.driver.find_element_by_css_selector(".MuiButton-label")
         submit_button.click()
         # time.sleep(5)
-        delay_timer("loggin in...", "logged in",  5)
+        delay_timer("logging in...", "logged in",  5)
 
         # driver.quit()
