@@ -4,6 +4,7 @@ import csv
 import time
 
 from requests.models import PreparedRequest
+from pprintpp import pprint
 
 
 class Companies(object):
@@ -128,7 +129,7 @@ class Companies(object):
 
         target_url = filter_url + "?" + payload_str
         self.driver.get(target_url)
-        print(target_url)
+        pprint(target_url)
         delay_timer("prepping to scrape...", "done", 10)
 
     def _scrape_companies(self, soup_data):
@@ -216,7 +217,7 @@ class Companies(object):
             d["jobs"] = jobs
             result.append(d)
 
-        print(result)
+        pprint(result)
         return
 
     def get_companies(
