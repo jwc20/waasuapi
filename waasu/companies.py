@@ -77,17 +77,12 @@ class Companies(object):
         for i in range(len(payload_list)):
             if isinstance(payload_list[i][1], list) and len(payload_list[i][1]) > 1:
                 for j in range(len(payload_list[i][1])):
-                    # __import__('ipdb').set_trace()
-                    # print(len(payload_list[i][1]))
-                    print(payload_list[i][0], payload_list[i][1][j])
                     payload.append((payload_list[i][0], payload_list[i][1][j]))
 
             if isinstance(payload_list[i][1], list) and len(payload_list[i][1]) == 1:
-                print(payload_list[i][0], payload_list[i][1][0])
                 payload.append((payload_list[i][0], payload_list[i][1][0]))
 
             elif isinstance(payload_list[i][1], str):
-                print(payload_list[i][0], payload_list[i][1])
                 payload.append((payload_list[i][0], payload_list[i][1]))
 
         # print(payload_list)
@@ -182,9 +177,8 @@ class Companies(object):
             ]
             if more_details.find("div").find_next_sibling("div").p is not None:
                 d["about"] = (
-                    more_details.find("div").find_next_sibling("div").p.text
-                )  # FIXME: Get all text
-
+                        more_details.find("div").find_next_sibling("div").text[5:].replace("\n", " ")
+                )
             if (
                 more_details.find("div")
                 .find_next_sibling("div")
@@ -196,8 +190,9 @@ class Companies(object):
                     more_details.find("div")
                     .find_next_sibling("div")
                     .find_next_sibling("div")
-                    .p.text
-                )  # FIXME: get all texts
+                    .text[4:].replace("\n", " ")
+                )  
+                
             # breakpoint()
 
             company_jobs = company.find("div", {"class": "w-full"}).find_all(
