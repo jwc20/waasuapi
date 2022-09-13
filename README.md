@@ -142,5 +142,7 @@ pprintpp
  ~~**_(low)_** Fix scroll down timer, display the total time (?).~~\
 ~~**_(high)_** Fix search query url.~~
 
+- [ ] **_(high)_** Get all texts for "about". (See d["about"] in companies.py)
 - [ ] **_(high)_** Use typing.
 - [ ] **_(high)_** Query not using all element in the list.
+
