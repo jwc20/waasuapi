@@ -127,8 +127,8 @@ pprintpp
 
 - [x] **_(high)_** Add filtering.
 - [x] **_(high)_** Get company details and available jobs from the companies search result.
-- [ ] **_(medium)_** Add scroll down feature.
-- [ ] **_(low)_** Convert job details into dictionary. (?)
+- [ ] **_(medium)_** Add scroll down feature.\
+      ~~**_(low)_** Convert job details into dictionary.~~
 - [ ] **_(low)_** Add "(New Grads Ok)" option.
 - [ ] **_(medium)_** Add export to csv feature.
 - [x] **_(medium)_** Add more to README instructions.
@@ -142,6 +142,6 @@ pprintpp
  ~~**_(low)_** Fix scroll down timer, display the total time (?).~~\
 ~~**_(high)_** Fix search query url.~~
 
-- [ ] **_(high)_** Get all texts for "about". (See d["about"] in companies.py)
+- [x] **_(high)_** Get all texts for "about". (See d["about"] in companies.py)
 - [ ] **_(low)_** Use typing.
 - [x] **_(high)_** Query not using all element in the list.
