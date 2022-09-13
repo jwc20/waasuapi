@@ -75,8 +75,8 @@ class Companies(object):
 
         # naive approach, use double loop
         for i in range(len(payload_list)):
-            for j in range(len(payload_list[i])):
-                if isinstance(payload_list[i][1], list) and len(payload_list[i][1]) > 1:
+            if isinstance(payload_list[i][1], list) and len(payload_list[i][1]) > 1:
+                for j in range(len(payload_list[i][1])):
                     payload.append((payload_list[i][0], payload_list[i][1][j]))
 
             if isinstance(payload_list[i][1], list) and len(payload_list[i][1]) == 1:
@@ -153,18 +153,10 @@ class Companies(object):
 
             d["location"] = details[0].find("div", {"class": "detail-label"}).text
             d["size"] = details[1].find("div", {"class": "detail-label"}).text.strip()
-            # d["tag1"] = details[2].find("div", {"class": "detail-label"}).text if details[2] else None
-            # d["tag2"] = details[3].find("div", {"class": "detail-label"}).text if details[3] else None
-
             d["waasu_url"] = eBase.URL + company.a["href"]
             d["company_url"] = company.find(
                 "div", {"class": "hidden sm:flex mt-4 sm:w-1/5"}
             ).a.text
-
-            # company_founders =  company.find("div", {"class": "sm:col-span-11"}).find_all("div", {"class":"font-medium"})
-            # d["founders"]=  [company_founder.text for company_founder in company_founders]
-            # d["about"] =  company.find("div", {"class": "mx-5 prose max-w-none col-span-11"}).p.text
-            # d["tech"] = company.find_next("div", {"class": "mx-5 prose max-w-none col-span-11"}).p.text
 
             more_details = company.find(
                 "div", {"class": "flex"}
@@ -175,24 +167,28 @@ class Companies(object):
             d["founders"] = [
                 company_founder.text.strip() for company_founder in company_founders[1:]
             ]
-            if more_details.find("div").find_next_sibling("div").p is not None:
+            if more_details.find("div").find_next_sibling("div") is not None:
                 d["about"] = (
-                    more_details.find("div").find_next_sibling("div").p.text
-                )  # FIXME: Get all text
+                    more_details.find("div")
+                    .find_next_sibling("div")
+                    .text[5:]
+                    .replace("\n", " ").strip()
+                )
 
             if (
                 more_details.find("div")
                 .find_next_sibling("div")
                 .find_next_sibling("div")
-                .p
                 is not None
             ):
                 d["tech"] = (
                     more_details.find("div")
                     .find_next_sibling("div")
                     .find_next_sibling("div")
-                    .p.text
-                )  # FIXME: get all texts
+                    .text[4:]
+                    .replace("\n", " ").strip()
+                )
+
             # breakpoint()
 
             company_jobs = company.find("div", {"class": "w-full"}).find_all(

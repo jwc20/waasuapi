@@ -30,7 +30,7 @@ def is_companies_search(url):
 def delay_timer(loading_message, end_message, wait_time):
     for remaining in range(wait_time, 0, -1):
         sys.stdout.write("\r")
-        sys.stdout.write(("{:d} " + loading_message).format(remaining))
+        sys.stdout.write(("{:d} " + loading_message + " ").format(remaining))
         sys.stdout.flush()
         time.sleep(1)
     sys.stdout.write("\r" + end_message + "                             \n")
