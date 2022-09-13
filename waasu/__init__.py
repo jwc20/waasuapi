@@ -7,15 +7,15 @@ from selenium.webdriver.chrome.options import Options
 
 options = Options()
 options.add_argument("--headless")
-options.add_argument("--window-size=500,1020")
+# options.add_argument("--window-size=500,1020")
 options.add_argument('--disable-gpu')
 
 
 class WorkAtAStartUp(Companies, LogIn):
-    def __init__(self, *args):
+    def __init__(self, **kwargs):
         self.driver = webdriver.Chrome(options=options)
-        Companies.__init__(self, *args)
-        LogIn.__init__(self, *args)
+        Companies.__init__(self, **kwargs)
+        LogIn.__init__(self)
 
 
 __authors__ = ["jwc20"]
