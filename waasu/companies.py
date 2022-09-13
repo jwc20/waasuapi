@@ -75,14 +75,19 @@ class Companies(object):
 
         # naive approach, use double loop
         for i in range(len(payload_list)):
-            for j in range(len(payload_list[i])):
-                if isinstance(payload_list[i][1], list) and len(payload_list[i][1]) > 1:
+            if isinstance(payload_list[i][1], list) and len(payload_list[i][1]) > 1:
+                for j in range(len(payload_list[i][1])):
+                    # __import__('ipdb').set_trace()
+                    # print(len(payload_list[i][1]))
+                    print(payload_list[i][0], payload_list[i][1][j])
                     payload.append((payload_list[i][0], payload_list[i][1][j]))
 
             if isinstance(payload_list[i][1], list) and len(payload_list[i][1]) == 1:
+                print(payload_list[i][0], payload_list[i][1][0])
                 payload.append((payload_list[i][0], payload_list[i][1][0]))
 
             elif isinstance(payload_list[i][1], str):
+                print(payload_list[i][0], payload_list[i][1])
                 payload.append((payload_list[i][0], payload_list[i][1]))
 
         # print(payload_list)
