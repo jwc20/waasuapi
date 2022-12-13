@@ -125,6 +125,7 @@ pprintpp
 
 ### TODO
 
+- [ ] **_(TOP PRIO)_** THE RESULT LIST IS RETURNING BLANK AFTER LATEST UPDATE (either chromedriver, selenium, or nixos).
 - [x] **_(high)_** Add filtering.
 - [x] **_(high)_** Get company details and available jobs from the companies search result.
 - [ ] **_(high)_** Add scroll down feature.\
