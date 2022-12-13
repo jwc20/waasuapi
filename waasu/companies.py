@@ -259,7 +259,7 @@ class Companies(object):
 
         ###########################################################
         # Scroll all the way to the bottom
-        # # Get scroll height
+        # Get scroll height
         # last_height = self.driver.execute_script("return document.body.scrollHeight")
 
         # while True:

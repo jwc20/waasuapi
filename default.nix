@@ -1,7 +1,7 @@
 let
     pkgs = (import (builtins.fetchTarball {
-        url = "https://github.com/NixOS/nixpkgs/archive/067d5d5b89133efcda060bba31f9941c6396e3ee.zip";
-        sha256 = "0wyrwrw5fr5b1ss2za37cgwk7hzydy184a49wbqrks5vhpjvfkg7";
+        url = "https://github.com/NixOS/nixpkgs/archive/7b9eeb856cbf976482fa8d1cb295ea03fb3e1277.zip";
+        sha256 = "19lp4nlv97dz64sm5cb92gfq0gxqdlcrc7ykfvlq9j0w740nkng5";
     }) { });
     stdenv = pkgs.stdenv;
 in pkgs.mkShell rec {
@@ -19,7 +19,6 @@ in pkgs.mkShell rec {
                 requests
                 lxml
                 selenium
-                chromedriver
                 python39Packages.ipdb
                 fake-useragent
                 pprintpp
