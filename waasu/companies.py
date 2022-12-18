@@ -141,7 +141,6 @@ class Companies(object):
         )
         # print(companies)
         # breakpoint()
-        
 
         for company in companies:
             d = {}
@@ -152,24 +151,29 @@ class Companies(object):
 
             details = company.find(
                 "div", {"class": "flex flex-wrap gap-1 sm:gap-3 whitespace-nowrap"}
-            ).find_all("div", {"class": "flex items-center text-gray-600 border px-2 py-1 rounded"})
+            ).find_all(
+                "div",
+                {"class": "flex items-center text-gray-600 border px-2 py-1 rounded"},
+            )
 
             d["location"] = details[0].find("div", {"class": "detail-label"}).text
             d["size"] = details[1].find("div", {"class": "detail-label"}).text.strip()
             d["waasu_url"] = eBase.URL + company.a["href"]
-            
+
             # breakpoint()
 
-            d["company_url"] = company.find( "div", {"class": "text-blue-600 ellipsis"} ).a.text
-            
+            d["company_url"] = company.find(
+                "div", {"class": "text-blue-600 ellipsis"}
+            ).a.text
+
             more_details = company.find(
                 "div", {"class": "flex"}
             ).next_sibling.next_sibling
-            
+
             company_founders = more_details.div.find_all(
                 "div", {"class": "font-medium"}
             )
-            
+
             d["founders"] = [
                 company_founder.text.strip() for company_founder in company_founders[1:]
             ]
@@ -178,7 +182,8 @@ class Companies(object):
                     more_details.find("div")
                     .find_next_sibling("div")
                     .text[5:]
-                    .replace("\n", " ").strip()
+                    .replace("\n", " ")
+                    .strip()
                 )
 
             if (
@@ -192,7 +197,8 @@ class Companies(object):
                     .find_next_sibling("div")
                     .find_next_sibling("div")
                     .text[4:]
-                    .replace("\n", " ").strip()
+                    .replace("\n", " ")
+                    .strip()
                 )
 
             # breakpoint()
@@ -207,12 +213,12 @@ class Companies(object):
                 company_job["job_name"] = job.find(
                     "div", {"class": "w-full sm:w-9/10 mb-4"}
                 ).a.text
-                
+
                 # breakpoint()
-                
-                company_job["job_url"] = job.find(
-                    "div", {"class": "job-name"}
-                ).a["href"]
+
+                company_job["job_url"] = job.find("div", {"class": "job-name"}).a[
+                    "href"
+                ]
                 job_details = job.find(
                     "div", {"class": "sm:flex sm:flex-wrap text-sm mr-2 sm:mr-3"}
                 ).find_all("span")
@@ -268,32 +274,32 @@ class Companies(object):
         ###########################################################
         # Scroll all the way to the bottom
         # Get scroll height
-        # last_height = self.driver.execute_script("return document.body.scrollHeight")
+        last_height = self.driver.execute_script("return document.body.scrollHeight")
 
-        # while True:
-        #     # Scroll down to bottom
-        #     self.driver.execute_script(
-        #         "window.scrollTo(0, document.body.scrollHeight);"
-        #     )
+        while True:
+            # Scroll down to bottom
+            self.driver.execute_script(
+                "window.scrollTo(0, document.body.scrollHeight);"
+            )
 
-        #     # Wait to load page
-        #     time.sleep(5)
+            # Wait to load page
+            time.sleep(5)
 
-        #     # Calculate new scroll height and compare with last scroll height
-        #     new_height = self.driver.execute_script("return document.body.scrollHeight")
-        #     if new_height == last_height:
-        #         break
-        #     last_height = new_height
+            # Calculate new scroll height and compare with last scroll height
+            new_height = self.driver.execute_script("return document.body.scrollHeight")
+            if new_height == last_height:
+                break
+            last_height = new_height
 
-        # for remaining in range(scroll_delay, 0, -1):
-        #     sys.stdout.write("\r")
-        #     sys.stdout.write("{:2d} seconds remaining.".format(remaining))
-        #     sys.stdout.flush()
-        #     time.sleep(1)
-        # sys.stdout.write("\rComplete!                       \n")
+        for remaining in range(scroll_delay, 0, -1):
+            sys.stdout.write("\r")
+            sys.stdout.write("{:2d} seconds remaining.".format(remaining))
+            sys.stdout.flush()
+            time.sleep(1)
+        sys.stdout.write("\rComplete!                       \n")
         ###########################################################
 
         soup = BeautifulSoup(self.driver.page_source, "lxml")
         results = self._scrape_companies(soup)
-        
+
         pprint(results)
