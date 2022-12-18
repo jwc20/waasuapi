@@ -25,14 +25,14 @@ class LogIn(object):
 
 
         # YCombinator username
-        yc_username = self.driver.find_element_by_css_selector("#ycid-input")
+        yc_username = self.driver.find_element("css selector", "#ycid-input")
         yc_username.send_keys(username)  # insert self.username here
 
         # YCombinator password
-        yc_password = self.driver.find_element_by_css_selector("#password-input")
+        yc_password = self.driver.find_element("css selector", "#password-input")
         yc_password.send_keys(password)  # insert self.username here
 
-        submit_button = self.driver.find_element_by_css_selector(".MuiButton-label")
+        submit_button = self.driver.find_element("css selector", ".MuiButton-label")
         submit_button.click()
         # time.sleep(5)
         delay_timer("logging in...", "logged in",  5)

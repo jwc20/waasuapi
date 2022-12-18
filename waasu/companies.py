@@ -137,8 +137,11 @@ class Companies(object):
         directory_list = soup_data.find("div", {"class": "directory-list list-compact"})
         companies = directory_list.find_all(
             "div",
-            {"class": "bg-beige-lighter border border-gray-200 rounded mb-5 pb-6"},
+            {"class": "bg-beige-lighter border border-gray-200 rounded mb-5 pb-4"},
         )
+        # print(companies)
+        # breakpoint()
+        
 
         for company in companies:
             d = {}
@@ -149,21 +152,24 @@ class Companies(object):
 
             details = company.find(
                 "div", {"class": "flex flex-wrap gap-1 sm:gap-3 whitespace-nowrap"}
-            ).find_all("div", {"class": "flex text-gray-600 border px-2 rounded"})
+            ).find_all("div", {"class": "flex items-center text-gray-600 border px-2 py-1 rounded"})
 
             d["location"] = details[0].find("div", {"class": "detail-label"}).text
             d["size"] = details[1].find("div", {"class": "detail-label"}).text.strip()
             d["waasu_url"] = eBase.URL + company.a["href"]
-            d["company_url"] = company.find(
-                "div", {"class": "hidden sm:flex mt-4 sm:w-1/5"}
-            ).a.text
+            
+            # breakpoint()
 
+            d["company_url"] = company.find( "div", {"class": "text-blue-600 ellipsis"} ).a.text
+            
             more_details = company.find(
                 "div", {"class": "flex"}
             ).next_sibling.next_sibling
+            
             company_founders = more_details.div.find_all(
                 "div", {"class": "font-medium"}
             )
+            
             d["founders"] = [
                 company_founder.text.strip() for company_founder in company_founders[1:]
             ]
@@ -201,8 +207,11 @@ class Companies(object):
                 company_job["job_name"] = job.find(
                     "div", {"class": "w-full sm:w-9/10 mb-4"}
                 ).a.text
+                
+                # breakpoint()
+                
                 company_job["job_url"] = job.find(
-                    "div", {"class": "flex-none my-auto"}
+                    "div", {"class": "job-name"}
                 ).a["href"]
                 job_details = job.find(
                     "div", {"class": "sm:flex sm:flex-wrap text-sm mr-2 sm:mr-3"}
@@ -214,9 +223,8 @@ class Companies(object):
 
             d["jobs"] = jobs
             result.append(d)
-
-        pprint(result)
-        return
+        # pprint(result)
+        return result
 
     def get_companies(
         self,
@@ -286,4 +294,6 @@ class Companies(object):
         ###########################################################
 
         soup = BeautifulSoup(self.driver.page_source, "lxml")
-        self._scrape_companies(soup)
+        results = self._scrape_companies(soup)
+        
+        pprint(results)
