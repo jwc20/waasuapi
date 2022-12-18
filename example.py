@@ -1,10 +1,6 @@
 import waasu
-from bs4 import BeautifulSoup
 
-
-
-
-# Log In
+# Must input login informations
 # username = "example_username"
 # password = "example_password"
 
@@ -16,8 +12,9 @@ client.log_in(username=username, password=password)
 #     jobType="contract", role="eng", demographic="black-founders", scroll_delay=10
 # )
 
-query = ["junior"]
+# query = ["junior"]
 # query = ["python", "javascript", "data", "typescript"]
-client.get_companies(query=query, industry="B2B Software and Services", jobType="contract", role="eng", scroll_delay=10)
+# client.get_companies(query=query, jobType="contract", role="eng", scroll_delay=10)
 
-# breakpoint()
+query = ["engieer", "entry", "junior"]
+client.get_companies(query=query, jobType="fulltime", role="eng", scroll_delay=10)
