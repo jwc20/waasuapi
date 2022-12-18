@@ -1,7 +1,5 @@
 # workatastartup-api
 
-This api uses [NixOs](https://nixos.org/) to install the dependencies, first [follow their instructions to install](https://nixos.org/download.html#download-nix).
-
 ### Install
 
 To install, run the following commands.
@@ -9,18 +7,24 @@ To install, run the following commands.
 ```
 git@github.com:jwc20/workatastartup-api.git
 cd workatastartup-api
-nix-build
 ```
 
 ### Usage
 
-To use the api, run the nix shell (or venv).
+To use the api, first setup and activate a python virtual environment (venv).
 
 ```
-nix-shell
+python3 -m venv venv
+. ./venv/bin/activate
 ```
 
-Inside the shell, you can run the example.py.
+Install the requirements.
+
+```
+pip3 install -r requirements.txt
+```
+
+You can see the example of the scraper in example.py.
 
 ### Log In
 
@@ -123,18 +127,21 @@ pprintpp
 - [Who Is Hiring?](https://kennytilton.github.io/whoishiring/)
 - [hn_search](https://news.ycombinator.com/item?id=10313519)
 
+### Note
+
+- No longer nixos.
+
 ### TODO
 
-- [ ] **_(TOP PRIO)_** THE RESULT LIST IS RETURNING BLANK AFTER LATEST UPDATE (either chromedriver, selenium, or nixos).
 - [x] **_(high)_** Add filtering.
 - [x] **_(high)_** Get company details and available jobs from the companies search result.
-- [ ] **_(high)_** Add scroll down feature.\
-      ~~**_(low)_** Convert job details into dictionary.~~
+- [x] **_(high)_** Add scroll down feature.\
+       ~~**_(low)_** Convert job details into dictionary.~~
 - [ ] **_(low)_** Add "(New Grads Ok)" option.
 - [ ] **_(low)_** Add export to csv feature.
 - [x] **_(medium)_** Add more to README instructions.
-~~**_(low)_** AND and OR support for queries. [(Example)](https://news.ycombinator.com/item?id=10313519)~~
-~~[ ] **_(high)_** Add role type filter parameter.~~
+      ~~**_(low)_** AND and OR support for queries. [(Example)](https://news.ycombinator.com/item?id=10313519)~~
+      ~~[ ] **_(high)_** Add role type filter parameter.~~
 - [ ] **_(low)_** Return total number of search result and jobs available.
 
 ### FIXME
@@ -143,6 +150,7 @@ pprintpp
  ~~**_(low)_** Fix scroll down timer, display the total time (?).~~\
 ~~**_(high)_** Fix search query url.~~
 
+- [x] **_(TOP PRIO)_** THE RESULT LIST IS RETURNING BLANK AFTER LATEST UPDATE (either chromedriver, selenium, or nixos).
 - [x] **_(high)_** Get all texts for "about". (See d["about"] in companies.py)
-~~[ ] **_(low)_** Use typing.~~
+      ~~[ ] **_(low)_** Use typing.~~
 - [x] **_(high)_** Query not using all element in the list.
