@@ -135,12 +135,12 @@ class Companies(object):
     def _scrape_companies(self, soup_data):
         result = []
         directory_list = soup_data.find("div", {"class": "directory-list list-compact"})
+        # pprint(directory_list)
         companies = directory_list.find_all(
             "div",
-            {"class": "bg-beige-lighter border border-gray-200 rounded mb-5 pb-4"},
+            {"class": "bg-beige-lighter border border-gray-200 mb-5 rounded pb-4"},
         )
-        # print(companies)
-        # breakpoint()
+        # pprint(companies)
 
         for company in companies:
             d = {}
@@ -149,12 +149,16 @@ class Companies(object):
             )
             d["name"] = company_name.text
 
+
+
             details = company.find(
-                "div", {"class": "flex flex-wrap gap-1 sm:gap-3 whitespace-nowrap"}
+                "div", {"class": "flex flex-wrap gap-1 whitespace-nowrap sm:gap-3"}
             ).find_all(
                 "div",
-                {"class": "flex items-center text-gray-600 border px-2 py-1 rounded"},
+                {"class": "flex items-center rounded border px-2 py-1 text-gray-600"},
             )
+
+            pprint(details)
 
             d["location"] = details[0].find("div", {"class": "detail-label"}).text
             d["size"] = details[1].find("div", {"class": "detail-label"}).text.strip()
@@ -228,6 +232,7 @@ class Companies(object):
                 jobs.append(company_job)
 
             d["jobs"] = jobs
+            print(d)
             result.append(d)
         # pprint(result)
         return result
