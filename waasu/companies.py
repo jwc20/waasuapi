@@ -2,9 +2,16 @@ from .core import *
 from collections import namedtuple, defaultdict
 import csv
 import time
+import json
 
 from requests.models import PreparedRequest
 from pprintpp import pprint
+
+from datetime import datetime
+
+now = datetime.now()
+
+date_time_format = now.strftime("%Y-%m-%d_%H-%M-%S")
 
 
 class Companies(object):
@@ -149,8 +156,6 @@ class Companies(object):
             )
             d["name"] = company_name.text
 
-
-
             details = company.find(
                 "div", {"class": "flex flex-wrap gap-1 whitespace-nowrap sm:gap-3"}
             ).find_all(
@@ -158,7 +163,7 @@ class Companies(object):
                 {"class": "flex items-center rounded border px-2 py-1 text-gray-600"},
             )
 
-            pprint(details)
+            # pprint(details)
 
             d["location"] = details[0].find("div", {"class": "detail-label"}).text
             d["size"] = details[1].find("div", {"class": "detail-label"}).text.strip()
@@ -190,20 +195,31 @@ class Companies(object):
                     .strip()
                 )
 
-            if (
-                more_details.find("div")
-                .find_next_sibling("div")
-                .find_next_sibling("div")
-                is not None
-            ):
-                d["tech"] = (
-                    more_details.find("div")
-                    .find_next_sibling("div")
-                    .find_next_sibling("div")
-                    .text[4:]
-                    .replace("\n", " ")
-                    .strip()
-                )
+            # pprint(more_details)
+            # breakpoint()
+
+            # if (
+            #     more_details.find("div")
+            #     .find_next_sibling("div")
+            #     .find_next_sibling("div")
+            #     is not None
+            # ):
+            #     d["tech"] = (
+            #         more_details.find("div")
+            #         .find_next_sibling("div")
+            #         .find_next_sibling("div")
+            #         .text[4:]
+            #         .replace("\n", " ")
+            #         .strip()
+            #     )
+
+            first_div = more_details.find("div")
+            if first_div is not None:
+                second_div = first_div.find_next_sibling("div")
+                if second_div is not None:
+                    third_div = second_div.find_next_sibling("div")
+                    if third_div is not None:
+                        d["tech"] = third_div.text[4:].replace("\n", " ").strip()
 
             # breakpoint()
 
@@ -223,16 +239,18 @@ class Companies(object):
                 company_job["job_url"] = job.find("div", {"class": "job-name"}).a[
                     "href"
                 ]
+
                 job_details = job.find(
                     "div", {"class": "sm:flex sm:flex-wrap text-sm mr-2 sm:mr-3"}
                 ).find_all("span")
                 job_details_texts = [job_detail.text for job_detail in job_details]
                 job_details_text = " ".join(job_details_texts)
                 company_job["details"] = job_details_text
+                print(company_job)
                 jobs.append(company_job)
 
             d["jobs"] = jobs
-            print(d)
+            # print(d)
             result.append(d)
         # pprint(result)
         return result
@@ -276,6 +294,7 @@ class Companies(object):
             layout,
         )
 
+        """
         ###########################################################
         # Scroll all the way to the bottom
         # Get scroll height
@@ -303,8 +322,16 @@ class Companies(object):
             time.sleep(1)
         sys.stdout.write("\rComplete!                       \n")
         ###########################################################
+        """
 
         soup = BeautifulSoup(self.driver.page_source, "lxml")
         results = self._scrape_companies(soup)
 
-        pprint(results)
+        # pprint(results)
+
+        filename = f"data_{date_time_format}.json"
+
+        with open(filename, "w", encoding="utf-8") as f:
+            json.dump(results, f, ensure_ascii=False, indent=4)
+
+
