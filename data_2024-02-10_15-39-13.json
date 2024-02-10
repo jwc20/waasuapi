@@ -1,0 +1,137 @@
+[
+    {
+        "name": "Zitara Technologies, Inc.",
+        "location": "San Francisco",
+        "size": "33 people",
+        "waasu_url": "https://www.workatastartup.com/companies/zitara-technologies-inc",
+        "company_url": "zitara.com",
+        "founders": [
+            "Evan Murphy",
+            "Shyam Srinivasan"
+        ],
+        "about": "In order to keep climate change to 1.5°C, we’ll need 30% of global GDP (all of energy generation and transportation) to run on batteries by 2035.Zitara Technologies (YCombinator S20) builds predictive battery management software for transportation and energy customers with large deployments. Their customers operate >$100M deployments of batteries in satellites, EVs, and renewable energy storage installations.",
+        "tech": "Our team brings top researchers in physics-based battery algorithms together with seasoned software engineers to build safety-critical firmware and large scale machine learning systems. We bring with us decades of experience from Toyota, Exponent, Proterra, Tesla, Gogoro, Google, and Facebook, and a passion for technologies that can have immediate impact on the climate crisis.",
+        "jobs": []
+    },
+    {
+        "name": "Intrinsic",
+        "location": " 3 people",
+        "size": "B2B Software and Services",
+        "waasu_url": "https://www.workatastartup.com/companies/intrinsic",
+        "company_url": "withintrinsic.com",
+        "founders": [
+            "Michael Lin",
+            "Karine Mellata"
+        ],
+        "about": "At Intrinsic, we are using disruptive technologies to solve some of the oldest and most complex problems of our digital age in anti-abuse, fraud prevention, and brand safety. Online abuse is an elaborate video game of cat-and-mouse. We move fast, and so do our adversaries.",
+        "tech": "AI services (LLM infra: hosting, fine-tuning and operationalization of open source foundational models)Frontend: NextJS, Typescript, and ReactBackend: NextJS and Python for ML inferenceInfrastructure hosted on GCP with Kubernetes and orchestrated using Terraform.ML services and training: PythonReal-time and streaming technologies",
+        "jobs": []
+    },
+    {
+        "name": "Velt",
+        "location": "San Francisco",
+        "size": "10 people",
+        "waasu_url": "https://www.workatastartup.com/companies/velt",
+        "company_url": "velt.dev",
+        "founders": [
+            "Rakesh Goyal"
+        ],
+        "about": "Our mission is to redefine how people work together online. We're not just making collaboration faster—we're crafting it to be the best.Today we’re all using online platforms more than ever before - building, researching, learning, connecting etc. And we're not doing it alone. We're doing it together with other people and machines, turning the internet into the world's biggest team.Yet, the web was built for solo voyages. We saw a shift when platforms like Figma and Google Docs brought a multiplayer approach, breaking down walls and inspiring seamless teamwork.At Velt, we're taking it further. We're on a mission to infuse the magic of collaboration into the fabric of the web—one app at a time. We aim to erase the lines between online and offline co-working, crafting an environment where distance is irrelevant, and 'flow' is the norm.Right now, more than half of work hours are spent on coordination and communication—less on creating. With Velt, we're setting out to reverse these figures, reducing time spent on logistical issues by over 90%. Imagine what we can create when we spend less time talking about work and more time doing it!We're building a better web—a web for us, for our team, for everyone. Join us, and let's accelerate the future of web together 🚀Our Products:Velt SDK: JS SDK to add powerful collaboration experiences to your own product for your end-users. This helps you ship such experiences ridiculously fast, increase user growth and engagement.Superflow: JS plugin to enable product, marketing and design teams to comment and collaborate directly on their websites. This helps them iterate and ship their products 10x faster.TeamWe are a team of ex-Googlers. We've launched products like Augmented Reality in Google Search & Maps. As an early team member, you will work directly with the founders.Come build a better web with us 🚀",
+        "tech": "We're building an SDK that adds a performant & robust multiplayer experience to any web app. We abstract away the infrastructure complexity for the developer. They have access to simple & beautiful APIs that gives them full control to make the UI feel native.This is a highly complex and exciting problem.",
+        "jobs": []
+    },
+    {
+        "name": "Paragon",
+        "location": "Los Angeles, CA",
+        "size": "22 people",
+        "waasu_url": "https://www.workatastartup.com/companies/paragon",
+        "company_url": "useparagon.com",
+        "founders": [
+            "Brandon Foo",
+            "Ishmael Samuel"
+        ],
+        "about": "Paragon is an embedded integration platform for SaaS apps – we enable companies to build products that integrate with the SaaS ecosystem. With Paragon, software companies can integrate with hundreds of different SaaS apps in minutes while providing their customers with a seamless, unified integration experience. Our vision is to build the connecting layer for all software that enables every application in the world to work together seamlessly.In the last year, we've grown by over 6x and now work with nearly 100 customers around the world. We've raised over $16M from world-class investors like Inspired Capital, Y Combinator, Global Founders Capital, Soma Capital, and Village Global, and have been featured in Techcrunch and Forbes.",
+        "tech": "We're a full-stack javascript shop (Node.js, React) and you'll work closely with technologies like AWS, Kubernetes, and Docker. You'll also play a large role in helping make architectural decisions and choosing which tools we work with.",
+        "jobs": []
+    },
+    {
+        "name": "Scispot",
+        "location": "Kitchener, Canada",
+        "size": "12 people",
+        "waasu_url": "https://www.workatastartup.com/companies/scispot-io",
+        "company_url": "scispot.io",
+        "founders": [
+            "Satya Singh",
+            "Guru Singh"
+        ],
+        "about": "Scispot is a fully configurable workflow automation platform for fast-growing life science companies. Our customers use Scispot to design and automate their workflows at all stages of their R&D, from planning, lab execution to reporting collaboratively.",
+        "tech": "We use AWS as our primary hosting service. Our tech stack comprises a Next.js frontend web app. On the backend, we use a NoSQL database (AWS DynamoDB) which is fronted by a GraphQL database abstraction API layer. We also use AWS Lambda as the middleware for our platform. To manage our user authentication, authorization and signups, we use AWS Cognito in combination with AWS IAM.",
+        "jobs": []
+    },
+    {
+        "name": "AlemHealth",
+        "location": "Singapore, Singapore",
+        "size": "11 people",
+        "waasu_url": "https://www.workatastartup.com/companies/alemhealth",
+        "company_url": "alemhealth.com",
+        "founders": [
+            "Aschkan Abdul Malek"
+        ],
+        "about": "At AlemHealth, we connect patients, physicians and radiologists in over 30 countries to the medical care they deserve. We build software and hardware for medical image sharing and AI medical imaging analysis on the edge, and deploy that throughout Africa and Asia. We pair that with software that makes it easier to accurately diagnose and disseminate results to patients and clinicians anywhere.",
+        "tech": "Front end is ReactJS, backend is Python on webapps and Java elsewhere, mix of Azure and AWS for infrastructure.",
+        "jobs": []
+    },
+    {
+        "name": "Replo",
+        "location": "San Francisco",
+        "size": "10 people",
+        "waasu_url": "https://www.workatastartup.com/companies/replo",
+        "company_url": "replo.app",
+        "founders": [
+            "Noah Gilmore",
+            "Yuxin Zhu"
+        ],
+        "about": "Replo helps companies build websites with less code. Today, we sell this product to e-commerce companies (e.g. Hexclad, Studs) who use it to build everything from their latest products to giveaways. Our goal is to create a **single platform for businesses to design, develop, and market content on the internet**.About UsReplo was founded in the summer of 2021. We launched in 2022 and grew to over 1000+ paying customers in just 6 months with no sales team. We’ve raised over $4.2M from Figma, YCombinator, Infinity Ventures, MAGIC Fund, Base Case Capital, as well as the founders of NextJS/Vercel.",
+        "tech": "We use NextJS, Node, and Typescript aggressively. We deploy on Fly.io and Vercel.At Replo, you won’t just be writing the next internal tool at a big-tech company. We’re building a highly distributed, scalable system to power the next-generation of online commerce. If this sounds interesting to you, we’d love to chat!",
+        "jobs": []
+    },
+    {
+        "name": "Milo",
+        "location": "San Francisco",
+        "size": "4 people",
+        "waasu_url": "https://www.workatastartup.com/companies/milo",
+        "company_url": "joinmilo.com",
+        "founders": [
+            "Archa Jain",
+            "Avni Patel Thompson"
+        ],
+        "about": "Milo connects to all the sources of info and tasks in a family and creates a simple way to assign and send things to where they need to go.",
+        "tech": "Our job is to connect a diverse set of data inputs (school calendars, Gcal, email, SMS, pdfs) into a central system and then send info to the places people already use (calendar, email, SMS) so we look for people that are well versed in a wide range of languages, tech stacks and protocols.",
+        "jobs": []
+    },
+    {
+        "name": "Bunkerhill Health",
+        "location": "Palo Alto",
+        "size": "12 people",
+        "waasu_url": "https://www.workatastartup.com/companies/bunkerhill-health",
+        "company_url": "bunkerhillhealth.com",
+        "founders": [
+            "David Eng",
+            "Nishith Khandwala"
+        ],
+        "jobs": []
+    },
+    {
+        "name": "Cofactr",
+        "location": "New York",
+        "size": "15 people",
+        "waasu_url": "https://www.workatastartup.com/companies/cofactr",
+        "company_url": "cofactr.com",
+        "founders": [
+            "Phillip Gulley",
+            "Matthew Haber"
+        ],
+        "about": "Cofactr believes hardware should be as agile and scalable as software. We’re leveraging better data and AI to build best-in-class tools for electronics supply chain management. Cofactr is a single platform for procurement, purchase and management of electronic components that works seamlessly with integrated logistics to assure that the physical management of electronics parts is always responsible and efficient.",
+        "jobs": []
+    }
+]

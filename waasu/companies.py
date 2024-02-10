@@ -2,9 +2,16 @@ from .core import *
 from collections import namedtuple, defaultdict
 import csv
 import time
+import json
 
 from requests.models import PreparedRequest
 from pprintpp import pprint
+
+from datetime import datetime
+
+now = datetime.now()
+
+date_time_format = now.strftime("%Y-%m-%d_%H-%M-%S")
 
 
 class Companies(object):
@@ -129,18 +136,18 @@ class Companies(object):
 
         target_url = filter_url + "?" + payload_str
         self.driver.get(target_url)
-        pprint(target_url)
+        # pprint(target_url)
         delay_timer("prepping to scrape...", "done", 10)
 
     def _scrape_companies(self, soup_data):
         result = []
         directory_list = soup_data.find("div", {"class": "directory-list list-compact"})
+        # pprint(directory_list)
         companies = directory_list.find_all(
             "div",
-            {"class": "bg-beige-lighter border border-gray-200 rounded mb-5 pb-4"},
+            {"class": "bg-beige-lighter border border-gray-200 mb-5 rounded pb-4"},
         )
-        # print(companies)
-        # breakpoint()
+        # pprint(companies)
 
         for company in companies:
             d = {}
@@ -150,11 +157,13 @@ class Companies(object):
             d["name"] = company_name.text
 
             details = company.find(
-                "div", {"class": "flex flex-wrap gap-1 sm:gap-3 whitespace-nowrap"}
+                "div", {"class": "flex flex-wrap gap-1 whitespace-nowrap sm:gap-3"}
             ).find_all(
                 "div",
-                {"class": "flex items-center text-gray-600 border px-2 py-1 rounded"},
+                {"class": "flex items-center rounded border px-2 py-1 text-gray-600"},
             )
+
+            # pprint(details)
 
             d["location"] = details[0].find("div", {"class": "detail-label"}).text
             d["size"] = details[1].find("div", {"class": "detail-label"}).text.strip()
@@ -186,32 +195,44 @@ class Companies(object):
                     .strip()
                 )
 
-            if (
-                more_details.find("div")
-                .find_next_sibling("div")
-                .find_next_sibling("div")
-                is not None
-            ):
-                d["tech"] = (
-                    more_details.find("div")
-                    .find_next_sibling("div")
-                    .find_next_sibling("div")
-                    .text[4:]
-                    .replace("\n", " ")
-                    .strip()
-                )
-
+            # pprint(more_details)
             # breakpoint()
 
+            # if (
+            #     more_details.find("div")
+            #     .find_next_sibling("div")
+            #     .find_next_sibling("div")
+            #     is not None
+            # ):
+            #     d["tech"] = (
+            #         more_details.find("div")
+            #         .find_next_sibling("div")
+            #         .find_next_sibling("div")
+            #         .text[4:]
+            #         .replace("\n", " ")
+            #         .strip()
+            #     )
+
+            first_div = more_details.find("div")
+            if first_div is not None:
+                second_div = first_div.find_next_sibling("div")
+                if second_div is not None:
+                    third_div = second_div.find_next_sibling("div")
+                    if third_div is not None:
+                        d["tech"] = third_div.text[4:].replace("\n", " ").strip()
+
+
+
             company_jobs = company.find("div", {"class": "w-full"}).find_all(
-                "div", {"class": "flex justify-between"}
+                "div", {"class": "mb-4 flex flex-col justify-between sm:flex-row"}
             )
             jobs = []
+            # breakpoint()
 
             for job in company_jobs:
                 company_job = {}
                 company_job["job_name"] = job.find(
-                    "div", {"class": "w-full sm:w-9/10 mb-4"}
+                    "div", {"class": "sm:w-9/10 w-full"}
                 ).a.text
 
                 # breakpoint()
@@ -219,15 +240,18 @@ class Companies(object):
                 company_job["job_url"] = job.find("div", {"class": "job-name"}).a[
                     "href"
                 ]
+
                 job_details = job.find(
-                    "div", {"class": "sm:flex sm:flex-wrap text-sm mr-2 sm:mr-3"}
+                    "div", {"class": "mr-2 text-sm sm:mr-3 sm:flex sm:flex-wrap"}
                 ).find_all("span")
                 job_details_texts = [job_detail.text for job_detail in job_details]
                 job_details_text = " ".join(job_details_texts)
                 company_job["details"] = job_details_text
+                # print(company_job)
                 jobs.append(company_job)
 
             d["jobs"] = jobs
+            # print(d)
             result.append(d)
         # pprint(result)
         return result
@@ -302,4 +326,11 @@ class Companies(object):
         soup = BeautifulSoup(self.driver.page_source, "lxml")
         results = self._scrape_companies(soup)
 
-        pprint(results)
+        # pprint(results)
+
+        filename = f"data_{date_time_format}.json"
+
+        with open(filename, "w", encoding="utf-8") as f:
+            json.dump(results, f, ensure_ascii=False, indent=4)
+
+
