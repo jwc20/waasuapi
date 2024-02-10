@@ -1,0 +1,277 @@
+[
+    {
+        "name": "Zitara Technologies, Inc.",
+        "location": "San Francisco",
+        "size": "33 people",
+        "waasu_url": "https://www.workatastartup.com/companies/zitara-technologies-inc",
+        "company_url": "zitara.com",
+        "founders": [
+            "Evan Murphy",
+            "Shyam Srinivasan"
+        ],
+        "about": "In order to keep climate change to 1.5°C, we’ll need 30% of global GDP (all of energy generation and transportation) to run on batteries by 2035.Zitara Technologies (YCombinator S20) builds predictive battery management software for transportation and energy customers with large deployments. Their customers operate >$100M deployments of batteries in satellites, EVs, and renewable energy storage installations.",
+        "tech": "Our team brings top researchers in physics-based battery algorithms together with seasoned software engineers to build safety-critical firmware and large scale machine learning systems. We bring with us decades of experience from Toyota, Exponent, Proterra, Tesla, Gogoro, Google, and Facebook, and a passion for technologies that can have immediate impact on the climate crisis.",
+        "jobs": []
+    },
+    {
+        "name": "Intrinsic",
+        "location": " 3 people",
+        "size": "B2B Software and Services",
+        "waasu_url": "https://www.workatastartup.com/companies/intrinsic",
+        "company_url": "withintrinsic.com",
+        "founders": [
+            "Michael Lin",
+            "Karine Mellata"
+        ],
+        "about": "At Intrinsic, we are using disruptive technologies to solve some of the oldest and most complex problems of our digital age in anti-abuse, fraud prevention, and brand safety. Online abuse is an elaborate video game of cat-and-mouse. We move fast, and so do our adversaries.",
+        "tech": "AI services (LLM infra: hosting, fine-tuning and operationalization of open source foundational models)Frontend: NextJS, Typescript, and ReactBackend: NextJS and Python for ML inferenceInfrastructure hosted on GCP with Kubernetes and orchestrated using Terraform.ML services and training: PythonReal-time and streaming technologies",
+        "jobs": []
+    },
+    {
+        "name": "Velt",
+        "location": "San Francisco",
+        "size": "10 people",
+        "waasu_url": "https://www.workatastartup.com/companies/velt",
+        "company_url": "velt.dev",
+        "founders": [
+            "Rakesh Goyal"
+        ],
+        "about": "Our mission is to redefine how people work together online. We're not just making collaboration faster—we're crafting it to be the best.Today we’re all using online platforms more than ever before - building, researching, learning, connecting etc. And we're not doing it alone. We're doing it together with other people and machines, turning the internet into the world's biggest team.Yet, the web was built for solo voyages. We saw a shift when platforms like Figma and Google Docs brought a multiplayer approach, breaking down walls and inspiring seamless teamwork.At Velt, we're taking it further. We're on a mission to infuse the magic of collaboration into the fabric of the web—one app at a time. We aim to erase the lines between online and offline co-working, crafting an environment where distance is irrelevant, and 'flow' is the norm.Right now, more than half of work hours are spent on coordination and communication—less on creating. With Velt, we're setting out to reverse these figures, reducing time spent on logistical issues by over 90%. Imagine what we can create when we spend less time talking about work and more time doing it!We're building a better web—a web for us, for our team, for everyone. Join us, and let's accelerate the future of web together 🚀Our Products:Velt SDK: JS SDK to add powerful collaboration experiences to your own product for your end-users. This helps you ship such experiences ridiculously fast, increase user growth and engagement.Superflow: JS plugin to enable product, marketing and design teams to comment and collaborate directly on their websites. This helps them iterate and ship their products 10x faster.TeamWe are a team of ex-Googlers. We've launched products like Augmented Reality in Google Search & Maps. As an early team member, you will work directly with the founders.Come build a better web with us 🚀",
+        "tech": "We're building an SDK that adds a performant & robust multiplayer experience to any web app. We abstract away the infrastructure complexity for the developer. They have access to simple & beautiful APIs that gives them full control to make the UI feel native.This is a highly complex and exciting problem.",
+        "jobs": []
+    },
+    {
+        "name": "Paragon",
+        "location": "Los Angeles, CA",
+        "size": "22 people",
+        "waasu_url": "https://www.workatastartup.com/companies/paragon",
+        "company_url": "useparagon.com",
+        "founders": [
+            "Brandon Foo",
+            "Ishmael Samuel"
+        ],
+        "about": "Paragon is an embedded integration platform for SaaS apps – we enable companies to build products that integrate with the SaaS ecosystem. With Paragon, software companies can integrate with hundreds of different SaaS apps in minutes while providing their customers with a seamless, unified integration experience. Our vision is to build the connecting layer for all software that enables every application in the world to work together seamlessly.In the last year, we've grown by over 6x and now work with nearly 100 customers around the world. We've raised over $16M from world-class investors like Inspired Capital, Y Combinator, Global Founders Capital, Soma Capital, and Village Global, and have been featured in Techcrunch and Forbes.",
+        "tech": "We're a full-stack javascript shop (Node.js, React) and you'll work closely with technologies like AWS, Kubernetes, and Docker. You'll also play a large role in helping make architectural decisions and choosing which tools we work with.",
+        "jobs": []
+    },
+    {
+        "name": "Scispot",
+        "location": "Kitchener, Canada",
+        "size": "12 people",
+        "waasu_url": "https://www.workatastartup.com/companies/scispot-io",
+        "company_url": "scispot.io",
+        "founders": [
+            "Satya Singh",
+            "Guru Singh"
+        ],
+        "about": "Scispot is a fully configurable workflow automation platform for fast-growing life science companies. Our customers use Scispot to design and automate their workflows at all stages of their R&D, from planning, lab execution to reporting collaboratively.",
+        "tech": "We use AWS as our primary hosting service. Our tech stack comprises a Next.js frontend web app. On the backend, we use a NoSQL database (AWS DynamoDB) which is fronted by a GraphQL database abstraction API layer. We also use AWS Lambda as the middleware for our platform. To manage our user authentication, authorization and signups, we use AWS Cognito in combination with AWS IAM.",
+        "jobs": []
+    },
+    {
+        "name": "AlemHealth",
+        "location": "Singapore, Singapore",
+        "size": "11 people",
+        "waasu_url": "https://www.workatastartup.com/companies/alemhealth",
+        "company_url": "alemhealth.com",
+        "founders": [
+            "Aschkan Abdul Malek"
+        ],
+        "about": "At AlemHealth, we connect patients, physicians and radiologists in over 30 countries to the medical care they deserve. We build software and hardware for medical image sharing and AI medical imaging analysis on the edge, and deploy that throughout Africa and Asia. We pair that with software that makes it easier to accurately diagnose and disseminate results to patients and clinicians anywhere.",
+        "tech": "Front end is ReactJS, backend is Python on webapps and Java elsewhere, mix of Azure and AWS for infrastructure.",
+        "jobs": []
+    },
+    {
+        "name": "Replo",
+        "location": "San Francisco",
+        "size": "10 people",
+        "waasu_url": "https://www.workatastartup.com/companies/replo",
+        "company_url": "replo.app",
+        "founders": [
+            "Noah Gilmore",
+            "Yuxin Zhu"
+        ],
+        "about": "Replo helps companies build websites with less code. Today, we sell this product to e-commerce companies (e.g. Hexclad, Studs) who use it to build everything from their latest products to giveaways. Our goal is to create a **single platform for businesses to design, develop, and market content on the internet**.About UsReplo was founded in the summer of 2021. We launched in 2022 and grew to over 1000+ paying customers in just 6 months with no sales team. We’ve raised over $4.2M from Figma, YCombinator, Infinity Ventures, MAGIC Fund, Base Case Capital, as well as the founders of NextJS/Vercel.",
+        "tech": "We use NextJS, Node, and Typescript aggressively. We deploy on Fly.io and Vercel.At Replo, you won’t just be writing the next internal tool at a big-tech company. We’re building a highly distributed, scalable system to power the next-generation of online commerce. If this sounds interesting to you, we’d love to chat!",
+        "jobs": []
+    },
+    {
+        "name": "Milo",
+        "location": "San Francisco",
+        "size": "4 people",
+        "waasu_url": "https://www.workatastartup.com/companies/milo",
+        "company_url": "joinmilo.com",
+        "founders": [
+            "Archa Jain",
+            "Avni Patel Thompson"
+        ],
+        "about": "Milo connects to all the sources of info and tasks in a family and creates a simple way to assign and send things to where they need to go.",
+        "tech": "Our job is to connect a diverse set of data inputs (school calendars, Gcal, email, SMS, pdfs) into a central system and then send info to the places people already use (calendar, email, SMS) so we look for people that are well versed in a wide range of languages, tech stacks and protocols.",
+        "jobs": []
+    },
+    {
+        "name": "Bunkerhill Health",
+        "location": "Palo Alto",
+        "size": "12 people",
+        "waasu_url": "https://www.workatastartup.com/companies/bunkerhill-health",
+        "company_url": "bunkerhillhealth.com",
+        "founders": [
+            "David Eng",
+            "Nishith Khandwala"
+        ],
+        "jobs": []
+    },
+    {
+        "name": "Cofactr",
+        "location": "New York",
+        "size": "15 people",
+        "waasu_url": "https://www.workatastartup.com/companies/cofactr",
+        "company_url": "cofactr.com",
+        "founders": [
+            "Phillip Gulley",
+            "Matthew Haber"
+        ],
+        "about": "Cofactr believes hardware should be as agile and scalable as software. We’re leveraging better data and AI to build best-in-class tools for electronics supply chain management. Cofactr is a single platform for procurement, purchase and management of electronic components that works seamlessly with integrated logistics to assure that the physical management of electronics parts is always responsible and efficient.",
+        "jobs": []
+    },
+    {
+        "name": "Deed",
+        "location": "New York",
+        "size": "40 people",
+        "waasu_url": "https://www.workatastartup.com/companies/deed",
+        "company_url": "joindeed.com",
+        "founders": [
+            "Aske Ertmann",
+            "Deevee Kashi",
+            "Steve Liu"
+        ],
+        "about": "We build technology that helps people do good deeds. Our first product was an app that makes volunteering easy and social. We then launched our enterprise platform last year designed to help companies engage their employees through social good. Employees can share their time, skills, and money with causes they care about, and employers can manage, track and measure the impact they generate.",
+        "tech": "If you are someone who cares about social good (and technology solutions that scale social good), can work effectively in small teams, and are a self-starter who wants an opportunity to shape and have a meaningful impact at an early-stage startup, we invite you to apply for one of the positions below. Let’s do some good every day, together!",
+        "jobs": []
+    },
+    {
+        "name": "Reflex",
+        "location": "San Francisco",
+        "size": "7 people",
+        "waasu_url": "https://www.workatastartup.com/companies/reflex",
+        "company_url": "reflex.dev",
+        "founders": [
+            "Alek Petuskey",
+            "Nikhil Rao"
+        ],
+        "about": "Reflex is an open-source framework to build web apps in pure Python and deploy them with a single command. This can be anything from a small data science/internal app to a large multi-page web app. We launched in December and have seen rapid adoption of our open-source framework, with over 14K GitHub Stars and 8500 users on the waitlist for our hosting service. In parallel with improving our open-source framework, we are now working on a hosting service so users can quickly deploy and scale their apps. We have raised 5M in seed funding in August led by Lux Capital with some fantastic founders as angel investors.Introduction:https://reflex.dev/docs/getting-started/introduction/ Github: https://github.com/reflex-dev/reflexFunding Blog Post: https://reflex.dev/blog/2023-08-02-seed-annoucement/",
+        "jobs": []
+    },
+    {
+        "name": "Blissway",
+        "location": "Denver, CO",
+        "size": "15 people",
+        "waasu_url": "https://www.workatastartup.com/companies/blissway",
+        "company_url": "blissway.com",
+        "founders": [
+            "Felipe Kettlun",
+            "Francisco Torrealba"
+        ],
+        "about": "Blissway is a transportation tech startup founded by Stanford grads that uses machine learning and IoT to simplify the collection of tolls and improve road safety. We have been developing and testing our technology with transportation agencies from California, Colorado, Florida, Georgia, North Carolina and Washington. We are already operating on three major highways and will be installing five more in the next year. We need your help!",
+        "tech": "We use Node.js, React, TypeScript, MongoDB, React Native, Python, and C++. We also use tools like AWS, Docker, Git, and Altium.",
+        "jobs": []
+    },
+    {
+        "name": "Roboflow",
+        "location": "San Francisco",
+        "size": "40 people",
+        "waasu_url": "https://www.workatastartup.com/companies/roboflow",
+        "company_url": "roboflow.com",
+        "founders": [
+            "Brad Dwyer",
+            "Joseph Nelson"
+        ],
+        "about": "We're on a mission to remove barriers that prevent developers from building their own computer vision applications. Roboflow streamlines the process of labeling, training, and deploying a computer vision model.WhyComputer vision is going to transform every industry. We're already seeing this play out in fields like transportation (self driving cars), agriculture (drone spraying), and medicine (early stage cancer detection). But these superpowers shouldn't be locked up in the handful of giant technology companies that can afford to hire teams of machine learning PhDs.WhatRoboflow enables any developer to use computer vision without being a machine learning expert. Our product is the key missing infrastructure that allows developers turn raw images into a useful model -- replacing a sprawling list of one-off utils everyone previously had to reinvent and enabling our users to have working models in hours, not weeks.For example, Sarah Hinkley from Barn Owl Drones uses vision to identify weeds from crops in drone images so her customers can use fewer herbicides and grow more. She's one of our over 50,000 users working on problems we couldn't even imagine when we got started!WhoRoboflow is a venture-backed SaaS startup that empowers innovators all over the world to build, train, and deploy computer vision models. Roboflow believes that computer vision is a foundation technology that will transform nearly every industry. We currently have over 250,000 users, including half of the Fortune 100. Roboflow has enabled our customers to accelerate cancer research, conduct experiments in space, accelerate the world’s transition to green energy, and improve the retail experience (to name a few!) with world-altering technology. Investors like Y Combinator, David Sack’s Craft Ventures, Lachy Groom, the founders of OpenAI (Sam Altman and Greg Brockman), and many others back Roboflow.As with any rapidly scaling startup, we hope to build a team that is both versatile and adaptable. Each role has tremendous potential for growth. As such, we believe that coachability, enthusiasm, and an entrepreneurial mindset are more important than experience or qualifications.GrowthRoboflow went from zero to over 20,000 users in 2020 (and now to over 50,000 in 2021) and our customers are requesting features and product enhancements faster than we can provide them.We're starting to build out our engineering, marketing, and sales teams. As an integral part of our core team, all roles will inevitably involve wearing a lot of hats; we're specifically looking for people excited about learning new things and filling gaps where needed. And most importantly, we're looking for people who ship.Learn more about us on our careers page (https://roboflow.com/careers).",
+        "tech": "Our goal is to build the world's best computer vision infrastructure so our users don't have to. This means we handle a lot of challenging complexities like seamlessly ingesting dozens of data formats, processing millions of images per day, and deploying auto-scaling machine learning infrastructure that can handle our customers' most demanding training and deployment needs.Our core app sits atop Firebase with assistance from auto-scaling groups of Docker containers (for jobs like archiving datasets and training models). We also heavily lean on serverless infrastructure so we can gracefully deal with bursty traffic involved in manipulating datasets that can range anywhere from one hundred to one million images.We also maintain a library of Colab notebooks our customers can use to train common computer vision models, a directory of public datasets, and a web of format specifications. We see building and supporting mini-projects like these that are helpful to the community at large as part of our role in democratizing computer vision.",
+        "jobs": []
+    },
+    {
+        "name": "UserGems",
+        "location": "Austria",
+        "size": "60 people",
+        "waasu_url": "https://www.workatastartup.com/companies/usergems",
+        "company_url": "usergems.com",
+        "founders": [
+            "Stephan Kletzl",
+            "Christian Kletzl"
+        ],
+        "about": "We're a passionate and growing team from around the world - the US, Europe, and Asia. Our customers include Mixpanel, UserTesting, Heap, ON24, BrightTALK, LaunchDarkly, etc.We've been recognized by SaaS Awards as a finalist for 3 categories: Best SaaS for Sales & Marketing, Best SaaS for Improved Productivity, and Best SaaS Newcomer 2020.We are growing 3-4x year over year.We believe strongly in being customer-focused and data-driven in everything we do.We are an inclusive workplace. We value individual differences in the workforce and strive to make everyone feel welcomed and accepted, regardless of their skin color, gender or sexual orientation.Our products help companies generate new revenue for their businesses. Our customers see a > 1,000% return in investment (ROI) within the first year.As a remote company, we have a Weekly Standup every Monday, a virtual Happy Hour every 6 weeks, and a Company All-Hands every quarter so that everyone stays connected and updated.",
+        "jobs": []
+    },
+    {
+        "name": "Kombo",
+        "location": "Berlin, Germany",
+        "size": "15 people",
+        "waasu_url": "https://www.workatastartup.com/companies/kombo",
+        "company_url": "kombo.dev",
+        "founders": [
+            "Niklas Higi",
+            "Aike Hillbrands",
+            "Alexander Kübel",
+            "Fabian Rothfuß"
+        ],
+        "about": "Kombo builds a unified API for HR, payroll and recruiting systems. We're working with companies of all sizes - from Fortune 500 companies down to early stage startups - to help them integrate dozens of software vendors within a few days instead of months.Instead of having to get their hands on a sandbox environment, build the integration code and figure out the edge cases dozens of times, they can only once use a well documented and clean abstraction provided by Kombo.We grew from 0 revenue to >$1M ARR within a year and are looking for skilled engineers to help us improve and scale our product. For more details (and pictures!), check out our culture page!",
+        "tech": "Kombo provides an API layer between our customers and any HR, payroll or recruiting tool - many of which are legacy, enterprise and badly documented systems containing multiple 100k records. The backend is doing a full read of each tool every few hours and has to handle inconsistent data schemas or downtime.Our tech-stack includesInfra: GCP (Cloud run, Kubernetes, BigQuery, Postgres Cloud SQL)AppNode (TypeScript) + express, zod, tRPC, prismaReact (TypeScript)Observability: Opentelemetry + HoneycombOtherGitHub + GH ActionsTerraform",
+        "jobs": []
+    },
+    {
+        "name": "Aleph",
+        "location": "New York",
+        "size": "14 people",
+        "waasu_url": "https://www.workatastartup.com/companies/aleph",
+        "company_url": "getaleph.com",
+        "founders": [
+            "Albert Gozzi",
+            "Santiago Perez De Rosso"
+        ],
+        "about": "Aleph (YC S21) makes it easy for finance teams to build financial models in Excel/Google Sheets that are always up-to-date. Our main thesis is that, while specialized software abounds (Anaplan, Adaptive Insights, etc.), it's usually clunky, too expensive to implement and maintain, and takes people away from the tool they love the most — spreadsheets. This is a huge market that’s ripe for innovation, and we’re expanding our team to go after it. We’re participating in the current Y Combinator batch and looking to move quickly, so we hope you’re the individual we’re looking for!Aleph was founded by Albert Gozzi and Santiago Perez De Rosso, two technical founders with backgrounds from Stanford and MIT and experience working at top-tier companies such as Google, Microsoft, DocuSign, and Bain & Company.",
+        "tech": "JavaScript, React, Node.js, MongoDB, BigQuery. We like to keep our stack simple, but we are open to fresh ideas that can help us move faster.",
+        "jobs": []
+    },
+    {
+        "name": "UNISON",
+        "location": "Mountain View",
+        "size": "15 people",
+        "waasu_url": "https://www.workatastartup.com/companies/unison",
+        "company_url": "in-unison.com",
+        "founders": [
+            "Maxim Perumal"
+        ],
+        "about": "UNISON is a small team of passionate people from companies like Meta, Sony, Apple and research labs like the IARAI, based in the SF Bay Area and backed by some of the world’s best investors.We are building a unified reality headset to dive in and resurface from virtual worlds with new-found value.Learn more about us, our product, and team here: in-unison.com.",
+        "tech": "We are holistically building a headset focused on a few key use cases that are truly delightful. We design and build the hardware, software, firmware, AI models, and virtual worlds experiences. We have an internal team for mechanical/product design engineering of hardware, AI development mostly for computer vision, software experiences, our custom built rendering/3D engine, and design.",
+        "jobs": []
+    },
+    {
+        "name": "Eventual",
+        "location": "San Francisco",
+        "size": "5 people",
+        "waasu_url": "https://www.workatastartup.com/companies/eventual",
+        "company_url": "eventualcomputing.com",
+        "founders": [
+            "Jay Chia",
+            "Sammy Sidhu"
+        ],
+        "about": "Eventual is a data platform that helps data scientists and engineers build data applications across ETL, analytics and ML/AI.Our product is open-source and used at enterprise scaleOur distributed data engine Daft is open-sourced and runs on 800k CPU cores daily. This is more compute than Frontier, the world's largest supercomputer!Today's data tooling (Spark, Presto, Snowflake) was built for a world of tabular data analytics, but does not generalize to the needs of modern ML/AI such as multimodal data, heterogenous compute and user-defined Python algorithms.Eventual and Daft bridge that gap, making ML/AI workloads easy to run alongside traditional tabular workloads.We're growing - come grow with us!We are well funded by investors such as YCombinator, Caffeinated Capital, Array.vc and top angels in the valley from Databricks, Meta and Lyft.Our team has deep expertise in high performance computing, big data technologies, cloud infrastructure and machine learning. Our team members have previously worked in top technology companies such as AnyScale, Tesla and Lyft.We are looking for exceptional individuals with a passion for technology and a strong sense of intellectual curiosity.If that sounds like you, please reach out even if you don't see a specific role listed that matches your skillsets - we'd love to chat!",
+        "tech": "Our stack is a mix of Python and Rust. We integrate closely with distributed systems such as Ray and storage engines such as Apache Iceberg and AWS S3.Examples of domains that we work in include:Databases: Daft employs modern query planning and optimizations for efficient execution of distributed workloadsEnterprise Big Data: Daft integrates with data lake technologies such as Apache Iceberg and Hive, with record-setting I/O throughputs to these storage formatsLow-Level System Programming: The execution core of Daft is written in Rust for memory-efficient data processing",
+        "jobs": []
+    },
+    {
+        "name": "Checkr",
+        "location": "San Francisco",
+        "size": "1200 people",
+        "waasu_url": "https://www.workatastartup.com/companies/checkr",
+        "company_url": "checkr.com",
+        "founders": [
+            "Jonathan Perichon",
+            "Daniel Yanisse"
+        ],
+        "about": "Checkr’s mission is to build a fairer future by designing technology to create opportunities for all. We believe all candidates, regardless of who they are, should have a fair chance to work. Established in 2014 and valued at $5B, Checkr is using technology to bring hiring to the next level. Our People Trust Platform uses machine learning to help thousands of companies modernize their background check process and make hiring safer, more efficient, and more inclusive. Some of our customers include Uber, Instacart, Doordash, Netflix, Compass Group, and Adecco.A career with Checkr is an opportunity to work with some of the best and brightest minds, disrupt an industry for a better future, and give otherwise overlooked candidates access to employment. Checkr has been recognized in Forbes Best Startup Employers and is a top Y Combinator company by valuation.",
+        "tech": "https://stackshare.io/checkr/checkr",
+        "jobs": []
+    }
+]
