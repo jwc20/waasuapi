@@ -221,17 +221,18 @@ class Companies(object):
                     if third_div is not None:
                         d["tech"] = third_div.text[4:].replace("\n", " ").strip()
 
-            # breakpoint()
+
 
             company_jobs = company.find("div", {"class": "w-full"}).find_all(
-                "div", {"class": "flex justify-between"}
+                "div", {"class": "mb-4 flex flex-col justify-between sm:flex-row"}
             )
             jobs = []
+            # breakpoint()
 
             for job in company_jobs:
                 company_job = {}
                 company_job["job_name"] = job.find(
-                    "div", {"class": "w-full sm:w-9/10 mb-4"}
+                    "div", {"class": "sm:w-9/10 w-full"}
                 ).a.text
 
                 # breakpoint()
@@ -241,7 +242,7 @@ class Companies(object):
                 ]
 
                 job_details = job.find(
-                    "div", {"class": "sm:flex sm:flex-wrap text-sm mr-2 sm:mr-3"}
+                    "div", {"class": "mr-2 text-sm sm:mr-3 sm:flex sm:flex-wrap"}
                 ).find_all("span")
                 job_details_texts = [job_detail.text for job_detail in job_details]
                 job_details_text = " ".join(job_details_texts)
