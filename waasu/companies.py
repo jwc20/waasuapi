@@ -136,7 +136,7 @@ class Companies(object):
 
         target_url = filter_url + "?" + payload_str
         self.driver.get(target_url)
-        pprint(target_url)
+        # pprint(target_url)
         delay_timer("prepping to scrape...", "done", 10)
 
     def _scrape_companies(self, soup_data):
@@ -247,7 +247,7 @@ class Companies(object):
                 job_details_texts = [job_detail.text for job_detail in job_details]
                 job_details_text = " ".join(job_details_texts)
                 company_job["details"] = job_details_text
-                print(company_job)
+                # print(company_job)
                 jobs.append(company_job)
 
             d["jobs"] = jobs
@@ -295,7 +295,6 @@ class Companies(object):
             layout,
         )
 
-        """
         ###########################################################
         # Scroll all the way to the bottom
         # Get scroll height
@@ -323,7 +322,6 @@ class Companies(object):
             time.sleep(1)
         sys.stdout.write("\rComplete!                       \n")
         ###########################################################
-        """
 
         soup = BeautifulSoup(self.driver.page_source, "lxml")
         results = self._scrape_companies(soup)
