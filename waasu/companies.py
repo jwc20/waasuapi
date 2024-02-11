@@ -195,23 +195,8 @@ class Companies(object):
                     .strip()
                 )
 
-            # pprint(more_details)
-            # breakpoint()
-
-            # if (
-            #     more_details.find("div")
-            #     .find_next_sibling("div")
-            #     .find_next_sibling("div")
-            #     is not None
-            # ):
-            #     d["tech"] = (
-            #         more_details.find("div")
-            #         .find_next_sibling("div")
-            #         .find_next_sibling("div")
-            #         .text[4:]
-            #         .replace("\n", " ")
-            #         .strip()
-            #     )
+            company_logo = company.find("div", {"class": "mr-4 flex w-20 sm:hidden"}).find("img")["src"]
+            d["logo"] = company_logo
 
             first_div = more_details.find("div")
             if first_div is not None:
@@ -222,12 +207,10 @@ class Companies(object):
                         d["tech"] = third_div.text[4:].replace("\n", " ").strip()
 
 
-
             company_jobs = company.find("div", {"class": "w-full"}).find_all(
                 "div", {"class": "mb-4 flex flex-col justify-between sm:flex-row"}
             )
             jobs = []
-            # breakpoint()
 
             for job in company_jobs:
                 company_job = {}
@@ -296,31 +279,31 @@ class Companies(object):
         )
 
         ###########################################################
-        # Scroll all the way to the bottom
-        # Get scroll height
-        last_height = self.driver.execute_script("return document.body.scrollHeight")
+        # # Scroll all the way to the bottom
+        # # Get scroll height
+        # last_height = self.driver.execute_script("return document.body.scrollHeight")
 
-        while True:
-            # Scroll down to bottom
-            self.driver.execute_script(
-                "window.scrollTo(0, document.body.scrollHeight);"
-            )
+        # while True:
+        #     # Scroll down to bottom
+        #     self.driver.execute_script(
+        #         "window.scrollTo(0, document.body.scrollHeight);"
+        #     )
 
-            # Wait to load page
-            time.sleep(5)
+        #     # Wait to load page
+        #     time.sleep(5)
 
-            # Calculate new scroll height and compare with last scroll height
-            new_height = self.driver.execute_script("return document.body.scrollHeight")
-            if new_height == last_height:
-                break
-            last_height = new_height
+        #     # Calculate new scroll height and compare with last scroll height
+        #     new_height = self.driver.execute_script("return document.body.scrollHeight")
+        #     if new_height == last_height:
+        #         break
+        #     last_height = new_height
 
-        for remaining in range(scroll_delay, 0, -1):
-            sys.stdout.write("\r")
-            sys.stdout.write("{:2d} seconds remaining.".format(remaining))
-            sys.stdout.flush()
-            time.sleep(1)
-        sys.stdout.write("\rComplete!                       \n")
+        # for remaining in range(scroll_delay, 0, -1):
+        #     sys.stdout.write("\r")
+        #     sys.stdout.write("{:2d} seconds remaining.".format(remaining))
+        #     sys.stdout.flush()
+        #     time.sleep(1)
+        # sys.stdout.write("\rComplete!                       \n")
         ###########################################################
 
         soup = BeautifulSoup(self.driver.page_source, "lxml")
