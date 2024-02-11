@@ -175,6 +175,16 @@ class Companies(object):
                 "div", {"class": "text-blue-600 ellipsis"}
             ).a.text
 
+            # company_twitter = company.find("div", {"class": "text-blue-600 ellipsis"})
+            # print(company_twitter)
+            # if company_twitter is not None:
+            #     d["twitter"] = company_twitter
+
+            company_logo = company.find(
+                "div", {"class": "mr-4 flex w-20 sm:hidden"}
+            ).find("img")["src"]
+            d["logo"] = company_logo
+
             more_details = company.find(
                 "div", {"class": "flex"}
             ).next_sibling.next_sibling
@@ -195,9 +205,6 @@ class Companies(object):
                     .strip()
                 )
 
-            company_logo = company.find("div", {"class": "mr-4 flex w-20 sm:hidden"}).find("img")["src"]
-            d["logo"] = company_logo
-
             first_div = more_details.find("div")
             if first_div is not None:
                 second_div = first_div.find_next_sibling("div")
@@ -206,10 +213,10 @@ class Companies(object):
                     if third_div is not None:
                         d["tech"] = third_div.text[4:].replace("\n", " ").strip()
 
-
             company_jobs = company.find("div", {"class": "w-full"}).find_all(
                 "div", {"class": "mb-4 flex flex-col justify-between sm:flex-row"}
             )
+
             jobs = []
 
             for job in company_jobs:
@@ -317,5 +324,3 @@ class Companies(object):
 
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(results, f, ensure_ascii=False, indent=4)
-
-
