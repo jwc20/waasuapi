@@ -231,7 +231,7 @@ class Companies(object):
                     "href"
                 ]
                 company_job["job_id"] = company_job["job_url"].split("/")[-1]
-                print(company_job["job_id"])
+                # print(company_job["job_id"])
 
                 job_details = job.find(
                     "div", {"class": "mr-2 text-sm sm:mr-3 sm:flex sm:flex-wrap"}
