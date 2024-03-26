@@ -1,0 +1,1559 @@
+[
+    {
+        "name": "Apriora",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/apriora",
+        "company_url": "apriora.ai",
+        "founders": [
+            "John Rytel",
+            "Aaron Wang"
+        ],
+        "about": "Apriora helps companies save time scaling their engineering teams with an AI interviewer that schedules, interviews, and evaluates applicants.",
+        "tech": "Backend: Python, NextJS, Node Frontend: React, Typescript, Tailwind Infrastructure: Azure, Porter, PostgreSQL",
+        "jobs": [
+            {
+                "job_name": "Full-Stack Software Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/65523",
+                "details": "San Francisco, CA, US / Remote (US) fulltime  Visa Required $100K - $200K 0.10% - 2.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Markprompt",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/markprompt",
+        "company_url": "markprompt.com",
+        "founders": [
+            "Michael Fester",
+            "Marie Schneegans"
+        ],
+        "jobs": [
+            {
+                "job_name": "Founding engineer ",
+                "job_url": "https://www.workatastartup.com/jobs/65513",
+                "details": "San Francisco, CA, US fulltime  Visa Required $130K - $200K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Wanderlog",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/wanderlog",
+        "company_url": "wanderlog.com",
+        "founders": [
+            "Peter Xu",
+            "Harry Yu"
+        ],
+        "about": "Wanderlog is building tools to make leisure travel easier. We believe that travel makes us and the world better, and are trying to lower the bar to it. Our product so far is a Google Docs for planning travel and sharing recommendations.We’re an engineering and product-heavy team. A typical week’s work involves talking to users, prioritizing tasks on a kanban, designing on Figma, and building and shipping continuously. Harry and I have worked at Stripe, McKinsey, and Google and studied Computer Science at Yale, and at Wanderlog, we try to take the best parts of each of the places we’ve been and bring them together.We believe in work-life balance. We work regular hours, take time off as a team to eat lunch together (and even cook!), exercise, and enjoy time with friends and family. We love travel and believe it rejuvenates us and makes us better people, and have quarterly travel offsites where the goal is to just enjoy visiting a new place and use the tools we’ve built.If you enjoy travel, and would love to make it easier for the rest of the world to do it, send us a note at founders@wanderlog.com! We’d love for you to join our team.",
+        "tech": "Our core stack is:React for front-endNode.js/Express for back-endMySQL databaseAs an engineer, you'll also be working with the wild and wonderful world of geospatial data. We integrate information from Google Maps, Tripadvisor, Yelp, blogs around the web, and more, and are experts at crawling data and ingesting it.",
+        "jobs": [
+            {
+                "job_name": "Full-stack software engineer (any level of experience, remote-friendly)",
+                "job_url": "https://www.workatastartup.com/jobs/65395",
+                "details": "San Francisco, CA, US / Toronto, ON, CA / US / CA / Remote (US; CA) fulltime  Visa Required $55K - $80K 0.10% - 0.25% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Cambio",
+        "location": "Chicago, IL",
+        "waasu_url": "https://www.workatastartup.com/companies/cambio",
+        "company_url": "helloaviary.ai",
+        "founders": [
+            "Blesson Abraham",
+            "Jay Patel"
+        ],
+        "about": "Cambio, with its main product Aviary AI, transforms the way credit unions communicate with their members by using AI technologies. Aviary, an outbound AI sales team for credit unions, banks and insurance companies, provides interactions that are human-like and customized to fit the operational and regulatory requirements of credit unions, banks and insurance providers. Aviary uses Cambio's private large language models and industry data to ensure TCPA compliance and high-quality interactions.",
+        "tech": "Cambio uses large language models that are customized with private data and industry knowledge to comply with TCPA rules and deliver high-quality interactions. These models are based on open-source LLM's that are adjusted to meet the needs and expectations of the industry and the regulations.",
+        "jobs": [
+            {
+                "job_name": "AI Software Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/65390",
+                "details": "New York, NY, US / Remote (New York, NY, US) fulltime  Visa Required $75K - $85K 0.10% - 0.50% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Andson Biotech",
+        "location": "Atlanta, GA",
+        "waasu_url": "https://www.workatastartup.com/companies/andson-biotech",
+        "company_url": "andsonbiotech.com",
+        "founders": [
+            "Mason Chilmonczyk"
+        ],
+        "about": "About Andson: (TL;DR video about us: https://youtu.be/wMyAikoQkXE)Andson Biotech is developing a microfluidic platform enabling rapid sample cleanup for mass spectrometry applications. Mass spectrometry is a gold-standard chemical analysis tool, but it remains limited in utility due to the complex workflows associated with going from raw sample to analysis. Our flagship product, the DynaCHIP, enables simple, on-demand mass spectrometric analysis with easy-to-use interfaces that democratize mass spectrometry from lab to market.Andson Biotech was spun out of Georgia Tech and is supported by Y Combinator and Merck Digital Sciences Studio. We are a seed-stage startup, so every role has the chance for growth.",
+        "jobs": [
+            {
+                "job_name": "Electro-Mechanical Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/65276",
+                "details": "Atlanta, GA, US fulltime  Visa Required $65K - $115K 0.01% - 1.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Moxion Power Co.",
+        "location": "Richmond, CA",
+        "waasu_url": "https://www.workatastartup.com/companies/moxion-power-co",
+        "company_url": "moxionpower.com",
+        "founders": [
+            "Paul Huelskamp",
+            "Alexander Meek"
+        ],
+        "about": "Moxion Power manufactures commercial-scale electric generators and provides temporary-power-as-a-service to customers in the construction, events and entertainment, data center, and electrified transportation industries.  Our battery gensets have the same dimensions, run-times, and performance capabilities as traditional trailer and skid mounted diesel generators, with the added benefits of being clean, perfectly-quiet, and offering superior load flexibility.   Moxion's logistics team remotely monitors our gensets and provides battery charging/swapping services so our customers never have to worry about running out of power. Moxion has signed LOI’s with several of the largest construction firms in California and is backed by Energy Impact Partners, Y Combinator, Liquid 2 ventures and Tamarack Global. Moxion's founding team has backgrounds in vehicle electrification, battery manufacturing, renewable energy project finance, and construction.",
+        "tech": "Moxion has filed multiple utility patents for its proprietary inverter architecture and battery module and pack design. We are also developing software that enables the use of our products. This software will eventually help automate most of our rental operations, and Moxion has filed patents that cover the use of machine learning in these applications.",
+        "jobs": [
+            {
+                "job_name": "Supplier Quality Engineer Intern",
+                "job_url": "https://www.workatastartup.com/jobs/65246",
+                "details": "Richmond, CA fulltime  Visa Required Any (new grads ok)"
+            },
+            {
+                "job_name": "Manufacturing Engineer Intern",
+                "job_url": "https://www.workatastartup.com/jobs/65219",
+                "details": "Richmond, CA fulltime  Visa Required Any (new grads ok)"
+            },
+            {
+                "job_name": "Manufacturing Maintenance Engineer Intern",
+                "job_url": "https://www.workatastartup.com/jobs/65220",
+                "details": "Richmond, CA fulltime  Visa Required Any (new grads ok)"
+            },
+            {
+                "job_name": "Mechanical Engineer Intern",
+                "job_url": "https://www.workatastartup.com/jobs/65223",
+                "details": "Richmond, CA fulltime  Visa Required Any (new grads ok)"
+            },
+            {
+                "job_name": "Quality Engineer Intern",
+                "job_url": "https://www.workatastartup.com/jobs/65227",
+                "details": "Richmond, CA fulltime  Visa Required Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Pivot Robots",
+        "location": " 2 people",
+        "waasu_url": "https://www.workatastartup.com/companies/pivot-robots",
+        "company_url": "pivotrobots.com",
+        "founders": [
+            "Siddharth Girdhar",
+            "Vignesh Rajmohan"
+        ],
+        "about": "Pivot Robots (YC W24) is building the AI brain for robot arms for high-mix manufacturing. Pivot Robots combines off-the-shelf robots and vision sensors with recent breakthroughs in foundation vision models to give industrial robot arms the power to adapt. Our first product directly addresses the dangerous and unpopular task of grinding metal parts. Currently, our software is being deployed on 10+ robots at a large cast iron foundry.",
+        "jobs": [
+            {
+                "job_name": "Mechanical Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/65193",
+                "details": "San Francisco, CA, US fulltime $80K - $100K 0.50% - 1.50% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Terrace",
+        "location": "Los Angeles, CA",
+        "waasu_url": "https://www.workatastartup.com/companies/terrace",
+        "company_url": "terrace.fi",
+        "founders": [
+            "Jesse Beller",
+            "Sola Ogunsakin"
+        ],
+        "about": "Terrace is a regulatory-compliant, all-in-one institutional-grade trading UI / terminal and infrastructure layer for DeFi (lending, staking, liquidity, borrowing, and exchange). Terrace offers a curated, security-verified selection of DeFi pools across protocols and multiple blockchain networks with seamless money movement through both a set of APIs and a user interface. We handle custody, money movement, back-office, and execution and provide continuous security and compliance monitoring (everything except investment decisions) so investors can focus on investing.",
+        "tech": "Programming Languages: Go, NodeDev-ops: Kubernetes, GCP, TerraformAPI-layer: GraphQL (Federation), GRPC",
+        "jobs": [
+            {
+                "job_name": "Infrastructure Engineer (New Grad)",
+                "job_url": "https://www.workatastartup.com/jobs/65191",
+                "details": "Remote fulltime $36K - $150K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Reclaim Protocol, Questbook",
+        "location": "Hyderabad, India",
+        "waasu_url": "https://www.workatastartup.com/companies/reclaim-protocol-questbook",
+        "company_url": "reclaimprotocol.org",
+        "founders": [
+            "Sriharsha Karamchati",
+            "Subhash Karri",
+            "Madhavan Malolan"
+        ],
+        "about": "Reclaim Protocol (by Questbook) helps users migrate their profile and reputation from one app to another. Until recently, the rating you have accumulated on Uber or the followers you have on Twitter are locked in the said apps. Reclaim Protocol uses zeroknowledge-proofs on https traffic to enable migration of profiles.We've raised about $10M - from top VCs including but not limited to Lemnis Capital, Hashed, Coinbase Ventures, Dragonfly, Spartan, Balaji S.We are about 25 employees. 80% of whom are engineers.You will enjoy working with us if : 1. You are an independent operator - the team is fully remote and across timezones. Typically, there is only one person working per project at the company. So, you're expected to make tough decisions on the go with little help from colleagues. Not only make decisions, but also make them fast and execute on it.  2. You thrive in chaos - the tech we're working on is super cutting edge. There are constant improvements in cryptographic tools available. We have to stay on top of the latest greatest, even if it means not all of us have clarity all the time. The problem statements at the company are often vague and open ended. You are expected to look for clarity, ask questions, do research and eventually come up with a solution. Fast. 3. If you like exploring the frontiers of technology - everything here is cutting edge. We don't have apps, we have appclips. We don't do cryptography, we do zkproofs. The team is an ultra tech aware one. So, we're always trying to use the super powers of the latest greatest technology out there. That means reading through a lot of shitty documentation and being many times the first to use a certain tech/library.You will hate working with us if :  1. You don't like speaking with customers - most companies shield developers from customers and only the \"business folks\" speak with customers. Not at our company. Every engineer handles one customer. Helping that customer integrate our products and respond to all their queries on telegram around the clock. 2. You don't like purging code - at the time of this writing, 100% of the code I've written has been purged. Everyone at the company will have an outrageous amount of code that has been trashed.  We build fast and trash faster. We experiment a lot. At any point of time there are atleast 3 projects that are in the research phase and might never make it to production. If you're on the project that didn't move the needle, it will be trashed. And there's no room to feel bad about it. It happens all the time.  3. If you hate documentation - every PR in our core products is accompanied by updating our docs. Our docs is our primary product, the SDK is the manifestation of the docs. If you don't enjoy writing docs, you'll find this place miserable. Not just that, if you feel there are parts of the development stack that are beneath you, you will hate working with us. If you think frontend/backent/devops/documentation is beneath you, this isn't the place for you. 4. If you love the 80-20 rule - unlike many other products 80-20 isn't good enough. Our customers have a long tail of requirements. Products that satisfy just the top 20% customers will not get us 80% of the revenue. We often have to go over and beyond to serve our customers. We don't settle easy. If you often think \"I will skip this and will get away with it\", you'd be in the wrong place.",
+        "tech": "Reclaim Protocol helps generate zeroknowledge proofs from https traffic.  We operate on the cutting edge of technology. Interesting tech stack componentsZK Circuits on mobile : There are probably no other products with real customers that generate zk proofs on a mobile phone. We relentlessly focus on improving performance. Every second of performance counts. Our customers have phones from 2017 Low end Android devices to the latest iPhone. Our zkproofs need to be generated on all of them. At the time of this writing it takes about 30s to create a proof on the low end Androids. And in somecases, just crashes. ZK Circuits are memory intensive. We're always exploring optimizations and alternate implementations.Appclips & Instant apps - Many of the apps don't need to be apps that need to be downloaded on the appstores. They just need to be an app like experience. To interact with the Reclaim Protocol, we use appclips. Appclips are a feature in phones that are oft overlooked. Making an app that opens instantaneously without having to install a new app by visiting the store unlocks a whole new design space. Ours is an appclip - which means there are strict limits on package size. So, we're not only optimizing the run time of the zkproofs, but we are also trying to optimize the package size at the same time.SDKs : We have SDKs for multiple popular frameworks. This includes NodeJS, ReactJS, React Native, Flutter and a bunch of blockchain SDKs like Ethereum, EVM, Solana, Near, Cosmos, Polkadot etc. The zkproofs can be verified on any framework the app is built on, and we support as many as we can.Developer tooling - we're continuously investing in building great developer tooling. Imagine building the chrome debug tools ground up from scratch. That's what we do. We build developer tools for our customers to see what is happening under the hood on their mobile browser - so as to help them speed up integrating our SDK. This development is full of edge cases and lot of intricacies. We have written our own implementation of TLS ground up. And it's open sourced.We are extremely proud of the technology we build.",
+        "jobs": [
+            {
+                "job_name": "Smart Contract Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/65128",
+                "details": "Remote fulltime $30K - $100K Any (new grads ok)"
+            },
+            {
+                "job_name": "Dev Rel",
+                "job_url": "https://www.workatastartup.com/jobs/65129",
+                "details": "Remote fulltime $20K - $60K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Zeta Surgical",
+        "location": "Boston",
+        "waasu_url": "https://www.workatastartup.com/companies/z-imaging",
+        "company_url": "zetasurgical.com",
+        "founders": [
+            "Jose Amich",
+            "Raahil Sha"
+        ],
+        "about": "Zeta Surgical is a digital surgery company focused on improving the accuracy, safety and accessibility of image guided surgery. Its navigation and robotics platform Zeta leverages cutting-edge computer vision and artificial intelligence to unlock the use of image guidance directly at the point-of-care, enabling new possibilities in fields such as emergency care and interventional medicine. Zeta Surgical was founded by Harvard graduates and faculty, is partnered with leading universities, and is backed by top investors.",
+        "tech": "Zeta Surgical lies at the intersection of surgical robotics, mixed reality and computer vision. We work closely with surgeons, researchers and development partners at all stages of product development, providing a unique ability to translate engineering and research problems into actionable products.",
+        "jobs": [
+            {
+                "job_name": "Senior Product Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/65097",
+                "details": "Boston, MA, US fulltime $125K - $150K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "222",
+        "location": "Los Angeles, CA",
+        "waasu_url": "https://www.workatastartup.com/companies/222",
+        "company_url": "222.place",
+        "founders": [
+            "Danial Hashemi",
+            "Keyan Kazemian",
+            "Arman Roshannai"
+        ],
+        "about": "222 is building the future of social by accelerating IRL chance encounters.",
+        "tech": "Python, React, Swift, Python Data Frameworks (NumPy, Pandas, Matplotlib), Python Machine Learning Frameworks (Scikit-Learn, Pytorch, Tensorflow)",
+        "jobs": [
+            {
+                "job_name": "Software Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/64919",
+                "details": "New York, NY, US fulltime  Visa Required $110K - $150K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "SPRX",
+        "location": " 11 people",
+        "waasu_url": "https://www.workatastartup.com/companies/sprx",
+        "company_url": "sprx.tax",
+        "founders": [
+            "Mark Andrus",
+            "Dominic Vitucci"
+        ],
+        "about": "SPRX is a technology company that is changing the tax consulting industry. We have developed artificial intelligence software that automates many of the tasks performed by tax consultants. This gets much more exciting when you consider that tax consultants earn more than $10 Billion in fees each year. That's a market worth transforming!What is tax consulting? Good question.  Tax consultants are tax experts that analyze one or two numbers that go on a company's tax return. For example, the R&D tax credit. The rules for the R&D tax credit are very complex and most accountants do not have the expertise to compute the credit. So a company will hire a tax expert to compute the R&D tax credit for the company. That's tax consulting.",
+        "tech": "Tax consultants perform their analysis in spreadsheets. This is a slow, inefficient process. SPRX has developed artificial intelligence tools that speed up the process and improve quality. We have automated the data gathering process, the prediction process, and the report generation process. We automate the repeatable, mundane, low value tasks so the tax consultants can focus their time on high value analysis tasks.To learn more visit SPRX.tax",
+        "jobs": [
+            {
+                "job_name": "Junior Full Stack Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/64846",
+                "details": "New York, NY, US / Remote (US) fulltime  Visa Required $90K - $110K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Prelim",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/prelim",
+        "company_url": "prelim.com",
+        "founders": [
+            "Chris Blaser",
+            "Heang Chan"
+        ],
+        "about": "At Prelim, we are on a mission to revolutionize the way financial institutions onboard new customers. We believe that the customer onboarding process should be fast, efficient, and user-friendly. As a member of our team, you will have the opportunity to work with cutting-edge technology and make a real impact on the financial industry.Our no-code platform allows banks and financial institutions to digitalize their services, streamline account opening processes, and improve customer experience. By joining our team, you will be a part of a fast-paced, innovative, and dynamic work environment where you can learn and grow your skills.Our team is made up of a diverse group of individuals with a wide range of experience and expertise. We value collaboration, creativity, and a passion for problem-solving. As a member of our team, you will have the opportunity to work with experts in the field, and be challenged to think outside the box.In addition, we offer a comprehensive benefits package, flexible working hours, and a great work-life balance. We are constantly evolving and growing, and we are looking for talented individuals who share our vision and are excited to be a part of our journey. If you're passionate about fintech and want to be a part of a team that is making a real impact in the industry, then Prelim is the place for you.",
+        "tech": "We primarily use React, Node.js, and Postgres.",
+        "jobs": [
+            {
+                "job_name": "Sales Engineer  (SF Remote)",
+                "job_url": "https://www.workatastartup.com/jobs/64811",
+                "details": "San Francisco / Remote (US; San Francisco, CA, US) fulltime  Visa Required $115K - $120K Any (new grads ok)"
+            },
+            {
+                "job_name": "Security Engineer  (LA Remote)",
+                "job_url": "https://www.workatastartup.com/jobs/64812",
+                "details": "Los Angeles / Remote (US; Los Angeles, CA, US) fulltime  Visa Required $115K - $120K Any (new grads ok)"
+            },
+            {
+                "job_name": "Security Engineer  (SF Remote)",
+                "job_url": "https://www.workatastartup.com/jobs/64814",
+                "details": "San Francisco / Remote (US; San Francisco, CA, US) fulltime  Visa Required $115K - $120K Any (new grads ok)"
+            },
+            {
+                "job_name": "Security Engineer  (NY Remote)",
+                "job_url": "https://www.workatastartup.com/jobs/64813",
+                "details": "New York / Remote (US; New York, NY, US) fulltime  Visa Required $115K - $120K Any (new grads ok)"
+            },
+            {
+                "job_name": "Sales Engineer  (NY Remote)",
+                "job_url": "https://www.workatastartup.com/jobs/64810",
+                "details": "New York / Remote (US; New York, NY, US) fulltime  Visa Required $115K - $120K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Leafpress",
+        "location": " 2 people",
+        "waasu_url": "https://www.workatastartup.com/companies/leafpress",
+        "company_url": "leafpress.io",
+        "founders": [
+            "Devishi Jha",
+            "Jianna Liu"
+        ],
+        "jobs": [
+            {
+                "job_name": "Founding Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/64687",
+                "details": "San Francisco, CA, US fulltime  Visa Required $130K - $180K 0.50% - 2.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Scispot",
+        "location": "Kitchener, Canada",
+        "waasu_url": "https://www.workatastartup.com/companies/scispot-io",
+        "company_url": "scispot.io",
+        "founders": [
+            "Satya Singh",
+            "Guru Singh"
+        ],
+        "about": "Scispot is a fully configurable workflow automation platform for fast-growing life science companies. Our customers use Scispot to design and automate their workflows at all stages of their R&D, from planning, lab execution to reporting collaboratively.",
+        "tech": "We use AWS as our primary hosting service. Our tech stack comprises a Next.js frontend web app. On the backend, we use a NoSQL database (AWS DynamoDB) which is fronted by a GraphQL database abstraction API layer. We also use AWS Lambda as the middleware for our platform. To manage our user authentication, authorization and signups, we use AWS Cognito in combination with AWS IAM.",
+        "jobs": [
+            {
+                "job_name": "Front End Engineer - Generative AI UX",
+                "job_url": "https://www.workatastartup.com/jobs/64517",
+                "details": "CA / Kitchener, ON, CA / Vancouver, BC, CA / Waterloo, ON, CA / Toronto, ON, CA / Remote (CA; Kitchener, ON, CA; Vancouver, BC, CA; Waterloo, ON, CA; Toronto, ON, CA) fulltime $60K - $100K CAD 0.05% - 0.10% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Eventual",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/eventual",
+        "company_url": "eventualcomputing.com",
+        "founders": [
+            "Jay Chia",
+            "Sammy Sidhu"
+        ],
+        "about": "Eventual is a data platform that helps data scientists and engineers build data applications across ETL, analytics and ML/AI.Our product is open-source and used at enterprise scaleOur distributed data engine Daft is open-sourced and runs on 800k CPU cores daily. This is more compute than Frontier, the world's largest supercomputer!Today's data tooling (Spark, Presto, Snowflake) was built for a world of tabular data analytics, but does not generalize to the needs of modern ML/AI such as multimodal data, heterogenous compute and user-defined Python algorithms.Eventual and Daft bridge that gap, making ML/AI workloads easy to run alongside traditional tabular workloads.We're growing - come grow with us!We are well funded by investors such as YCombinator, Caffeinated Capital, Array.vc and top angels in the valley from Databricks, Meta and Lyft.Our team has deep expertise in high performance computing, big data technologies, cloud infrastructure and machine learning. Our team members have previously worked in top technology companies such as AnyScale, Tesla and Lyft.We are looking for exceptional individuals with a passion for technology and a strong sense of intellectual curiosity.If that sounds like you, please reach out even if you don't see a specific role listed that matches your skillsets - we'd love to chat!",
+        "tech": "Our stack is a mix of Python and Rust. We integrate closely with distributed systems such as Ray and storage engines such as Apache Iceberg and AWS S3.Examples of domains that we work in include:Databases: Daft employs modern query planning and optimizations for efficient execution of distributed workloadsEnterprise Big Data: Daft integrates with data lake technologies such as Apache Iceberg and Hive, with record-setting I/O throughputs to these storage formatsLow-Level System Programming: The execution core of Daft is written in Rust for memory-efficient data processing",
+        "jobs": [
+            {
+                "job_name": "Open-Source Product Growth Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/64459",
+                "details": "San Francisco, CA fulltime $120K - $140K 0.10% - 1.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "buildspace",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/buildspace",
+        "company_url": "buildspace.so",
+        "founders": [
+            "Farza Majeed"
+        ],
+        "about": "we’re the largest place where you give your idea a shot.and, we mean any idea — a hip-hop album, short film, a novel, some indie software, a youtube channel — whatever.no idea is too big or too small.it all starts with nights & weekends.it's six-weeks where you can start any idea from zero on your nights and weekends, and by the end you'll have your first fans, revenue, downloads, whatever.in 2023:12M+ ppl saw our content across Instagram and Twitter.more than 30,000 people joined nights & weekends to work on their own ideas.1,000 people flew to meet us and others like them for 3-days.and, we had 1,000 people come out to one of our physical, 3-day events.to get a sense of what this all looks like in practice, see our video for season four here.we even built a physical campus for people who want to go full-time on their idea and need place to figure it out -- again, we don't care how big or small the idea is.overall, it's been a journey.so, now what?in 2023, we built up massive distribution. it was all about creating really high-quality content + experiences. but, it was all very one-off.in 2024, we're fully focused on taking all our learnings and building a world class product. a product that can help millions pursue their passions and build their ideas.and, we're looking for talented engineers and designers to help us figure it out.",
+        "jobs": [
+            {
+                "job_name": "product engineer -- full-stack web (sf)",
+                "job_url": "https://www.workatastartup.com/jobs/64420",
+                "details": "San Francisco, CA, US fulltime  Visa Required $120K - $220K 0.25% - 1.00% Any (new grads ok)"
+            },
+            {
+                "job_name": "product engineer -- mobile (sf)",
+                "job_url": "https://www.workatastartup.com/jobs/64421",
+                "details": "San Francisco, CA, US fulltime  Visa Required $120K - $220K 0.25% - 1.00% Any (new grads ok)"
+            },
+            {
+                "job_name": "growth hacker (sf)",
+                "job_url": "https://www.workatastartup.com/jobs/64434",
+                "details": "San Francisco, CA, US fulltime  Visa Required $120K - $220K 0.25% - 0.50% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "FirstIgnite",
+        "location": "Traverse City, MI",
+        "waasu_url": "https://www.workatastartup.com/companies/firstignite",
+        "company_url": "firstignite.com",
+        "founders": [
+            "Chase Bonhag",
+            "Cody Pawlowski"
+        ],
+        "about": "FirstIgnite is developing the best-in-class software tool in the commercialization and innovation space to bring world-changing research to those capable of driving it forward.  FirstIgnite currently services universities, national labs, and research hospitals around the globe to help drive engagement between scientific research and industry. When we're successful solutions to the world's biggest problems will be solved by speeding up the time it takes to get innovation to market.",
+        "tech": "FirstIgnite is an AI software company built specifically for helping universities identify and connect with companies interested in partnering on research. Users enter a description of their research and are matched to the markets, companies and contacts most aligned with potential partnership. We're building complete automation throughout the research enterprise so every time a paper is published, a grant is funded, or a patent is issued we provide a commercial prediction score and get corporate partners for research faster than ever before.",
+        "jobs": [
+            {
+                "job_name": "Full Stack Developer / Software Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/64381",
+                "details": "Remote (US) fulltime  Visa Required $60K - $90K 0.10% - 0.24% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "MediSearch",
+        "location": "London, United Kingdom",
+        "waasu_url": "https://www.workatastartup.com/companies/medisearch",
+        "company_url": "medisearch.io",
+        "founders": [
+            "Eduard Oravkin",
+            "Michal Pándy"
+        ],
+        "jobs": [
+            {
+                "job_name": "Founding engineer (full stack)",
+                "job_url": "https://www.workatastartup.com/jobs/64308",
+                "details": "Bratislava, Bratislava Region, SK / London, England, GB / San Francisco, CA, US / New York, NY, US / Remote fulltime €50K - €80K EUR 3.00% - 5.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Brainbase",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/brainbase",
+        "company_url": "usebrainbase.xyz",
+        "founders": [
+            "Gokhan Egri"
+        ],
+        "about": "Brainbase lets businesses automate their repetitive tasks and free up their employees' bandwidth.We do so by developing state-of-the-art foundation models for automating workflows and data entry.",
+        "tech": "Our tech stack is divided into two sectors as building the interfaces for businesses to manage their workflows and developing the AI models that run automations.For our interfaces, we work on the familiar stack of NextJS/React/TypeScript, with MongoDB as our database. We use Tailwind CSS for our styling.Our backend is dockerized and runs on AWS servers and serverless instances, written in a combination of Node and Python.For our development, we work with large-language models, primarily in Python, with Pytorch as our preferred ML framework.",
+        "jobs": [
+            {
+                "job_name": "Founding Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/64212",
+                "details": "San Francisco, CA, US fulltime  Visa Required $80K - $120K 0.10% - 1.20% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Peakflo",
+        "location": "Singapore, Singapore",
+        "waasu_url": "https://www.workatastartup.com/companies/peakflo",
+        "company_url": "peakflo.co",
+        "founders": [
+            "Saurabh Chauhan",
+            "Dmitry Vedenyapin"
+        ],
+        "about": "Peakflo with its simple API and one-click ERP integrations, allows businesses to streamline their invoice-to-cash and procure-to-pay processes. 100+ companies, from scale-ups to enterprises, use Peakflo each to: Save 2000 man-hours/month on finance ops  Get paid faster on customer invoices by 15-25 days Cut vendor bill payment time by 50% Automate three-way matching",
+        "tech": "We are looking for quick-thinking, problem-solving full stack engineers to build the next generation of fintech products. Our SaaS product is built using typescript, node.js and react. You should apply if you are interested in backend, microservice distributed architecture; if you are looking to join a high-growth high-pace startup with great engineering culture; if you want to work in a passionate high-skilled team.",
+        "jobs": [
+            {
+                "job_name": "Jr. DevOps Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/63904",
+                "details": "SG / Remote (SG) fulltime  Visa Required $2.2K - $4.5K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Vorticity",
+        "location": "Redwood City, CA",
+        "waasu_url": "https://www.workatastartup.com/companies/vorticity",
+        "company_url": "vorticity.xyz",
+        "founders": [
+            "Chirath Neranjena"
+        ],
+        "about": "As passionate scientists and engineers, we are well aware of the plethora of critical problems in the world that cannot be solved because humanity simply does not have enough computing power. To address this, Vorticity is developing a radically new silicon chip architecture and system to dramatically accelerate scientific computing problems.Vorticity’s mission is to expand human ingenuity. To do that we are building a team of exceptional people to work together on big problems. Join us!",
+        "tech": "Our fully integrated system is built from the ground up for scientific computing. We are innovating at every level - from silicon design, to memory, power delivery, cooling to new algorithms and system architectures to solve a myriad of scientific problems. Problems we currently solve include but are not limited to: Small molecule drug discovery for critically ill oncology patients, discovering ideal locations to store CO2 after capture to stave off climate change and designing the next generation hypersonic aircraft.",
+        "jobs": [
+            {
+                "job_name": "ASIC Design Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/63875",
+                "details": "Redwood City, CA, US fulltime $120K - $190K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Dyte",
+        "location": "Bengaluru, India",
+        "waasu_url": "https://www.workatastartup.com/companies/dyte",
+        "company_url": "dyte.io",
+        "founders": [
+            "Palash Golecha",
+            "Abhishek Kankani",
+            "Kushagra Vaish"
+        ],
+        "about": "Dyte is a developer-friendly real time audio and video calling software development kit (SDK). It allows developers to integrate live video into their apps in interesting and innovative ways. The SDK is simple, offers integrations within hours, and has a large number of plug-ins and configurations. These configurations provide developers with a quick and efficient way to embed audio and video calling in any way imaginable to suit a use-case. That means, 1-1 calls, recording, webinars, livestreams can all be personalised and delivered with a variety of options to enhance user and developer experience! The goal is to reimagine what can be achieved with these APIs and continue to push the envelope, going above and beyond. We're looking for inventive minds to join us on this journey to build the new.",
+        "tech": "At Dyte, what we are trying to achieve, is only possible with a combination of reliable, well tested technologies, along with cutting edge developments and a lot of in-house experimentation. A glimpse of the technologies we use and what excites us about our roadmap:Full-stack webRTC, with compatibility for all: We tailor the experience to make use of the best webRTC capabilities each client has to offer, falling back to lowest common denominator only where extremely necessary.Custom A/V pipelines: We encode and inject streams with custom audio/video processing logic and media enhancing AI to bring out the quality beyond what webRTC is capable of.Scalable micro-services: Our infrastructure handles a million video minutes every day but that isn't good enough for our own internal standards, we are looking to improve and scale it even further.Homegrown testing framework: Because what we are building is not standard. We recognised the need early on to build our own tools for testing what we build and its resiliency at the scale we look to offer.Abstract all complexity, offer intuitive and beautiful APIs to customers: We offer flexibility of getting started in a few minutes, or to dive deep into the streams and components level, along with a host of features built on top of the communication and media aspects of our product.",
+        "jobs": [
+            {
+                "job_name": "Software Engineer - Support (Latin America)",
+                "job_url": "https://www.workatastartup.com/jobs/63849",
+                "details": "AR / MX / BR / CO / UY / BO / HN / CL / EC / VE / PE / NI / PY / CR / Remote (AR; MX; BR; CO; UY; BO; HN; CL; EC; VE; PE; NI; PY; CR) fulltime  Visa Required $30K - $50K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Airgoods",
+        "location": "New York",
+        "waasu_url": "https://www.workatastartup.com/companies/airgoods",
+        "company_url": "airgoods.com",
+        "founders": [
+            "Paolo Carroll",
+            "Aaron Farr",
+            "Elian Haddock"
+        ],
+        "about": "Airgoods is a fast-growing wholesale marketplace for the specialty food and beverage industry. We help specialty stores (like Tiny Grocer, Eastern District, Soberish, and Union Market) centralize their wholesale supply chain by making it easy for them to order all of their inventory in one place. Today, we focus on connecting these stores with over 3,000 specialty beverage products. Our mission is to radically improve wholesale for all stakeholders in the specialty food world.  We started in January 2023, and have raised $3M+ from top investors like YC (S23).",
+        "tech": "Must-havesExpertise in full-stack web development and system design.Proficient in Typescript to power our frontend React app, NodeJS, and Express backend.Expertise in relational databases; preferably PostgreSQL.Attention to detail and passion for building beautiful software.Previous experience shipping production-level code using our tech stack or similar technologies.Bonus pointsExperience in a start-up or building 0 to 1 products and bringing them to market.Experience with advanced front-end technologies such as Redux for state management, or modern CSS frameworks like Tailwind CSS.Experience in mobile app development, either through native development (iOS/Android) or cross-platform frameworks like React Native.Expertise in NextJS or other server-side JS frameworks.",
+        "jobs": [
+            {
+                "job_name": "Founding Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/63762",
+                "details": "New York, NY, US fulltime  Visa Required $120 - $150K 0.50% - 1.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "PromptArmor",
+        "location": " 2 people",
+        "waasu_url": "https://www.workatastartup.com/companies/promptarmor",
+        "company_url": "promptarmor.com",
+        "founders": [
+            "Vikram Jayanthi",
+            "Shankar Krishnan"
+        ],
+        "about": "We're building the security layer for anyone using AI. This is the bottleneck to a future where AI is actually usable, every day, by everyone. We're growing fast, generating revenue, well funded, and poised to dominate the security market. Join us if you like to move fast and win",
+        "jobs": [
+            {
+                "job_name": "Founding ML Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/63755",
+                "details": "San Francisco, CA, US fulltime $120K - $180K 1.00% - 4.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Vendora",
+        "location": " 2 people",
+        "waasu_url": "https://www.workatastartup.com/companies/vendora",
+        "company_url": "vendora.io",
+        "founders": [
+            "Sunny Singh"
+        ],
+        "about": "Vendora is revolutionizing grocery tech. We’re building vertical saas for the $1T grocery industry and are starting with e-commerce enablement. Backed by Y Combinator and a strong set of investors with deep experience in the commerce space, we’re giving grocers the tools to thrive in today’s world.",
+        "tech": "Technologies Used:Javascript (Typescript, React.js, React Native, Node.js, Next.js), PythonREST APIs, GraphQL, MongoDBAWS, GCloud, DockerLangchain, PyTorch",
+        "jobs": [
+            {
+                "job_name": "Full Stack Engineer - Vendora (W23) - Vertical SaaS for Grocery",
+                "job_url": "https://www.workatastartup.com/jobs/63753",
+                "details": "Santiago, Santiago Metropolitan Region, CL / Remote (Santiago, Santiago Metropolitan Region, CL) fulltime  Visa Required $20K - $40K Any (new grads ok)"
+            },
+            {
+                "job_name": "Front End Engineer - Vendora (W23) - Vertical SaaS for Grocery",
+                "job_url": "https://www.workatastartup.com/jobs/63312",
+                "details": "New York, NY, US fulltime  Visa Required $90K - $140K 0.30% - 2.00% Any (new grads ok)"
+            },
+            {
+                "job_name": "Founding Engineer (Full Stack) - Vendora (W23) - Vertical SaaS for Grocery",
+                "job_url": "https://www.workatastartup.com/jobs/63311",
+                "details": "New York, NY, US fulltime  Visa Required $100K - $140K 0.30% - 2.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Carma",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/carma",
+        "company_url": "joincarma.com",
+        "founders": [
+            "Muhammad Alasgarli",
+            "Brandt Lawson"
+        ],
+        "about": "We’re Carma, a first-of-its-kind mobile app marketplace startup for getting the best local same-day offers on any auto repair – think Upwork or GoodRX for auto repair.Carma is a YC company (W24 batch). You can learn more about us at our website here (https://www.joincarma.com/).Our mission is to solve the massive $100B problem with car repair – difficulty for consumers to shop for car repair and difficulty for auto repair shops to attract customers.By joining our lean 11-person team, you will be getting in on the ground floor of an explosive growth company – with the responsibility, individual impact, and early-stage equity that comes with it.",
+        "tech": "If you are a highly technical, fast-paced coder (full-stack, frontend, or backend) and love solving complex challenges, especially building mobile apps, then we want you to apply. We are looking for someone who has experience or specializes in:•\tBuilding iOS/Android mobile apps in React Native, Swift, or Kotlin •\tBuilding web apps in React •\tBuilding backends in NestJS or Node.js •\tBuilding marketplaces, reverse marketplaces, or auction systemsThese more technical skills are an additional plus:•\tStrong knowledge of iOS/Android UI design principles, patterns, and best practices •\tExperience leveraging APIs for deep integrations with both iOS and Android platforms •\tExperience working with remote data via REST and JSON •\tSolid understanding of mobile development platforms, including iOS Frameworks, Android Libraries, SDKs, and APIs for push notifications •\tFamiliarity with native build tools like XCode, Gradle, and Android Studio •\tExperience with AWS •\tExperience with React Hooks •\tAbility to write clean, well-documented code •\tAn entrepreneurial mentality where you are comfortable working in an exciting, fast-paced, and autonomous environment •\tPrior startup experience where you have worked on building a mobile app or something else from scratch •\tA strong product-oriented mindset •\tInterest in cars and automotive is a plus",
+        "jobs": [
+            {
+                "job_name": "Senior Frontend Software Engineer (React Native / React)",
+                "job_url": "https://www.workatastartup.com/jobs/63529",
+                "details": "San Francisco, CA, US fulltime $100K - $200K 1.00% - 5.00% Any (new grads ok)"
+            },
+            {
+                "job_name": "Senior Mobile Software Engineer (React Native / React)",
+                "job_url": "https://www.workatastartup.com/jobs/63534",
+                "details": "San Francisco, CA, US fulltime $100K - $200K 1.00% - 5.00% Any (new grads ok)"
+            },
+            {
+                "job_name": "Senior Backend Software Engineer (Node.js / NestJS)",
+                "job_url": "https://www.workatastartup.com/jobs/63532",
+                "details": "San Francisco, CA, US fulltime $100K - $200K 1.00% - 5.00% Any (new grads ok)"
+            },
+            {
+                "job_name": "Senior Mobile Full-Stack Software Engineer (React Native / React)",
+                "job_url": "https://www.workatastartup.com/jobs/63533",
+                "details": "San Francisco, CA, US fulltime $100K - $200K 1.00% - 5.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "BotBuilt",
+        "location": "Durham, NC",
+        "waasu_url": "https://www.workatastartup.com/companies/botbuilt",
+        "company_url": "botbuilt.com",
+        "founders": [
+            "Barrett Ames",
+            "Colin Devine",
+            "Brent Wadas"
+        ],
+        "about": "BotBuilt is creating flexible robotic systems to solve the housing crisis. Our cutting-edge software and cost-efficient hardware allow us to improve the world by providing beautiful construction, safer job sites, and sustainable building techniques. The $600 billion residential construction industry is facing a massive labor shortage. Our robotic systems leverage the latest in rapid prototyping, artificial intelligence, and computer vision. By taking on some of the hardest technical challenges on earth, BotBuilt is ready to help solve one of society’s biggest problems.",
+        "tech": "We're designing custom hardware and software for building houses with robotic arms. ROS, Python, and/or CAD experience preferred but not required.",
+        "jobs": [
+            {
+                "job_name": "Software Infrastructure Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/63231",
+                "details": "Durham, NC, US fulltime $90 - $110 Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Axle Health",
+        "location": "Los Angeles, CA",
+        "waasu_url": "https://www.workatastartup.com/companies/axle-health",
+        "company_url": "axlehealth.com",
+        "founders": [
+            "Adam Stansell"
+        ],
+        "about": "Axle Health builds scheduling and workforce management software to empower in-home healthcare providers to deliver exceptional, personalized care right where patients feel most comfortable—at home.Some of the biggest providers in the country use our software to improve the utilization of their field teams by 15%+, and automate the operational burden of scheduling and dispatching.Our platform includes proprietary logistics algorithms to optimize scheduling, a mobile app for field staff, an operations dashboard for office teams, engagement and booking tools for patients, and a wide range of integrations and external APIs for modular access.We’re a team of all-star engineers and operators, backed by $4m from top investors such as Y Combinator and Pear VC, applying our intellect and logistics experience to upend how home healthcare is delivered.",
+        "tech": "Healthcare is complex, healthcare in the home even more so. Part of the reason in-home care isn't widespread is because it's not economical without a heavy technological component. Providing economical in-home care is a series of optimization problems. How do you assign visits to the lowest cost health professional qualified for a visit? How do you account for different license requirements across states? How do you ensure visits that require refrigerated supplies are completed earlier in the day? Solving this 3-dimensional tradeoff between time, geography, and licensure is what we do day-in and day-out.",
+        "jobs": [
+            {
+                "job_name": "Software Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/63130",
+                "details": "Los Angeles, CA, US / San Francisco, CA, US fulltime  Visa Required $130K - $160K 0.20% - 0.40% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Mintlify",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/mintlify",
+        "company_url": "mintlify.com",
+        "founders": [
+            "Hahnbee Lee",
+            "Han Wang"
+        ],
+        "about": "We’ll cut to the chase. We’re looking for self starters to join our fast moving founding team in our mission to empower millions of developers.Mintlify's platform reaches 4m+ developers every year and power the documentation of 1000+ companies. We're also the #1 most popular YC product used by other YC companies in the past four years.Our team has worked across transformative tech companies, gone through YC, and attracted some amazing investors from Bain Capital Ventures and the founders of Vercel, Sourcegraph, and other top developer tooling companies. We’re well capitalized and ready to put it to good use.We're an in-person team in SF and hire for in-person, but we can always make exceptions for exceptional people :)Company BenefitsNot sold yet? Check out some benefits you’ll have access to as well:🧧 Competitive compensation and equity✈️ Flexible work culture🌻 20 days paid time off every year🧑‍⚕️ Health, dental, vision💸 401k or RRSP matching🍱 Free lunch and dinners💻 $700/year work setup stipend💪 $200/month wellness stipend🌴 Annual team offsite🌿 Unlimited free mintsWe're growing. Come grow with us!We take exceptional people when they come along - and we really mean that!Don’t see a specific role listed? That doesn't mean we won't have a spot for you. Click on the open application and drop us your resume. We'd love to consider you as opportunities open up in the future!",
+        "jobs": [
+            {
+                "job_name": "Full Stack Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/62862",
+                "details": "San Francisco, CA, US fulltime  Visa Required $110K - $140K 0.50% - 1.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Trexo Robotics",
+        "location": "Toronto, Canada",
+        "waasu_url": "https://www.workatastartup.com/companies/trexo-robotics",
+        "company_url": "trexorobotics.com",
+        "founders": [
+            "Manmeet Maggu",
+            "Rahul Udasi"
+        ],
+        "about": "We're here to make a dent in the universe... At Trexo Robotics, we're solving big problems that have a big impact.Trexo Robotics is on a mission to redefine mobility solutions for all people. We want to create devices that are affordable, designed with the user in mind, and can be used at home. Fundamentally, we are driven by the belief that people should have access to enabling technologies.Wearable robots for children are only the beginning, we're looking for individuals who will join us on this incredible journey to build wearable robots for all.  At Trexo Robotics you will find a flat organization where you can work with highly optimistic, low ego and exceptionally talented individuals who look forward to solving hard problems.",
+        "tech": "Trexo Robotics (YC W19) is enabling mobility by building powered wearable robots (https://youtu.be/3LW4LJIpa2o). Our first product is a robot for children with movement disorders such as Cerebral Palsy and it allows kids to walk, in many cases for the first time in their lives. The device is currently being used by families and the best hospitals across North America.",
+        "jobs": [
+            {
+                "job_name": "Robot Builder (Assembly)",
+                "job_url": "https://www.workatastartup.com/jobs/62845",
+                "details": "Mississauga, ON, CA fulltime  Visa Required $50K - $55K CAD Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Continue",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/continue",
+        "company_url": "continue.dev",
+        "founders": [
+            "Ty Dunn",
+            "Nate Sesti"
+        ],
+        "about": "We’ve raised $2.1M from Heavybit and angels because we believe that large language models present a new opportunity to make building software feel like making music.This drastic improvement to the developer experience is so fundamental that the tooling will ultimately be public infrastructure (aka open-source software).This is why we are building 1) an open-source IDE extension and 2) a paid data engine that continuously updates models and context as organizations evolve over time.Together, these two products are leading us toward our vision of enabling anyone to slip into a flow state when coding, to experience the lightness of never getting stuck, to continue.",
+        "jobs": [
+            {
+                "job_name": "Founding Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/62784",
+                "details": "San Francisco, CA, US fulltime  Visa Required $130K - $170K 1.00% - 2.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Kapacity.io",
+        "location": "Helsinki, Finland",
+        "waasu_url": "https://www.workatastartup.com/companies/kapacity-io",
+        "company_url": "kapacity.io",
+        "founders": [
+            "Rami El Geneidy",
+            "Jaakko Rauhala",
+            "Sonja Salo"
+        ],
+        "about": "Kapacity.io is building the future of smart energy grids with an electricity Load Balancing service focused on buildings.",
+        "tech": "Cloud-computing (AWS, Linux), Full-stack tools (Docker), Programming and optimisation (Python, Go, Javascript), AI (Tensorflow).We integrate into IoT-enabled HVAC systems in buildings remotely. We collect energy consumption data and energy market prices, run real time optimisations and send control signals back to the building",
+        "jobs": [
+            {
+                "job_name": "Open application",
+                "job_url": "https://www.workatastartup.com/jobs/62686",
+                "details": "Helsinki, Finland fulltime $40K - $85K 0.10% - 1.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Kalam Labs",
+        "location": "India",
+        "waasu_url": "https://www.workatastartup.com/companies/kalam-labs",
+        "company_url": "kalamlabs.in",
+        "founders": [
+            "Harshit Awasthi",
+            "Ahmad Faraaz",
+            "Sashakt Tripathi"
+        ],
+        "about": "Kalam Labs is India's First Kids Space Organization.  We are creating a place where kids take part in actual ambitious space missions.The Missions are done with India's Top Space Organizations and super cool & fun for kids, like:-Unfurling India's Flag in Space with Tata Institute of Fundamental ResearchBuilding a Space Drone with IIT-KanpurBuilding a Perpetual Drone Satellite with IISc BangaloreKids get to work on these missions at their home by our Kalam Labs - Space Kits and by playing our Kalam Labs app.",
+        "tech": "We have 2 tech domainsGame Development:-UnityBlender 3D ModellingBackend engineering + DevOpsUsage of AI/ML modelsAerospace Engineering:-Designing UAVs of all designs : Drones/Balloons/RocketsRunning Gazebo simulations to test our aerial flightsDesigning Aerodynamic Designs + Space Payloads",
+        "jobs": [
+            {
+                "job_name": "Unity Developer (C# Scripter)",
+                "job_url": "https://www.workatastartup.com/jobs/62610",
+                "details": "Bengaluru, KA, IN / Lucknow, UP, IN fulltime ₹90K - ₹150K INR Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Omnistrate",
+        "location": "Redwood City, CA",
+        "waasu_url": "https://www.workatastartup.com/companies/omnistrate",
+        "company_url": "omnistrate.com",
+        "founders": [
+            "Kamal Gupta",
+            "Alok Nikhil"
+        ],
+        "about": "Omnistrate is pioneering a fundamentally new category of defining next-gen abstractions for building and operating in the Cloud.As we all know, an increasing number of organizations are adopting the cloud with more and more service offerings moving to Cloud at scale. At Omnistrate, we believe that the complexity of the underlying cloud platform is growing with the increasing number of cloud offerings, multi/poly cloud strategies, regulatory requirements, globalization, and so on.Omnistrate lets you offer an enterprise-grade, fully managed multi-cloud PaaS/SaaS service for your software to your customers. Let us help you build the next MongoDB Atlas, Snowflake, Databricks, etc by handling all the complexities of setting up, scaling, and managing infrastructure on multiple clouds while delivering a reliable and high-performance service to your end-users",
+        "tech": "Cloud infra and tooling, Distributed systems, object-oriented programming",
+        "jobs": [
+            {
+                "job_name": "Solutions Engineer [India]",
+                "job_url": "https://www.workatastartup.com/jobs/62212",
+                "details": "IN / Remote (IN) fulltime  Visa Required ₹500K - ₹3M INR Any (new grads ok)"
+            },
+            {
+                "job_name": "Solutions Engineer [US]",
+                "job_url": "https://www.workatastartup.com/jobs/62441",
+                "details": "US / Remote (US) fulltime  Visa Required $60K - $125K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Storyboarder",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/storyboarder",
+        "company_url": "storyboarder.com",
+        "founders": [
+            "Charles Forman",
+            "Joe Watkins"
+        ],
+        "about": "Storyboarder is a tool and a platform for anyone to create, share, and sell webcomics.In East Asia, the webcomic (or digital manga) industry is an $12B market and rapidly growing to the rest of the world. Webtoon, the largest company in the space, generates $100M / month in revenue. However, their addressable market is limited by their content creators, who need know how to draw. Readers are desperate for a greater variety of stories in webcomics.Through years of working with filmmakers, we’ve built extremely easy to use storyboarding software  that has 700K users. We’re democratizing visual storytelling to everyone. We’re working on the next generation that, through advances in video game interfaces, ubiquitous 3D compute, and AI, will allow anyone to easily create scenes, pose characters, to create webcomics. Storyboarder is co-founded by Charles Forman who founded OMGPOP (S06) which sold to Zynga for $200M, a top YC exit.Storyboarder is backed by Y Combinator (W23), David Karp (Tumblr Founder), Andrew Kortina (Venmo Founder), and other product focused investors.",
+        "tech": "Our stack is: Editor: Javascript, React, Threejs / React Three Fiber. Platform: Nodejs, NextJS, Postgres.",
+        "jobs": [
+            {
+                "job_name": "Founding Full Stack Developer",
+                "job_url": "https://www.workatastartup.com/jobs/62214",
+                "details": "New York, NY, US / Remote (US) fulltime  Visa Required $120K - $140K 0.50% - 1.50% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "GIMO",
+        "location": "Hanoi, Vietnam",
+        "waasu_url": "https://www.workatastartup.com/companies/gimo",
+        "company_url": "gimo.vn",
+        "founders": [
+            "Quan Nguyen"
+        ],
+        "about": "We are building a new digital financial platform that helps millions of underbanked blue-collar and gig workers to get paid before payday.",
+        "jobs": [
+            {
+                "job_name": "Driving the business as a Data Analyst at GIMO",
+                "job_url": "https://www.workatastartup.com/jobs/62123",
+                "details": "Hanoi, Hanoi, VN / Remote fulltime $1.5K - $2.5K Any (new grads ok)"
+            },
+            {
+                "job_name": "Join Our Dynamic Team as a Data Engineer at GIMO",
+                "job_url": "https://www.workatastartup.com/jobs/62122",
+                "details": "Hanoi, Hanoi, VN / Remote fulltime $1.5K - $2.5K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Meru",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/meru",
+        "company_url": "usemeru.com",
+        "founders": [
+            "Rohan Arora",
+            "Venkat Krishnan"
+        ],
+        "about": "Meru is based out of San Francisco, CA, in the South Park neighborhood. We are building the next generation information acquisition system. We’re passionate about computers and language. We’re well-funded, post-revenue, and work with exciting late-stage startups and Fortune 500 companies. We’re hiring smart people profusely to grow our small team. Our benefits include top-tier health insurance, a generous 401(k) plan with matching, company-sponsored equipment, and stipends for employee education. Come join Meru, and help us shape the future of knowledge.",
+        "jobs": [
+            {
+                "job_name": "Software Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/60385",
+                "details": "San Francisco, CA, US fulltime  Visa Required $100K - $140K 0.50% - 2.00% Any (new grads ok)"
+            },
+            {
+                "job_name": "Machine Learning Architect",
+                "job_url": "https://www.workatastartup.com/jobs/61901",
+                "details": "San Francisco, CA, US fulltime  Visa Required $100K - $150K 0.50% - 2.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Kopia",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/kopia",
+        "company_url": "trykopia.com",
+        "founders": [
+            "Calvin Chen"
+        ],
+        "about": "ur tech stack is simple: We use Next.js for our frontend and Supabase for our backend.",
+        "jobs": [
+            {
+                "job_name": "Founding AI Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/61834",
+                "details": "San Francisco, CA, US fulltime  Visa Required $120K - $145K 0.50% - 1.50% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Exa",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/exa",
+        "company_url": "exa.ai",
+        "founders": [
+            "Will Bryk"
+        ],
+        "jobs": [
+            {
+                "job_name": "Generalist Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/61829",
+                "details": "San Francisco, CA fulltime $120K - $180K Any (new grads ok)"
+            },
+            {
+                "job_name": "Research Scientist or Research Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/48397",
+                "details": "San Francisco, CA fulltime $120K - $250K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Terra",
+        "location": "London, United Kingdom",
+        "waasu_url": "https://www.workatastartup.com/companies/terra",
+        "company_url": "tryterra.co",
+        "founders": [
+            "Kyriakos Eleftheriou",
+            "Raouf Yousfi"
+        ],
+        "about": "What we doTerra is an API that makes it easy for apps to connect to wearables. Currently, apps and developers in the fitness, wellness, sleep, and other health spaces are using us. Terra was launched in early 2021, and since then we’ve been growing like crazy. But this is just the beginning.The goal and visionThink if Spotify and Netflix create music and movies based on your heart rate, and stress levels, in real time. We want to enable apps to achieve that reality, through our super easy to use API.FundingTo achieve our grand goal, we couldn’t have made it without the support from some incredible investors. We are lucky enough to be supported by General Catalyst, Samsung NEXT, Next Ventures and we were part of Y-Combinator’s W21 batch.Do you want to learn more about the team? Check this, and learn who we are here",
+        "tech": "Back EndOur infrastructure is build on AWS, and our backend is written in Python. Front End Our Front End is build on React, Reactive Native, and Flutter",
+        "jobs": [
+            {
+                "job_name": "AI Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/61598",
+                "details": "London, England, GB fulltime $50K - $120K 0.10% - 0.50% Any (new grads ok)"
+            },
+            {
+                "job_name": "Software Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/53643",
+                "details": "London, UK fulltime $50K - $200K 0.10% - 2.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Santé",
+        "location": "New York",
+        "waasu_url": "https://www.workatastartup.com/companies/sante",
+        "company_url": "santehq.com",
+        "founders": [
+            "Antoine Balaresque",
+            "Darren Fike"
+        ],
+        "about": "Modern POS for Liquor Stores",
+        "tech": "Curent stack: Typescript, React, Nextjs, Nodejs, Vercel, AWS.You will help build a full-feature modern POS system. You will have a hand in everything from talking to customers, prioritizing features, and hiring. As we grow the team, you will have opportunities to explore a wide range of technical and managerial roles.",
+        "jobs": [
+            {
+                "job_name": "Full-Stack Engineer (Full-Stack)",
+                "job_url": "https://www.workatastartup.com/jobs/61206",
+                "details": "New York, NY, US / Remote (US) fulltime  Visa Required $120K - $180K 1.00% - 2.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Yummy Future",
+        "location": "Champaign, IL",
+        "waasu_url": "https://www.workatastartup.com/companies/yummy-future",
+        "company_url": "yummy-future.com",
+        "founders": [
+            "Jack Cui",
+            "Garrett Yan"
+        ],
+        "about": "We build robotic coffeeshops",
+        "tech": "Robotics, Machine Learning,IoT",
+        "jobs": [
+            {
+                "job_name": "Mechanical / Robotics Engineer (Full-Time) – Yummy Future",
+                "job_url": "https://www.workatastartup.com/jobs/60743",
+                "details": "Champaign, IL fulltime $1 0.50% Any (new grads ok)"
+            },
+            {
+                "job_name": "ECE / Robotics Engineer (Full-Time) – Yummy Future",
+                "job_url": "https://www.workatastartup.com/jobs/60742",
+                "details": "Champaign, IL fulltime $1 0.50% Any (new grads ok)"
+            },
+            {
+                "job_name": "Mechanical / Robotics Engineer (Full-Time) – Yummy Future",
+                "job_url": "https://www.workatastartup.com/jobs/60930",
+                "details": "Champaign, IL fulltime $1 0.50% Any (new grads ok)"
+            },
+            {
+                "job_name": "ECE / Robotics Engineer (Full-Time) – Yummy Future",
+                "job_url": "https://www.workatastartup.com/jobs/60931",
+                "details": "Champaign, IL fulltime $1 0.50% Any (new grads ok)"
+            },
+            {
+                "job_name": "Robotics & Mechanical Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/46611",
+                "details": "Champaign,IL & Chicago, IL fulltime  Visa Required Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Chima",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/chima",
+        "company_url": "withchima.com",
+        "founders": [
+            "Kiara Nirghin",
+            "Nikhara Nirghin"
+        ],
+        "about": "At Chima, we're helping the world's most important institutions customize and scale their generative AI. Our technology lets our customers integrate and analyze their data and relevant public data sources so they can leverage commercial generative AI models privately, in a way that they couldn't before.",
+        "tech": "Our Tech stack is extremely expansive and involves rapidly. Instead of being prescriptive here, we are looking for someone with: -Publications in top AI conferences. -Experience at AI research labs (OpenAI, Google Brain, DeepMind). -Experience on world-class AI products (Search, Recommendation, Ads). -Open-source projects / contributions.",
+        "jobs": [
+            {
+                "job_name": "AI Application's Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/60881",
+                "details": "San Francisco, CA, US fulltime  Visa Required $100K - $300K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Spellbrush",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/spellbrush",
+        "company_url": "spellbrush.com",
+        "founders": [
+            "Cory Li",
+            "Ruwen Liu",
+            "Haitao Mao"
+        ],
+        "about": "Here at Spellbrush, we're passionate about making a good anime game. We also happen to be the world's leading generative AI studio — we're the team behind niji・journey. We are currently investigating how AI can be used to help human artists perform masterpieces in the most complex medium of our times: videogames. Our games are characterized by a no-compromise approach to well-balanced gameplay married to a truthful love of visual arts. If you love turn-based tactics games, please consider applying!",
+        "tech": "At Spellbrush, we're pushing the boundaries of generative networks through our state-of-the-art diffusion text-to-image research. There's no shorted of interesting tech challenges here:Research: We make heavy use of Pytorch and JAX, and train large-scale models using both TPUs and GPUs. Our researchers spend each day developing and testing novel state-of-the-art diffusion models.Engineering: We make use of a lot of Elixir for real-time backend systems, Python for machine learning, and lots of simulation and game logic code written in C# via Unity. We also have tons of internal tools and apps written in Typescript, React, and RN.Infrastructure: We've done everything from building our own in-house GPU supercomputer, to scaling up massive inference clusters in our own datacenters, typically orchestrating via some unholy combination of SLURM, kubernetes, and NATS.",
+        "jobs": [
+            {
+                "job_name": "AI Researcher (Anime)",
+                "job_url": "https://www.workatastartup.com/jobs/60810",
+                "details": "Chiyoda City, Tokyo, JP / San Francisco, CA, US / Remote fulltime $75K - $200K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "EasyCode",
+        "location": "Toronto, Canada",
+        "waasu_url": "https://www.workatastartup.com/companies/easycode",
+        "company_url": "easycode.ai",
+        "founders": [
+            "James Jiang",
+            "Paul Li"
+        ],
+        "jobs": [
+            {
+                "job_name": "Founding Full Stack Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/60722",
+                "details": "Toronto, ON, CA / Remote (US) fulltime  Visa Required $110K - $185K 1.00% - 2.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Stepful",
+        "location": "New York",
+        "waasu_url": "https://www.workatastartup.com/companies/stepful",
+        "company_url": "stepful.com",
+        "founders": [
+            "Tressia Hobeika",
+            "Carl Madi",
+            "Edoardo Serra"
+        ],
+        "about": "Stepful is on a mission to revolutionize vocational education. We train people with a high school education in 4 months or less and places them into healthcare jobs. Healthcare is the fastest growing industry in the US accounting for 40% of all jobs added including medical assistants, nursing assistants, and phlebotomists.",
+        "tech": "Our current stack is based on Postgres, Rails and React.We are building the best student experience ever!",
+        "jobs": [
+            {
+                "job_name": "Product Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/60681",
+                "details": "New York, NY, US fulltime $140K - $180K 0.06% - 0.10% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Rosebud AI",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/rosebud-ai",
+        "company_url": "rosebud.ai",
+        "founders": [
+            "Lisha Li"
+        ],
+        "about": "About UsRosebud.ai is building the AI Roblox.  We use generative AI workflows to accelerate game development and creative. The next few years of AI are going to define the coming few decades of the world. Some wait a lifetime for a moment like this. For those who have an inner fire to make something great, join us. Let’s build.About UsFor more on vision and team. Check out this 3 min video: https://www.youtube.com/watch?v=JuxMHfzUff0&ab_channel=Lishali .  We're the team that built Tokkingheads (2 million IOS downloads, all organic) that allows any portrait/photo/face to be animated in seconds with no skill, and Synth (https://www.synth.run), a simple mobile app that allows users to create images based on Stable Diffusion. We’re a team of PhD researchers, creatives and engineers backed by Y Combinator with our seed led by Vinod Khosla at Khosla Ventures with participation from Balaji Srinivasan **(Former CTO Coinbase and A16Z GP), Ilya Sutskever (cofounder/chief scientist Open AI),  Kevin Lin (cofounder COO Twitch), Holly Liu Co-founder Kaba,  Kun Gao (cofounder, CEO Crunchyroll), Linda Xie Founder Scalar Capital, Jon Snoddy SVP @ Walt Disney Imagineering, Jeff Dean SVP Google Research, Adam D'Angelo CEO Quora, and Lily Liu.** cofounder http://earn.com.",
+        "tech": "LLMs for code gen.  Generative AI for 2D and 3D asset generation Browser based games.",
+        "jobs": [
+            {
+                "job_name": "LLMs and general AI Researcher/Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/60361",
+                "details": "San Francisco, CA, US / Remote fulltime $50K - $180K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Nabla Bio",
+        "location": "Boston",
+        "waasu_url": "https://www.workatastartup.com/companies/nabla-bio",
+        "company_url": "nabla.bio",
+        "founders": [
+            "Frances Anastassacos",
+            "Surge Biswas"
+        ],
+        "about": "Antibodies need to possess a multitude of properties to be manufacturable, safe, and efficacious for patients. This is a hard engineering problem with a high a failure rate, because today’s discovery technologies rely on brute-force guess-and-check. At Nabla, we're building a protein design platform that enables us to build antibodies deliberately, with all the properties they need to reach and treat patients, and do so faster than we can today.Learn more at: https://www.nabla.bio/",
+        "tech": "https://www.nabla.bio/platform",
+        "jobs": [
+            {
+                "job_name": "AI guided antibody design",
+                "job_url": "https://www.workatastartup.com/jobs/59805",
+                "details": "Boston, MA, US fulltime  Visa Required $100K - $250K 0.10% - 0.50% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "NanoNets",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/nanonets",
+        "company_url": "nanonets.com",
+        "founders": [
+            "Sarthak Jain",
+            "Prathamesh Juvatkar"
+        ],
+        "about": "Nanonets is automating document information extraction using AI. We are headquartered in San Francisco. We are backed by prestigious investors from bay area like Y-Combinator, SV Angels, Sound Ventures by Ashton Kutcher. We are currently profitable and growing at a fast pace and looking to expand our team.We are building a product that lets companies automate extracting key information from documents like invoices, receipts, or any other kind of document and integrate it into their workflows saving manual work. We need to keep building features that will let users automate millions of documents of different kinds every day, feed them to our AI for learning, plug our API to external systems like salesforce, quickbooks, RPA providers etc.You should check it out at https://app.nanonets.com",
+        "tech": "Some of the interesting things our backend team has shippedCompile python code into C which could be imported into golang and then shipped as binary for on premise systemsAutoscale GPU dependent services with kubernetes with a custom metricDisplaying machine learning metrics in simplified ways to end users so they can act based on those metricsBuilding large number and variety of integrations with relatively generic interface like salesforce, quickbooks, RPA's, external databasesProcess large number of files in highly distributed manner in golangSome of the interesting things our frontend team has shippedAbility for users to annotate documents so AI can learn which fields to extractDisplaying machine learning metrics in simplified ways to end users so they can act based on those metricsLetting users build complex visual workflows around our API in our product.Let users visualize complex ML metrics in a very simple and intuitive wayOur stack:DatabasesCassandra DBPostgres/MySQLBackendGolang for API and other microservicesPython for Machine learning (Tensorflow, Pytorch)FrontendReact, TypescriptMobxCloud ProvidersAWSGCP for ML heavy workloadMonitoring/AlertingELK for loggingPrometheus for MonitoringGraphana for dashboardsOrchestrationKubernetesDevOpsJenkins for CI/CD",
+        "jobs": [
+            {
+                "job_name": "Sales Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/59354",
+                "details": "CA, US / Seattle, WA, US / Remote (US) fulltime  Visa Required $90K - $130K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "GoSats",
+        "location": "Bengaluru, India",
+        "waasu_url": "https://www.workatastartup.com/companies/gosats",
+        "company_url": "gosats.io",
+        "founders": [
+            "Roshni Aslam",
+            "Mohammed Roshan"
+        ],
+        "about": "GoSats is the smart way to turn expenses and liabilities into valuable assets. We are the simplest on-ramp to bitcoin in India.While there are no exact numbers, reports estimate that around 7% of Indians own crypto. There are millions of people still left in the dark - without an understanding of what crypto is or are hesitant to enter the world of Bitcoin, crypto and Web 3 because of the risks involved. These are ordinary folks all around us - your friends, parents, siblings, co-workers and neighbours. Imagine the impact that Bitcoin and it’s benefits can bring to these people. That is where we are at this moment in time. Although several exchanges have done great work to take us this far, we do not believe they are the solution to mass adoption.At GoSats, we are here to help the masses in India enter the world of Bitcoin and Web 3 in a seamless and risk-free manner. How, you ask? With GoSats, they simply need to do their shopping or make transactions as they normally would to earn Bitcoin rewards. It’s that easy. In fact, backed by a stellar group of visionary investors and an energetic team, we have already been able to onboard over 400,000+ users within 2 years since inception. These include users from all walks of life - students, first-time Bitcoin hodlers, working professionals and crypto enthusiasts - who are using GoSats to save in Bitcoin on the road to wealth creation and financial freedom!This is just the beginning of the Bitcoin Revolution in India and the world, and we would love to have you on-board bringing this to life!",
+        "tech": "We use AWS Lambda stack with NodeJS for backend. React-Native for frontend.",
+        "jobs": [
+            {
+                "job_name": "Backend Developer",
+                "job_url": "https://www.workatastartup.com/jobs/56658",
+                "details": "Bengaluru, KA, IN fulltime ₹800K - ₹900K INR Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Poly",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/poly",
+        "company_url": "withpoly.com",
+        "founders": [
+            "Abhay Agarwal"
+        ],
+        "about": "Poly is the most advanced personal cloud storage platform for your files and media. Our platform is designed to be so good, that it'll replace Finder/File Explorer on your desktop. Find anything with multi-modal, natural language search. Browse with lightning fast caching and loading. Convert file types, open in your favorite apps, and tag/rank your content for instant access. Built on a foundation of incredible research and engineering, Poly is revolutionizing a technology that people use every day by reimagining the stack top to bottom using advanced proprietary AI.",
+        "tech": "We have built an entirely home-grown AI platform and self-trained models for search and ranking. That includes our own inference stack, training pipeline, and so forth. We don't rely on any 3rd-party APIs or services because we want to control our own destiny and build the absolute best tools possible.",
+        "jobs": [
+            {
+                "job_name": "Founding Platform / Full-Stack / Front-end Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/55727",
+                "details": "San Francisco, CA fulltime $150K - $250K 0.25% - 5.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Kitekraft",
+        "location": "Munich, Germany",
+        "waasu_url": "https://www.workatastartup.com/companies/kitekraft",
+        "company_url": "kitekraft.de",
+        "founders": [
+            "Florian Bauer",
+            "Christoph Drexler",
+            "André Frirdich",
+            "Maximilian Isensee"
+        ],
+        "about": "What We Do: Kitekraft is developing advanced wind power systems: power-generating kites, a.k.a. flying wind turbines, that require 10x less construction material than a conventional wind turbine. A Kitekraft unit will generate electricity cleaner, almost invisible, and at least 50% cheaper than conventional wind turbine of the same power rating, and eventually cheaper than any other alternative. Kitekraft develops and will build, sell, and operate flying wind turbines in the 100kW to 5MW+ range, for both grid-scale energy production and off-grid applications.Our Mission: is to help solving the climate and energy crisis. Today still 84% of primary energy comes from fossil fuels. All that has to be replaced with renewables. Electrification of most sectors is in full swing, additional capacities are required for production of e-fuels and hydrogen for transportation, especially shipping and flying, but also for CO2-neutral steel production and more. We have to at least 10x the current renewable energy capacities. Wind energy will be a backbone of this because of its scalability and availability over the globe. Our flying wind turbines will accelerate adoption and provide a major portion of this since it is cheaper, feasible at more locations, simpler to deploy & maintain, and being less visible.Why Join Us?Work on exciting topics and challenges relevant to solving the energy and climate crises.Tackle unknown challenges and deliver something that has never been done before.Be at the center of an agile and dynamic team of highly motivated aerospace/wind energy/climate-tech enthusiasts.Huge learning potential and the opportunity to build things from the ground up.You’ll enjoy a high level of freedom and autonomy.Flat hierarchy and open communication.Be one of the first employees of a startup company. You can help shaping it and growing with it.",
+        "tech": "C++ based systems engineering framework, \"the best part is no part\" (Elon Musk), boxplane airframe, aluminum, carbon fiber, real time Linux (PREEMPT_RT)",
+        "jobs": [
+            {
+                "job_name": "Electronics Engineer (m/f/d)",
+                "job_url": "https://www.workatastartup.com/jobs/55673",
+                "details": "Remote fulltime Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "MixRank",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/mixrank",
+        "company_url": "mixrank.com",
+        "founders": [
+            "Scott Milliken"
+        ],
+        "about": "MixRank processes petabytes of data every month from web crawls, Google Play Store, Apple App Store, social media, and dozens of other sources. We have hundreds of customers using our data products including Google, Amazon, Facebook, Intel, and Adobe, across industries Sales, Marketing, Finance, and Security.Team is ~31 full-time as of 2022, full-remote. We're growing, profitable, employee-owned, no dependence on outside funding.",
+        "tech": "Python, PostgreSQL, Linux, Nix, Javascript/TypeScript.",
+        "jobs": [
+            {
+                "job_name": "Software Engineer - Global/Remote",
+                "job_url": "https://www.workatastartup.com/jobs/55367",
+                "details": "Remote (US) fulltime  Visa Required $10K - $100K Any (new grads ok)"
+            },
+            {
+                "job_name": "Data Engineer - Global/Remote",
+                "job_url": "https://www.workatastartup.com/jobs/48680",
+                "details": "Remote fulltime $10K - $100K Any (new grads ok)"
+            },
+            {
+                "job_name": "Junior Software Engineer - Global/Remote",
+                "job_url": "https://www.workatastartup.com/jobs/48679",
+                "details": "Remote fulltime $10K - $100K Any (new grads ok)"
+            },
+            {
+                "job_name": "Full-Stack Web Developer  - Global/Remote",
+                "job_url": "https://www.workatastartup.com/jobs/48681",
+                "details": "Remote fulltime $10K - $100K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Gradia Health",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/gradia-health",
+        "company_url": "gradia.com",
+        "founders": [
+            "Rithvik Seela",
+            "Andrew Zelaya"
+        ],
+        "about": "Our healthcare system is costly and ineffective. We’re redesigning it from first principles.Founded by two Stanford CS students, Gradia is backed by YCombinator, Atlanta Ventures, Soma Capital, and incredible operators/founders of companies like Bolt, Ramp, Protocol Labs, and BillionToOne.",
+        "jobs": [
+            {
+                "job_name": "Founding Software Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/53125",
+                "details": "San Francisco, CA fulltime  Visa Required Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "voize",
+        "location": "Berlin, Germany",
+        "waasu_url": "https://www.workatastartup.com/companies/voize",
+        "company_url": "voize.de",
+        "founders": [
+            "Marcel Schmidberger",
+            "Fabio Schmidberger",
+            "Erik Ziegler"
+        ],
+        "about": "voize is an app that allows healthcare workers to fill out forms via domain-specific speech recognition. Healthcare workers speak freely and our AI automatically generates the correct structured forms.We are a closely knitted team, have a deep passion for solving the documentation burden on healthcare workers,Jobs can be fully remote and offer flexible working hours. Fluency in German and English is required.If you are looking for technical challenges in a rewarding environment, look no further. You will work with real production data from healthcare customers, be in close contact with our users and deliver value on a daily basis!",
+        "tech": "Tech Stack App: React Native, Kotlin Multi-Platform ML: Pytorch, Python Microservices: Kotlin, K8S, MongoChallenges We run our ASR/NLP models locally on smartphones. Models need to be resource-efficient yet really accurate. With every user interaction data is generated and used for model improvements. This data needs to be processed continuously, automatically quality-assured and used for new model training.We deploy into production on average every 6h and release updated machine learning models daily.",
+        "jobs": [
+            {
+                "job_name": "Software Engineer - App Development (fulltime)",
+                "job_url": "https://www.workatastartup.com/jobs/52527",
+                "details": "Berlin / Remote (US) fulltime  Visa Required Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Skio",
+        "location": "New York",
+        "waasu_url": "https://www.workatastartup.com/companies/skio",
+        "company_url": "skio.com",
+        "founders": [
+            "Kennan Davison"
+        ],
+        "about": "Skio (skio.com) helps brands on Shopify sell subscriptions without ripping their hair out.Brands using Skio include Liquid I.V., Bulletproof, Milk Bar, Barstool Sports, Unilever, 100 Thieves, Vega, KOS, KITSCH, True Botanicals, Wild One, GHOST, Raw Nutrition, RYSE Supplements, OpenStore, The Nue Co., Immi, DRMTLGY, KraveBeauty, Glamnetic, Doe Lashes, Magic Mind, Remedy Organics, & Siete Foods.Our team (skio.com/team) brings experience from Shopify, Recharge, Klaviyo, Attentive, Google, Amazon, Facebook, Pinterest, Hulu, Twitch, Nacelle, Smile.io, Groupon, Databricks, & Y Combinator.Investors ($8.4M raised, skio.com/investors) include Y Combinator, Adjacent, Jason Wong, Shaan Puri, Julian Shapiro, Geoff Woo, & Sahil Bloom, as well as founders and executives of companies like Italic, Magic Mind, Immi, Bev, Smile.io, Okendo, Wonderment, Archive, Parker, HVMN, & MuteSix.",
+        "tech": "Tech stack: Next.js (React), Hasura (GraphQL/Postgres), Serverless (AWS)",
+        "jobs": [
+            {
+                "job_name": "UX Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/47241",
+                "details": "New York, NY, US / Remote fulltime Any (new grads ok)"
+            },
+            {
+                "job_name": "Launch Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/50514",
+                "details": "New York / Remote fulltime Any (new grads ok)"
+            },
+            {
+                "job_name": "Software Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/47148",
+                "details": "New York / Remote fulltime Any (new grads ok)"
+            },
+            {
+                "job_name": "Head of Engineering",
+                "job_url": "https://www.workatastartup.com/jobs/51533",
+                "details": "New York / Remote fulltime Any (new grads ok)"
+            },
+            {
+                "job_name": "Engineering Manager",
+                "job_url": "https://www.workatastartup.com/jobs/51534",
+                "details": "New York / Remote fulltime Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Layerup",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/layerup",
+        "company_url": "uselayerup.com",
+        "founders": [
+            "Arnav Bathla"
+        ],
+        "about": "What if you had a chance to prevent cybercrime and be at the forefront of innovation by bringing AI to the most important industries? That’s what we’re doing over at Layerup — we’re building a cybersecurity suite for LLMs to eliminate bottlenecks to AI adoption across every single industry on the planet.We’re a seed-stage startup backed by some of the best investors in Silicon Valley like Founders Inc, Y Combinator, Multicoin Capital, Seed Club, Founders of Polygon (Sandeep and Jaynti), OrangeDAO, and a few more amazing angels like Shaan Puri. Here’s a piece about us. We're a team of serial entrepreneurs, AI engineers, and technologists who like to stay at the cutting edge of hardware and software alike. We've built everything ranging from AI apps to robots to drones to getting invited by NASA for a habitable space settlement research project.",
+        "tech": "React, Node.js, Javascript and MongoDB",
+        "jobs": [
+            {
+                "job_name": "AI Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/50344",
+                "details": "San Francisco, CA, US fulltime  Visa Required $80K - $220K 0.25% - 2.50% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Imbue (formerly Generally Intelligent)",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/imbue",
+        "company_url": "imbue.com",
+        "founders": [
+            "Josh Albrecht",
+            "Kanjun Qiu"
+        ],
+        "about": "Generally Intelligent is an AI research company. We help machines learn to understand the world the way humans do. Our mission is to build human-like general machine intelligence and make it safely accessible in order to foster a more abundant, equitable, and creative human society.We take a first-principles approach to understanding the fundamentals of learning, starting with simple self-supervised networks solving early evolutionary problems, and increasing complexity incrementally.",
+        "tech": "We are on the cutting edge of deep learning - implementing papers, running experiments, and designing architectures. Our stack is Python, PyTorch, Weights & Biases, and home-grown infrastructure to run experiments across AWS/GCP and our own GPUs.",
+        "jobs": [
+            {
+                "job_name": "Systems Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/48491",
+                "details": "SF / Remote fulltime $100K - $300K Any (new grads ok)"
+            },
+            {
+                "job_name": "Machine Learning Research Engineer - San Francisco, Full-Time",
+                "job_url": "https://www.workatastartup.com/jobs/42056",
+                "details": "SF fulltime  Visa Required $100K - $220K 0.01% - 1.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Agave",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/agave",
+        "company_url": "agaveapi.com",
+        "founders": [
+            "Pooria Azimi",
+            "Tom Reno",
+            "Samantha Zhang",
+            "John Zucchi"
+        ],
+        "about": "We build data infrastructure (APIs, financial automation) for construction, an unsexy-but-huge ($12T) industry. We help construction software companies integrate with the fragmented and old software that runs construction globally using our API. We help construction companies automate manual work in a no-code interface powered by our own API.Our founding team has worked together for 10 years, first at Graphiq (acq. by Amazon) then at Amazon. We've raised $3M from YC, Accel, the founders of Plaid, and execs at Procore, Autodesk, PlanGrid, and Aconex.These slides explain our company and market: https://docs.google.com/presentation/d/1VIRjj0W8wISEqM2IjPsg2-7carWSw-35GlC4ROTXXkU/edit?usp=sharing.",
+        "jobs": [
+            {
+                "job_name": "Founding Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/48277",
+                "details": "San Francisco, CA fulltime $110K - $140K 0.10% - 0.40% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Kula",
+        "location": "London, United Kingdom",
+        "waasu_url": "https://www.workatastartup.com/companies/kula",
+        "company_url": "joinkula.io",
+        "founders": [
+            "Nelson Jones",
+            "Saaras Mehan"
+        ],
+        "about": "Hey! We're Kula. We believe human salespeople will be replaced by AI, and we’re working to build that future. Our growth rate has rocketed up (reach out for specific numbers). We're now hiring to keep up with demand.Kula is being built by a team of MIT, IIT, Cambridge and Oxford grads, backed by some of the best investors in the world, including Y-Combinator, Entrepreneur First, Acequia Capital and angel investors behind companies like Ironclad, OpenSea and Stripe.",
+        "jobs": [
+            {
+                "job_name": "Founding Software Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/48254",
+                "details": "London, United Kingdom fulltime $70K - $200K 0.10% - 3.00% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "TransAstra Corporation",
+        "location": "Los Angeles, CA",
+        "waasu_url": "https://www.workatastartup.com/companies/transastra-corporation",
+        "company_url": "transastra.com",
+        "founders": [
+            "Joel Sercel"
+        ],
+        "about": "TransAstra is the best place for hard core technical engineers to work in the space industry. Zero paperwork, 100% substance. We rapidly prototype, test to failure, and learn every day. You get more experience here in a few months than years working at NASA.",
+        "tech": "We are currently testing the most innovative rocket engine on the planet: Omnivore. Omnivore is a breakthrough in solar thermal rocket technology that allows the use of virtually any fluid as propellant with nuclear rocket like performance from clean, cheap, safe, concentrated solar energy.  We are also known as the world leader in deep tech focussed on asteroid and lunar mining and power systems for lunar outposts.",
+        "jobs": [
+            {
+                "job_name": "Electrical Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/47014",
+                "details": "Los Angeles, CA fulltime  Visa Required Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Porter",
+        "location": "New York",
+        "waasu_url": "https://www.workatastartup.com/companies/porter",
+        "company_url": "porter.run",
+        "founders": [
+            "Justin Rhee",
+            "Trevor Shim"
+        ],
+        "about": "Porter is a Platform as a Service that runs in the user's own cloud. We allow users to deploy applications to their own AWS/GCP accounts by simply pointing at the code they want to run and automate devops from CI/CD to autoscaling. Under the hood, Porter runs on Kubernetes but abstracts away its complexity from the end user. We are growing fast, small but formidable, and are at one of the most exciting junctures a startup can be at with the state of our growth. We've grown 8x in ARR since the beginning of 2022 and are profitable as of Q3 2022. We are building out a founding team in NYC who can share this journey with us. (Remote is also OK depending on circumstances - see the end of this job post)",
+        "tech": "Web: React (styled-components), TypeScript Backend: Go, Kubernetes and Helm APIs, Postgres, Redis Infrastructure: AWS, GCP",
+        "jobs": [
+            {
+                "job_name": "Growth/Product Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/46166",
+                "details": "New York City fulltime Any (new grads ok)"
+            },
+            {
+                "job_name": "Full Stack Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/43716",
+                "details": "New York City fulltime $100K - $200K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "RentHop",
+        "location": "New York",
+        "waasu_url": "https://www.workatastartup.com/companies/renthop",
+        "company_url": "renthop.com",
+        "founders": [
+            "Lee C. Lin",
+            "Lawrence Zhou"
+        ],
+        "about": "No matter where you're moving to, finding a new home is hard. We're making it better. Join us on our quest to modernize apartment rentals and real estate investments.  We are a Y Combinator graduate from the Summer 2009 batch, and have been mostly bootstrapped and profitable ever since.For the first time ever, we are launching a small Taipei team and have immediate openings in both Taipei and New York.",
+        "tech": "Position dependent - we work with lots of data so comfort grabbing, manipulating, and analyzing large data sets is quite important.  Our consumer-facing software is running on PHP backed by MySQL.  The mobile apps are currently written in Flutter.",
+        "jobs": [
+            {
+                "job_name": "Taipei Software Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/42838",
+                "details": "Taipei fulltime $100K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Data Driven Bioscience",
+        "location": "Durham, NC",
+        "waasu_url": "https://www.workatastartup.com/companies/data-driven-bioscience",
+        "company_url": "datadrivenbioscience.com",
+        "founders": [
+            "Sandeep Dave"
+        ],
+        "about": "Data Driven Bioscience is revolutionizing the approach to cancer diagnosis by connecting cancer diagnostic testing with intelligent software. Unlike other industries, we are unaffected by COVID-19 and are continuing to grow.This is an opportunity to create novel software applications that connect machine learning with cancer tests, and to do work that matters. You will work closely with an interdisciplinary team to connect some of the largest databases in the world through software. We pay a very competitive salary and offer stock ownership of one of the hottest startups anywhere.We are hiring for a number of different positions including user interface development, back end/cloud-focused dev-ops and data scientists. There is the potential to work part time and/or remotely.",
+        "jobs": [
+            {
+                "job_name": "Bioinformatics specialist",
+                "job_url": "https://www.workatastartup.com/jobs/35229",
+                "details": "Durham, North Carolina (Remote okay) / Remote fulltime Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Together Software",
+        "location": "Toronto, Canada",
+        "waasu_url": "https://www.workatastartup.com/companies/together-software",
+        "company_url": "togetherplatform.com",
+        "founders": [
+            "Nathan Goldstein",
+            "Matthew Reeves"
+        ],
+        "about": "Who we areTogether creates software for enterprises to run internal employee mentoring programs. Our top use cases include launching an onboarding buddy program, first-time manager mentoring, or high potential talent and diversity programs. For example, the United Nations uses Together to connect employees globally (e.g. Colombia with Italy) over guided sessions to discuss future assignments, rotations, navigating the massive UN system, etc. We are a Y Combinator Summer 2019 company with ~10 employees, and our customers include Disney, United Nations, Reddit and more.MissionTo make employees and their companies more capable.",
+        "tech": "Who we look forOur customers’ experience trumps everything else. We find the fast ways of delivering functionality to customers. We debate heavily about whether something is good enough to be released.This role is great for you if you are okay with the following:Moving quicklyBeing comfortable building experiments that don’t work outSupporting a big customer by being flexible with your scheduleHaving a lot of opinions on how to make things betterThinking one step ahead of your manager on how the customer experience can improveBeing comfortable with debateYou put the team’s interest in front of your ownYou want to work with talented colleaguesSense for Product, UX and DesignPlease be ready for a high ownership, high expectation role. We are looking for candidates who are truly compatible with startup culture, including speed and ownership.",
+        "jobs": [
+            {
+                "job_name": "Software Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/31812",
+                "details": "Toronto, Canada or Vancouver, Canada fulltime $160K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Correlia Biosystems",
+        "location": "Berkeley, CA",
+        "waasu_url": "https://www.workatastartup.com/companies/correlia-biosystems",
+        "company_url": "correliabio.com",
+        "founders": [
+            "Akwasi Apori",
+            "Kursad Araz",
+            "Samuel Tia"
+        ],
+        "about": "Correlia Biosystems is a Y Combinator backed life science startup based in Berkeley, CA. We are developing a next generation proteomics platform to transform laborious and time-consuming immunoassays. Using lab-on-a-chip technology, we are creating the new standard for fast, automated, and multiplexed assays that put more critical data in the hands of researchers in basic science, pharma, diagnostics, and beyond.",
+        "tech": "We use microfluidics based enabling technology in combination with robotics and software to help life science scientist move faster with their research and development efforts in pharma and academia. Our first product miniaturizes ELISAs which is a test for proteins and antibodies. Correlia’s platform increases the efficiency of tests that are widely used in drug development, vaccine development and diagnostics. The current pandemic highlights the importance of these types of more efficient tests to not only diagnose faster, but also to develop preventive measures like vaccines and therapeutics in a timely fashion.",
+        "jobs": [
+            {
+                "job_name": "Mechatronics Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/29729",
+                "details": "Berkeley, CA fulltime  Visa Required Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Taskade",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/taskade",
+        "company_url": "taskade.com",
+        "founders": [
+            "Stan Chang Khin Boon",
+            "Dionis Loire",
+            "John Xie"
+        ],
+        "about": "Taskade is a real-time organization and collaboration tool for remote teams.  Create collaborative task lists, notes, and mind maps, with integrated team chat in one simple tool. Taskade is the unified workspace for remote workers and distributed teams.",
+        "tech": "Our Tech Stack for Taskade (Web, iOS, Android, Mac, Windows, Chrome Extension):Back End: NodeJS, Postgres, Redis, Elastic, Socket.IO. Front End: ReactJS, GraphQL. DevOps: Kubernetes. Cloud: AWS, GCP. Mobile: iOS, Android, React-Native. Desktop: ElectronJS.",
+        "jobs": [
+            {
+                "job_name": "Full Stack Software Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/16123",
+                "details": "San Francisco and Singapore / Remote (US) fulltime  Visa Required Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Tempo",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/tempo",
+        "company_url": "tempo.fit",
+        "founders": [
+            "Joshua Augustin",
+            "Moawia Eldeeb"
+        ],
+        "about": "Tempo is a Series B consumer fitness startup backed by Founders Fund and Khosla Ventures that uses computer vision to deliver an unparalleled fitness training experience to your home. Our unique hardware solution gives amazing trainers the ability to see their class participants in real time and deliver detailed advice that was previously only possible in person.",
+        "tech": "Tempo's software ranges from iOS and React consumer applications to Python distributed applications on AWS to embedded 3D data analysis and compression libraries written in C++/OpenCL.We're exploring new technologies to optimize our analysis of our extremely unique dataset of human motion - teaching computers to detect mistakes in customers' technique to help them perform at their best.Plus, we're using data science to deliver the first comprehensive fitness training that's based on real science, not bro science.",
+        "jobs": [
+            {
+                "job_name": "Sr Computer Vision Engineer",
+                "job_url": "https://www.workatastartup.com/jobs/15933",
+                "details": "San Francisco, CA fulltime  Visa Required $180K - $225K 0.05% - 0.11% Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Groww",
+        "location": "Bengaluru, India",
+        "waasu_url": "https://www.workatastartup.com/companies/groww",
+        "company_url": "groww.in",
+        "founders": [
+            "Ishan Bansal",
+            "Harsh Jain",
+            "Lalit Keshre",
+            "Neeraj Singh"
+        ],
+        "about": "Groww offers a new way of investing money.We leverage technology and expert financial knowledge to make investing extremely simple yet rewarding for people. An ex-Flipkart team backed by Y Combinator, Sequoia, Propel Ventures, Kauffman Fellows and Insignia Ventures.",
+        "jobs": [
+            {
+                "job_name": "React Native Developer",
+                "job_url": "https://www.workatastartup.com/jobs/14441",
+                "details": "Bengaluru, Karnataka fulltime  Visa Required Any (new grads ok)"
+            },
+            {
+                "job_name": "Software Developer ",
+                "job_url": "https://www.workatastartup.com/jobs/15730",
+                "details": "Bengaluru, Karnataka fulltime  Visa Required Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Helloverify",
+        "location": "Noida, India",
+        "waasu_url": "https://www.workatastartup.com/companies/helloverify",
+        "company_url": "helloverify.com",
+        "founders": [
+            "Karan Mirchandani",
+            "Varun Mirchandani"
+        ],
+        "about": "HelloVerify is an online background screening platform for India (aka checkr for India). We primarily target enterprise customers, demand economy companies, and small businesses.We conduct checks on an individuals employment history, academic qualifications, court and police records, id validations, credit reports and compliance related databases. We've bootstrapped ourselves with no outside capital and are profitable with over 300 full-time employees. But what's most exciting is that the Digital India Initiative is about to totally disrupt the traditional background screening market, and we are going to be the first company to take advantage of this new technology that is set to 10x the market in the next 4 years. Thus, Helloverify will be able to offer the fastest, cheapest, and most accurate reports, which will allow it to become India’s leading background screening company.",
+        "tech": "Our delivery centre and technology hub is located in Noida, India  •\tCIO ( Experience in data sciences, saas products, creating and managing engineering teams) ( Experience 12+ Yrs) •\tIT Engineers/ Data Scientists ( AI/Machine Learning, Open Ai ) –(Experience 6 Yrs) •\tTechnology Lead  ( Python,React,MongoDB) –(Experience 6 Yrs) •\tIT Product Managers ( Requirement Analysis/Planning/ Competitive Analysis, UI/UX ) – (Experience 6 Yrs) •\tIT Engineers ( Python,Django,React ) –(Experience 6Yrs)",
+        "jobs": [
+            {
+                "job_name": "Engineering Roles",
+                "job_url": "https://www.workatastartup.com/jobs/15710",
+                "details": "Noida, Uttar Pradesh fulltime  Visa Required $15K - $75K Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "Apprentice Health",
+        "location": "Boston",
+        "waasu_url": "https://www.workatastartup.com/companies/apprentice-health",
+        "company_url": "apprenticehealth.com",
+        "founders": [
+            "Artur Menzeleev",
+            "Rajiv Sivendran"
+        ],
+        "about": "Apprentice Health helps clinical teams deliver exceptional care to more patients by improving the usage of their most valuable resources - clinical time, space, and equipment. We increase the number of patients that can access care, improve the patient experience, and improve workdays for clinical staff.",
+        "tech": "We leverage sensors (IoT), software, and AI (ML, NLP) to accomplish our mission. Reach out to us if you're interested in learning more.",
+        "jobs": [
+            {
+                "job_name": "Software Engineer I",
+                "job_url": "https://www.workatastartup.com/jobs/15570",
+                "details": "Boston, MA / Remote fulltime Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "The Juggernaut",
+        "location": "New York",
+        "waasu_url": "https://www.workatastartup.com/companies/the-juggernaut",
+        "company_url": "thejuggernaut.com",
+        "founders": [
+            "Snigdha Sur"
+        ],
+        "about": "The Juggernaut is a NY-based subscription media company and community for the South Asia-curious. Targeted subscription media is a valuable bet: Black Entertainment Television (BET) sold to Viacom for $2.3b in 2000 and Liberty Media valued Univision at $14b in 2017. The U.S. South Asia diaspora alone has $460b of spending power and is the fastest growing demographic in the U.S., yet is underserved. We're backed by some incredible investors, including Precursor Ventures (also in The Athletic, Superhuman), Kevin Lin (co-founder, Twitch), Adam Hansmann (co-founder, The Athletic), and Balaji Srinivasan (ex-Coinbase CTO, ex-GP a16z).",
+        "tech": "We are looking for our first full-stack engineer to help take us to the next level, from a newsletter to a South Asia-focused media giant, using the power of software and data.  Depending on experience and milestones, the role could transition into that of CTO or Head of Product and Technology. Building a media company is difficult. Building a media company powered by subscription and having your customers open up their wallets means building an excellent user experience and getting the stories right. We are looking for someone who can test and iterate quickly. We are looking for someone who can define our initial tech stack and architecture for a paywall-powered media platform (and, eventually, an app). You will build the tools to improve user engagement across platforms (newsletter, social media, site, etc.) to help build and grow a thriving online and offline community. You will help build the tools that allow us to quickly understand which stories are worth covering or curating, as well as identifying potential contributors. You will help build the elements of a successful, innovative referral program.The interesting problems to solve include: what subscription offer can lead to the highest conversion, what paywall best balances user engagement with revenue (absolute paywall, a few free articles, locked articles), which platforms (newsletter, site, social) will drive the highest engagement.",
+        "jobs": [
+            {
+                "job_name": "Senior Full-Stack Engineer (Full-time) - potential to transition to CTO",
+                "job_url": "https://www.workatastartup.com/jobs/15526",
+                "details": "New York, NY fulltime  Visa Required Any (new grads ok)"
+            }
+        ]
+    },
+    {
+        "name": "VoiceOps",
+        "location": "San Francisco",
+        "waasu_url": "https://www.workatastartup.com/companies/voiceops",
+        "company_url": "voiceops.com",
+        "founders": [
+            "Ethan Barhydt"
+        ],
+        "about": "VoiceOps is the #1 AI platform for analyzing enterprise voice. The richest data source about customers — their conversations — is the least accessible. Managers spend 20+ hours a week shadowing individual calls and reps spend 10+ hours a week updating their CRM. Our product analyzes the content of customer conversations and generates actionable insights that automate hundreds hours of manual monitoring and QA work so that customer facing teams can do what they’re best at - serving their customers. Our customers are some of the largest sales and success teams in the US that are using VoiceOps for data driven coaching and monitoring. We’ve raised funding from Accel, Founders Fund, Lowercase, and went through Y Combinator. Our team has been featured on Forbes 30 Under 30, highlighted by Inc., Business Insider, Huffington Post, Venture Beat, TechCrunch, and others. Members of our team went to Harvard, Yale, and worked at Google, LinkedIn, Amazon, Uber, Twitch, and others. We’re growing fast and are hiring to build a world class team.",
+        "tech": "Rails + React app + Python for backend/integrations",
+        "jobs": [
+            {
+                "job_name": "Fullstack Engineer ",
+                "job_url": "https://www.workatastartup.com/jobs/1086",
+                "details": "1022 Natoma St, San Francisco, CA, 94114 fulltime $90 - $140 0.10% - 1.00% Any (new grads ok)"
+            }
+        ]
+    }
+]

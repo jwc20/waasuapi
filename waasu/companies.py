@@ -20,6 +20,7 @@ class Companies(object):
 
     def _make_companies_url(
         self,
+        minExperience,
         demographic,
         expo,
         hasEquity,
@@ -35,7 +36,10 @@ class Companies(object):
         companySize,
         layout,
     ):
-
+        p_minExperience = ("minExperience", minExperience) if minExperience else (
+            "minExperience",
+            "any",
+        )
         p_demo = ("demographic", demographic) if demographic else ("demographic", "any")
         p_expo = ("expo", expo) if expo else ("expo", "any")
         p_eq = ("hasEquity", hasEquity) if hasEquity else ("hasEquity", "any")
@@ -62,6 +66,7 @@ class Companies(object):
         p_layout = ("layout", "list")  # don't change
 
         payload_list = [
+            p_minExperience,
             p_demo,
             p_expo,
             p_eq,
@@ -80,7 +85,6 @@ class Companies(object):
 
         payload = []
 
-        # naive approach, use double loop
         for i in range(len(payload_list)):
             if isinstance(payload_list[i][1], list) and len(payload_list[i][1]) > 1:
                 for j in range(len(payload_list[i][1])):
@@ -91,13 +95,12 @@ class Companies(object):
 
             elif isinstance(payload_list[i][1], str):
                 payload.append((payload_list[i][0], payload_list[i][1]))
-
-        # print(payload_list)
-        # breakpoint()
+        pprint(payload)
         return payload
 
     def _load_page(
         self,
+        minExperience=None,
         demographic=None,
         expo=None,
         hasEquity=None,
@@ -116,6 +119,7 @@ class Companies(object):
         filter_url = eBase.URL + eCompanies.URL
         payload_str = urlencode(
             self._make_companies_url(
+                minExperience,
                 demographic,
                 expo,
                 hasEquity,
@@ -136,7 +140,7 @@ class Companies(object):
 
         target_url = filter_url + "?" + payload_str
         self.driver.get(target_url)
-        # pprint(target_url)
+        pprint(target_url)
         delay_timer("prepping to scrape...", "done", 10)
 
     def _scrape_companies(self, soup_data):
@@ -166,7 +170,7 @@ class Companies(object):
             # pprint(details)
 
             d["location"] = details[0].find("div", {"class": "detail-label"}).text
-            d["size"] = details[1].find("div", {"class": "detail-label"}).text.strip()
+            # d["size"] = details[1].find("div", {"class": "detail-label"}).text.strip()
             d["waasu_url"] = eBase.URL + company.a["href"]
 
             # breakpoint()
@@ -259,6 +263,7 @@ class Companies(object):
     def get_companies(
         self,
         scroll_delay,
+        minExperience=None,
         demographic=None,
         expo=None,
         hasEquity=None,
@@ -277,8 +282,8 @@ class Companies(object):
 
         delay_timer("prepping to url...", "url prepped", scroll_delay)
 
-        # self._make_companies_url(
         self._load_page(
+            minExperience,
             demographic,
             expo,
             hasEquity,

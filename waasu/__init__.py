@@ -9,9 +9,11 @@ from selenium.webdriver.chrome.options import Options
 
 # Define Chrome options
 options = Options()
-# options.add_argument("--headless")  # Enable headless mode
+options.add_argument("--headless")  # Enable headless mode
 # options.add_argument("--window-size=500,1020")  # Uncomment if you need a specific window size
 # options.add_argument('--disable-gpu')  # Recommended for headless mode, though may become unnecessary in future versions
+# options.add_argument("--user-data-dir=chrome-data")  # TODO: save cookies
+
 
 class WorkAtAStartUp(Companies, LogIn):
     def __init__(self, **kwargs):
