@@ -15,5 +15,5 @@ client.log_in(username=username, password=password)
 
 # Example usage with parameters
 query = []
-client.get_companies(query=query, jobType="fulltime", role="eng", scroll_delay=10)
+client.get_companies(query=query, minExperience="0", jobType="fulltime", role="eng", scroll_delay=10)
 
