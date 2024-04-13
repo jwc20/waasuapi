@@ -4,7 +4,6 @@ from .login import LogIn
 
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 
 # Define Chrome options
@@ -14,14 +13,14 @@ options.add_argument("--headless")  # Enable headless mode
 # options.add_argument('--disable-gpu')  # Recommended for headless mode, though may become unnecessary in future versions
 # options.add_argument("--user-data-dir=chrome-data")  # TODO: save cookies
 
-
 class WorkAtAStartUp(Companies, LogIn):
     def __init__(self, **kwargs):
-        # Initialize webdriver with options using webdriver-manager
-        self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+        # Initialize webdriver with options
+        # Specify the path to your ChromeDriver executable
+        chrome_driver_path = '/usr/bin/chromedriver-linux64/chromedriver'
+        self.driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options)
         Companies.__init__(self, **kwargs)
         LogIn.__init__(self)
-
 
 
 __authors__ = ["jwc20"]
