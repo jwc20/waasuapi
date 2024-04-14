@@ -262,13 +262,39 @@ class Companies(object):
         # pprint(result)
         return result
 
-    def _save_to_csv(self, data, filename):
-        keys = data[0].keys() if data else []
-        with open(filename, "w", newline="", encoding="utf-8") as output_file:
-            dict_writer = csv.DictWriter(output_file, keys)
-            dict_writer.writeheader()
-            dict_writer.writerows(data)
-            print(f"Data successfully written to {filename}")
+    def _save_to_csv(self, results, filename):
+        headers = [
+            "company_name",
+            "location",
+            "waasu_url",
+            "company_url",
+            "founders",
+            "about",
+            "tech",
+            "job_name",
+            "job_url",
+            "job_details",
+        ]
+        with open(filename, "w", newline="", encoding="utf-8") as file:
+            writer = csv.DictWriter(file, fieldnames=headers)
+            writer.writeheader()
+            for company in results:
+                for job in company["jobs"]:
+                    founders = ", ".join(company.get("founders", []))
+
+                    row = {
+                        "company_name": company.get("name"),
+                        "location": company.get("location"),
+                        "waasu_url": company.get("waasu_url"),
+                        "company_url": company.get("company_url"),
+                        "founders": founders,
+                        "about": company.get("about", ""),
+                        "tech": company.get("tech", ""),
+                        "job_name": job["job_name"],
+                        "job_url": job["job_url"],
+                        "job_details": job["details"],
+                    }
+                    writer.writerow(row)
 
     def get_companies(
         self,
@@ -343,10 +369,10 @@ class Companies(object):
 
         # pprint(results)
 
-        filename = f"data_{date_time_format}.json"
+        # filename = f"data_{date_time_format}.json"
 
-        with open(filename, "w", encoding="utf-8") as f:
-            json.dump(results, f, ensure_ascii=False, indent=4)
+        # with open(filename, "w", encoding="utf-8") as f:
+        #     json.dump(results, f, ensure_ascii=False, indent=4)
 
         csv_filename = f"data_{date_time_format}.csv"
         self._save_to_csv(results, csv_filename)
