@@ -36,9 +36,13 @@ class Companies(object):
         companySize,
         layout,
     ):
-        p_minExperience = ("minExperience", minExperience) if minExperience else (
-            "minExperience",
-            "any",
+        p_minExperience = (
+            ("minExperience", minExperience)
+            if minExperience
+            else (
+                "minExperience",
+                "any",
+            )
         )
         p_demo = ("demographic", demographic) if demographic else ("demographic", "any")
         p_expo = ("expo", expo) if expo else ("expo", "any")
@@ -225,8 +229,6 @@ class Companies(object):
                     if third_div is not None:
                         d["tech"] = third_div.text[4:].replace("\n", " ").strip()
 
-
-
             company_jobs = company.find("div", {"class": "w-full"}).find_all(
                 "div", {"class": "mb-4 flex flex-col justify-between sm:flex-row"}
             )
@@ -259,6 +261,14 @@ class Companies(object):
             result.append(d)
         # pprint(result)
         return result
+
+    def _save_to_csv(self, data, filename):
+        keys = data[0].keys() if data else []
+        with open(filename, "w", newline="", encoding="utf-8") as output_file:
+            dict_writer = csv.DictWriter(output_file, keys)
+            dict_writer.writeheader()
+            dict_writer.writerows(data)
+            print(f"Data successfully written to {filename}")
 
     def get_companies(
         self,
@@ -338,4 +348,5 @@ class Companies(object):
         with open(filename, "w", encoding="utf-8") as f:
             json.dump(results, f, ensure_ascii=False, indent=4)
 
-
+        csv_filename = f"data_{date_time_format}.csv"
+        self._save_to_csv(results, csv_filename)
