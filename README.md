@@ -35,6 +35,14 @@ username = "example_username"
 password = "example_password"
 ```
 
+Please update the chromedriver path in `waasu/__init__.py`. you can check by using the 'which' command in mac and linux.
+
+```python
+chrome_driver_path = '/usr/local/bin/chromedriver-linux64/chromedriver' # linux
+
+chrome_driver_path = '/opt/homebrew/bin/chromedriver' # mac (m1)
+```
+
 Once set, create a client and log in using the following method.
 
 ```
@@ -127,4 +135,3 @@ pprintpp
 - [Who Is Hiring?](https://kennytilton.github.io/whoishiring/)
 - [hn_search](https://news.ycombinator.com/item?id=10313519)
 - [O(n)](https://getoofn.com/)
-

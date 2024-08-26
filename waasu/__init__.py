@@ -17,7 +17,8 @@ class WorkAtAStartUp(Companies, LogIn):
     def __init__(self, **kwargs):
         # Initialize webdriver with options
         # Specify the path to your ChromeDriver executable
-        chrome_driver_path = '/usr/local/bin/chromedriver-linux64/chromedriver'
+        # chrome_driver_path = '/usr/local/bin/chromedriver-linux64/chromedriver'
+        chrome_driver_path = '/opt/homebrew/bin/chromedriver'
         self.driver = webdriver.Chrome(service=Service(chrome_driver_path), options=options)
         Companies.__init__(self, **kwargs)
         LogIn.__init__(self)
